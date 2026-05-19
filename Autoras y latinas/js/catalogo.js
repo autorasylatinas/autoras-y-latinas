@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function cargarLibros() {
   try {
-    const respuesta = await fetch('books.json');
+    const respuesta = await fetch('./books.json');
     todosLosLibros = await respuesta.json();
   } catch (error) {
     console.error('Error cargando books.json:', error);
