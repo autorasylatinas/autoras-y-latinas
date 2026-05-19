@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Quién soy — Autoras y Latinas</title>
+  <meta name="description" content="La creadora detrás de Autoras y Latinas. Un proyecto sobre literatura latinoamericana escrita por mujeres, como TIF de la Licenciatura en Ciencias de la Comunicación, UBA." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://autorasylatinas.com/quien-soy.html" />
+  <meta property="og:title" content="Quién soy — Autoras y Latinas" />
+  <meta property="og:description" content="La creadora detrás de Autoras y Latinas. Un proyecto sobre literatura latinoamericana escrita por mujeres." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo" aria-label="Autoras y Latinas — Inicio">
+          Autoras y Latinas
+        </a>
+        <nav class="header__nav" aria-label="Navegación principal">
+          <a href="catalogo.html">Catálogo</a>
+          <a href="quien-soy.html" class="activo" aria-current="page">Quién soy</a>
+        </nav>
+        <button
+          class="header__hamburger"
+          id="hamburger"
+          aria-expanded="false"
+          aria-controls="menu-mobile"
+          aria-label="Abrir menú"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
+        <a href="catalogo.html">Catálogo</a>
+        <a href="quien-soy.html" aria-current="page">Quién soy</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================
+       CONTENIDO PRINCIPAL
+       ============================================ -->
+  <main>
+    <div class="container">
+      <div class="qs-pagina">
+
+        <!-- Título de sección -->
+        <div class="qs-encabezado animar-solo">
+          <div class="separador"></div>
+          <h1 class="qs-titulo">Quién soy</h1>
+        </div>
+
+        <!-- BLOQUE: Presentación personal (foto + texto) -->
+        <section class="qs-bloque qs-presentacion animar-solo" aria-labelledby="qs-presentacion-titulo">
+
+          <!-- Foto (opcional — reemplazar src con tu foto) -->
+          <div class="qs-foto-wrap" aria-hidden="true">
+            <div class="qs-foto-placeholder">
+              <span>Foto</span>
+            </div>
+            <!-- Cuando tengas la foto, reemplazá el div de arriba por:
+            <img
+              class="qs-foto"
+              src="assets/foto-autora.jpg"
+              alt="Nombre Apellido, creadora de Autoras y Latinas"
+            />
+            -->
+          </div>
+
+          <!-- Texto de presentación -->
+          <div class="qs-presentacion__texto">
+            <h2 class="qs-bloque-titulo" id="qs-presentacion-titulo">Lorem ipsum nombre</h2>
+            <p class="qs-texto">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="qs-texto">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+        </section>
+
+        <!-- BLOQUE: Por qué este proyecto -->
+        <section class="qs-bloque animar-solo" aria-labelledby="qs-proyecto-titulo">
+          <h2 class="qs-bloque-titulo" id="qs-proyecto-titulo">Por qué este proyecto</h2>
+          <p class="qs-texto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <p class="qs-texto">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis.
+          </p>
+          <p class="qs-texto">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit.
+          </p>
+        </section>
+
+        <!-- BLOQUE: Por qué estos 12 libros -->
+        <section class="qs-bloque animar-solo" aria-labelledby="qs-libros-titulo">
+          <h2 class="qs-bloque-titulo" id="qs-libros-titulo">Por qué estos 12 libros</h2>
+          <p class="qs-texto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p class="qs-texto">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+          </p>
+          <p class="qs-texto">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+          </p>
+        </section>
+
+        <!-- BLOQUE: Contacto -->
+        <section class="qs-bloque qs-contacto animar-solo" aria-labelledby="qs-contacto-titulo">
+          <h2 class="qs-contacto-label" id="qs-contacto-titulo">Contacto</h2>
+          <div class="qs-contacto-links">
+
+            <a
+              href="https://instagram.com/autorasylatinas"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="qs-contacto-item"
+              aria-label="Instagram de Autoras y Latinas"
+            >
+              <svg class="qs-contacto-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+              </svg>
+              <span>@autorasylatinas</span>
+            </a>
+
+            <!-- Mail opcional — descomentar cuando tengas uno
+            <a
+              href="mailto:hola@autorasylatinas.com"
+              class="qs-contacto-item"
+              aria-label="Enviar mail a Autoras y Latinas"
+            >
+              <svg class="qs-contacto-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <polyline points="2,4 12,13 22,4"/>
+              </svg>
+              <span>hola@autorasylatinas.com</span>
+            </a>
+            -->
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">Autoras y Latinas</span>
+        <div class="footer__links">
+          <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">
+            Instagram
+          </a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="quien-soy.html">Quién soy</a>
+        </div>
+      </div>
+      <p class="footer__creditos">
+        TIF — Licenciatura en Ciencias de la Comunicación, FSOC UBA · 2026
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/animations.js"></script>
+
+</body>
+</html>

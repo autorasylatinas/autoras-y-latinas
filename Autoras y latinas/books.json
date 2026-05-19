@@ -1,0 +1,122 @@
+[
+  {
+    "id": "nueve-lunas",
+    "titulo": "Nueve lunas",
+    "autora": "Gabriela Wiener",
+    "pais": "Perú",
+    "anio": 2009,
+    "categoria": "Cuido y cuido, ¿quién me cuida a mí?",
+    "portada": "assets/portadas/nuevelunas.jpg",
+    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+  },
+  {
+    "id": "el-matrimonio-de-los-peces-rojos",
+    "titulo": "El matrimonio de los peces rojos",
+    "autora": "Guadalupe Nettel",
+    "pais": "México",
+    "anio": 2013,
+    "categoria": "Cuido y cuido, ¿quién me cuida a mí?",
+    "portada": "assets/portadas/elmatrimoniodelospecesrojos.jpg",
+    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+  },
+  {
+    "id": "primera-persona",
+    "titulo": "Primera persona",
+    "autora": "Margarita García Robayo",
+    "pais": "Colombia",
+    "anio": 2017,
+    "categoria": "Cuido y cuido, ¿quién me cuida a mí?",
+    "portada": "assets/portadas/primerapersona.jpg",
+    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+  },
+  {
+    "id": "la-mucama-de-omicunle",
+    "titulo": "La mucama de Omicunlé",
+    "autora": "Rita Indiana",
+    "pais": "República Dominicana",
+    "anio": 2015,
+    "categoria": "Me arrancaron algo que era mío",
+    "portada": "assets/portadas/lamucamadeomicunle.jpg",
+    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+  },
+  {
+    "id": "la-cabeza-del-santo",
+    "titulo": "La cabeza del santo",
+    "autora": "Socorro Acioli",
+    "pais": "Brasil",
+    "anio": 2014,
+    "categoria": "Me arrancaron algo que era mío",
+    "portada": "assets/portadas/lacabezadelsanto.jpg",
+    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+  },
+  {
+    "id": "ustedes-brillan-en-lo-oscuro",
+    "titulo": "Ustedes brillan en lo oscuro",
+    "autora": "Liliana Colanzi",
+    "pais": "Bolivia",
+    "anio": 2022,
+    "categoria": "Me arrancaron algo que era mío",
+    "portada": "assets/portadas/ustedesbrillanenlooscuro.jpg",
+    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+  },
+  {
+    "id": "mugre-rosa",
+    "titulo": "Mugre rosa",
+    "autora": "Fernanda Trías",
+    "pais": "Uruguay",
+    "anio": 2020,
+    "categoria": "La tierra que habito",
+    "portada": "assets/portadas/mugrerosa.jpg",
+    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+  },
+  {
+    "id": "derroche",
+    "titulo": "Derroche",
+    "autora": "María Sonia Cristoff",
+    "pais": "Argentina",
+    "anio": 2022,
+    "categoria": "La tierra que habito",
+    "portada": "assets/portadas/derroche.jpg",
+    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+  },
+  {
+    "id": "chamanes-electricos-en-la-fiesta-del-sol",
+    "titulo": "Chamanes eléctricos en la fiesta del sol",
+    "autora": "Mónica Ojeda",
+    "pais": "Ecuador",
+    "anio": 2024,
+    "categoria": "La tierra que habito",
+    "portada": "assets/portadas/chamaneselectricosenlafiestadelsol.jpg",
+    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+  },
+  {
+    "id": "atras-queda-la-tierra",
+    "titulo": "Atrás queda la tierra",
+    "autora": "Arianna de Sousa-García",
+    "pais": "Venezuela",
+    "anio": 2024,
+    "categoria": "Desaparecieron y se fueron",
+    "portada": "assets/portadas/atrasquedalatierra.jpg",
+    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+  },
+  {
+    "id": "todos-se-van",
+    "titulo": "Todos se van",
+    "autora": "Wendy Guerra",
+    "pais": "Cuba",
+    "anio": 2006,
+    "categoria": "Desaparecieron y se fueron",
+    "portada": "assets/portadas/todossevan.jpeg",
+    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+  },
+  {
+    "id": "marciano",
+    "titulo": "Marciano",
+    "autora": "Nona Fernández",
+    "pais": "Chile",
+    "anio": 2025,
+    "categoria": "Desaparecieron y se fueron",
+    "portada": "assets/portadas/marciano.jpg",
+    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+  }
+]

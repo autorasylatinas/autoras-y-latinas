@@ -1,0 +1,205 @@
+/* ============================================
+   AUTORAS Y LATINAS — animations.css
+   Animaciones, transiciones y pantalla de intro
+   ============================================ */
+
+/* ============================================
+   PANTALLA DE INTRO (splash screen)
+   ============================================ */
+
+.intro {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-texto); /* #1a1208 — casi negro cálido */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  pointer-events: all;
+}
+
+.intro__nombre {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 8vw, 72px);
+  font-weight: 800;
+  color: var(--color-fondo);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(16px);
+  animation: entradaTexto 700ms var(--ease-entrada) 200ms forwards;
+}
+
+.intro__nombre span {
+  color: var(--color-amarillo);
+}
+
+.intro__linea {
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-amarillo), var(--color-rosa));
+  border-radius: 1px;
+  margin-top: 20px;
+  animation: expandirLinea 500ms var(--ease-entrada) 800ms forwards;
+}
+
+/* Salida del splash */
+.intro.saliendo {
+  animation: salidaIntro 500ms var(--ease-entrada) forwards;
+  pointer-events: none;
+}
+
+@keyframes entradaTexto {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes expandirLinea {
+  to {
+    width: 80px;
+  }
+}
+
+@keyframes salidaIntro {
+  to {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+}
+
+/* ============================================
+   ANIMACIONES DE ENTRADA (scroll / page load)
+   Elementos con clase .animar entran con fade + slide
+   ============================================ */
+
+.animar {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms var(--ease-entrada),
+              transform 500ms var(--ease-entrada);
+}
+
+.animar.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger: delay entre elementos consecutivos */
+.animar:nth-child(1) { transition-delay: 0ms; }
+.animar:nth-child(2) { transition-delay: 80ms; }
+.animar:nth-child(3) { transition-delay: 160ms; }
+.animar:nth-child(4) { transition-delay: 240ms; }
+.animar:nth-child(5) { transition-delay: 320ms; }
+.animar:nth-child(6) { transition-delay: 400ms; }
+.animar:nth-child(7) { transition-delay: 480ms; }
+.animar:nth-child(8) { transition-delay: 560ms; }
+.animar:nth-child(9) { transition-delay: 640ms; }
+.animar:nth-child(10) { transition-delay: 720ms; }
+.animar:nth-child(11) { transition-delay: 800ms; }
+.animar:nth-child(12) { transition-delay: 880ms; }
+
+/* Variante sin stagger (para elementos solos) */
+.animar-solo {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms var(--ease-entrada),
+              transform 500ms var(--ease-entrada);
+}
+
+.animar-solo.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   TRANSICIONES DEL CUESTIONARIO
+   ============================================ */
+
+/* Paso del cuestionario: fade out → fade in */
+.cuestionario__paso-contenido {
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.cuestionario__paso-contenido.saliendo {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.cuestionario__paso-contenido.entrando {
+  animation: entradaPaso 300ms var(--ease-entrada) forwards;
+}
+
+@keyframes entradaPaso {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Escala en la opción seleccionada */
+.opcion.seleccionada {
+  animation: seleccionOpcion 150ms var(--ease-entrada) forwards;
+}
+
+@keyframes seleccionOpcion {
+  0%   { transform: scale(1); }
+  60%  { transform: scale(1.025); }
+  100% { transform: scale(1.02); }
+}
+
+/* ============================================
+   ELEMENTO DECORATIVO DE CELEBRACIÓN
+   (aparece junto al resultado del cuestionario)
+   ============================================ */
+
+.resultado-celebracion {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 48px;
+  height: 48px;
+  background: radial-gradient(circle, var(--color-amarillo) 0%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  animation: celebracion 600ms var(--ease-entrada) 100ms forwards;
+  pointer-events: none;
+}
+
+@keyframes celebracion {
+  0%   { opacity: 0; transform: scale(0.5); }
+  60%  { opacity: 0.6; transform: scale(1.2); }
+  100% { opacity: 0; transform: scale(1.5); }
+}
+
+/* ============================================
+   ACCESIBILIDAD — prefers-reduced-motion
+   Respeta la preferencia del sistema operativo
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .intro {
+    display: none;
+  }
+
+  .animar,
+  .animar-solo {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Catálogo — Autoras y Latinas</title>
+  <meta name="description" content="Los 12 libros del catálogo de Autoras y Latinas. Filtrá por país o por categoría temática y encontrá tu próxima lectura latinoamericana." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://autorasylatinas.com/catalogo.html" />
+  <meta property="og:title" content="Catálogo — Autoras y Latinas" />
+  <meta property="og:description" content="12 libros escritos por autoras latinoamericanas que dialogan con el contexto político y social de América Latina." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo" aria-label="Autoras y Latinas — Inicio">
+          Autoras y Latinas
+        </a>
+        <nav class="header__nav" aria-label="Navegación principal">
+          <a href="catalogo.html" class="activo" aria-current="page">Catálogo</a>
+          <a href="quien-soy.html">Quién soy</a>
+        </nav>
+        <button
+          class="header__hamburger"
+          id="hamburger"
+          aria-expanded="false"
+          aria-controls="menu-mobile"
+          aria-label="Abrir menú"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
+        <a href="catalogo.html" aria-current="page">Catálogo</a>
+        <a href="quien-soy.html">Quién soy</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================
+       CONTENIDO PRINCIPAL
+       ============================================ -->
+  <main>
+    <div class="container">
+      <section class="catalogo-seccion" aria-labelledby="catalogo-titulo">
+
+        <!-- Título de la sección -->
+        <div class="catalogo-header animar-solo">
+          <div class="separador"></div>
+          <h1 class="catalogo-titulo" id="catalogo-titulo">Catálogo</h1>
+          <p class="catalogo-bajada">
+            12 libros escritos por autoras latinoamericanas. Filtrá por país o por categoría temática.
+          </p>
+        </div>
+
+        <!-- FILTROS -->
+        <div class="filtros animar-solo" id="filtros" role="search" aria-label="Filtros del catálogo">
+
+          <!-- Filtro por país -->
+          <div class="filtros__grupo" role="group" aria-label="Filtrar por país">
+            <span class="filtros__label" id="label-pais">País</span>
+            <div class="filtros__botones" id="filtros-pais" aria-labelledby="label-pais">
+              <!-- Se genera con JS -->
+            </div>
+          </div>
+
+          <!-- Filtro por categoría -->
+          <div class="filtros__grupo filtros__grupo--categoria" role="group" aria-label="Filtrar por categoría">
+            <span class="filtros__label" id="label-categoria">Categoría</span>
+            <div class="filtros__botones" id="filtros-categoria" aria-labelledby="label-categoria">
+              <!-- Se genera con JS -->
+            </div>
+          </div>
+
+          <!-- Limpiar filtros -->
+          <button
+            class="filtros__limpiar"
+            id="limpiar-filtros"
+            hidden
+            aria-label="Limpiar todos los filtros activos"
+          >
+            ✕ Limpiar filtros
+          </button>
+
+        </div>
+
+        <!-- Contador de resultados -->
+        <p class="catalogo-contador animar-solo" id="catalogo-contador" aria-live="polite" aria-atomic="true">
+          <!-- Se actualiza con JS -->
+        </p>
+
+        <!-- GRILLA DE LIBROS -->
+        <div
+          class="catalogo-lista"
+          id="catalogo-lista"
+          role="list"
+          aria-label="Lista de libros"
+        >
+          <!-- Se genera con JS -->
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">Autoras y Latinas</span>
+        <div class="footer__links">
+          <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">
+            Instagram
+          </a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="quien-soy.html">Quién soy</a>
+        </div>
+      </div>
+      <p class="footer__creditos">
+        TIF — Licenciatura en Ciencias de la Comunicación, FSOC UBA · 2026
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/catalogo.js"></script>
+  <script src="js/animations.js"></script>
+
+</body>
+</html>
