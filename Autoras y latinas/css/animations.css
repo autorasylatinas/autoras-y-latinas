@@ -10,7 +10,7 @@
 .intro {
   position: fixed;
   inset: 0;
-  background-color: #e5901d;
+  background-color: #e89b21;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,4 +169,134 @@
     opacity: 1;
     transform: none;
   }
+}
+
+/* ============================================
+   HEADER FUCSIA CON LOGO CENTRADO
+   ============================================ */
+
+.header--fucsia {
+  background-color: var(--color-fucsia);
+}
+
+.header__inner--centrado {
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 0 16px;
+}
+
+.header__logo-img {
+  display: block;
+  text-decoration: none;
+}
+
+.header__logo-imagen {
+  height: 80px;
+  width: auto;
+  display: block;
+}
+
+.header__nav--centrado {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.header__nav--centrado a {
+  color: #ffffff;
+  font-family: var(--fuente-body);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  transition: opacity 200ms ease;
+}
+
+.header__nav--centrado a:hover {
+  opacity: 0.75;
+}
+
+/* Ocultar hamburguesa en desktop cuando el nav está centrado */
+@media (min-width: 768px) {
+  .header--fucsia .header__hamburger {
+    display: none;
+  }
+}
+
+/* Mobile: mostrar hamburguesa, ocultar nav centrado */
+@media (max-width: 767px) {
+  .header__nav--centrado {
+    display: none;
+  }
+
+  .header__inner--centrado {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+  }
+
+  .header__logo-imagen {
+    height: 48px;
+  }
+
+  /* Hamburguesa en blanco sobre fucsia */
+  .header--fucsia .header__hamburger span {
+    background-color: #ffffff;
+  }
+
+  /* Menú mobile sobre fucsia */
+  .header--fucsia .header__menu-mobile a {
+    color: #ffffff;
+  }
+}
+
+/* ============================================
+   HERO HOME — sin sidebar
+   ============================================ */
+
+.hero--home {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 64px 0 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.hero__descripcion {
+  font-family: var(--fuente-body);
+  font-size: clamp(17px, 2vw, 20px);
+  line-height: 1.6;
+  color: var(--color-texto);
+  max-width: 60ch;
+}
+
+/* ============================================
+   PÁGINA CUESTIONARIO
+   ============================================ */
+
+.cuestionario-page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 0 64px;
+}
+
+.cuestionario-page__titulo {
+  font-family: var(--fuente-display);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+  color: var(--color-texto);
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.cuestionario-page__bajada {
+  font-family: var(--fuente-body);
+  font-size: 17px;
+  color: var(--color-texto-sec);
+  margin-bottom: 40px;
 }
