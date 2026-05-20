@@ -427,20 +427,14 @@ p {
   color: #ffffff !important;
 }
 
-/* Desktop: mostrar nav, ocultar hamburguesa */
+/* Desktop: ocultar nav de texto, mostrar hamburguesa */
 @media (min-width: 768px) {
   .header__nav {
-    display: flex;
-    align-items: center;
-    gap: var(--space-4);
-  }
-
-  .header__hamburger {
     display: none;
   }
 
-  .header__menu-mobile {
-    display: none !important;
+  .header__hamburger {
+    display: flex;
   }
 }
 
