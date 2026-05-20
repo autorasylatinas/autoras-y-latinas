@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       intro.setAttribute('aria-hidden', 'true');
       // Lanzar animaciones de entrada del contenido principal
       iniciarAnimacionesEntrada();
-    }, 4000);
+    }, 3000);
   } else {
     // Si no hay intro (páginas internas), animar de todas formas
     iniciarAnimacionesEntrada();
