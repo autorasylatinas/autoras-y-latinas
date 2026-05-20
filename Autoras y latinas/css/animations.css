@@ -10,58 +10,25 @@
 .intro {
   position: fixed;
   inset: 0;
-  background-color: var(--color-texto); /* #1a1208 — casi negro cálido */
+  background-color: #e29d3c;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 9999;
   pointer-events: all;
 }
 
-.intro__nombre {
-  font-family: var(--font-display);
-  font-size: clamp(32px, 8vw, 72px);
-  font-weight: 800;
-  color: var(--color-fondo);
-  letter-spacing: -0.03em;
-  line-height: 1;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(16px);
-  animation: entradaTexto 700ms var(--ease-entrada) 200ms forwards;
-}
-
-.intro__nombre span {
-  color: var(--color-amarillo);
-}
-
-.intro__linea {
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--color-amarillo), var(--color-rosa));
-  border-radius: 1px;
-  margin-top: 20px;
-  animation: expandirLinea 500ms var(--ease-entrada) 800ms forwards;
+/* Video de intro exportado desde Canva */
+.intro__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Salida del splash */
 .intro.saliendo {
   animation: salidaIntro 500ms var(--ease-entrada) forwards;
   pointer-events: none;
-}
-
-@keyframes entradaTexto {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes expandirLinea {
-  to {
-    width: 80px;
-  }
 }
 
 @keyframes salidaIntro {
