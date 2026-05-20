@@ -32,15 +32,15 @@
   <!-- ============================================
        HEADER
        ============================================ -->
-  <header class="header header--fucsia" role="banner">
+  <header class="header" role="banner">
     <div class="container">
-      <div class="header__inner header__inner--centrado">
+      <div class="header__inner">
 
         <a href="index.html" class="header__logo-img" aria-label="Autoras y Latinas — Inicio">
           <img src="assets/logo.png" alt="Autoras y Latinas" class="header__logo-imagen" />
         </a>
 
-        <nav class="header__nav header__nav--centrado" aria-label="Navegación principal">
+        <nav class="header__nav" aria-label="Navegación principal">
           <a href="catalogo.html">Catálogo</a>
           <a href="quien-soy.html">Quién soy</a>
         </nav>
@@ -60,7 +60,15 @@
       </div>
 
       <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
-        <a href="catalogo.html">Catálogo</a>
+        <button class="header__submenu-toggle" id="submenu-toggle" aria-expanded="false">
+          Catálogo <span class="flecha" aria-hidden="true">▾</span>
+        </button>
+        <div class="header__submenu" id="submenu-categorias">
+          <a href="catalogo.html?categoria=cuido">Cuido y cuido, ¿quién me cuida a mí?</a>
+          <a href="catalogo.html?categoria=arrancaron">Me arrancaron algo que era mío</a>
+          <a href="catalogo.html?categoria=tierra">La tierra que habito</a>
+          <a href="catalogo.html?categoria=desaparecieron">Desaparecieron y se fueron</a>
+        </div>
         <a href="quien-soy.html">Quién soy</a>
       </nav>
     </div>
