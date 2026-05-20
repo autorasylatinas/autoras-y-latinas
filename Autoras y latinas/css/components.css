@@ -4,6 +4,156 @@
    ============================================ */
 
 /* ============================================
+   HEADER
+   ============================================ */
+
+.header {
+  background-color: var(--color-fucsia) !important;
+  border-bottom: none;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+/* Ocultar texto logo anterior */
+.header__logo {
+  display: none;
+}
+
+/* Logo imagen */
+.header__logo-img {
+  display: block;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.header__logo-imagen {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
+/* Nav desktop */
+.header__nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.header__nav a {
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: opacity 200ms ease;
+}
+
+.header__nav a:hover,
+.header__nav a.activo {
+  opacity: 0.75;
+}
+
+/* Hamburguesa en blanco */
+.header__hamburger span {
+  background-color: #ffffff !important;
+}
+
+/* Menú mobile */
+.header__menu-mobile {
+  background-color: var(--color-fucsia);
+  padding-bottom: 16px;
+}
+
+.header__menu-mobile > a {
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 0;
+  display: block;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.header__menu-mobile > a:last-child {
+  border-bottom: none;
+}
+
+/* Botón que abre el submenú de Catálogo */
+.header__submenu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 16px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding: 10px 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.header__submenu-toggle .flecha {
+  font-size: 12px;
+  transition: transform 250ms ease;
+}
+
+.header__submenu-toggle.abierto .flecha {
+  transform: rotate(180deg);
+}
+
+/* Submenú categorías */
+.header__submenu {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 300ms ease;
+  padding-left: 16px;
+}
+
+.header__submenu.abierto {
+  max-height: 400px;
+}
+
+.header__submenu a {
+  color: rgba(255,255,255,0.85) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  padding: 8px 0 !important;
+  border-bottom: none !important;
+  display: block;
+}
+
+.header__submenu a:hover {
+  color: #ffffff !important;
+}
+
+/* En desktop ocultar hamburguesa */
+@media (min-width: 768px) {
+  .header__hamburger {
+    display: none;
+  }
+  .header__menu-mobile {
+    display: none !important;
+  }
+}
+
+/* En mobile ocultar nav desktop */
+@media (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+/* ============================================
    TARJETA DE LIBRO (catálogo)
    ============================================ */
 
@@ -40,7 +190,6 @@
   background-color: var(--color-fondo-alt);
 }
 
-/* Placeholder cuando no hay imagen */
 .libro-card__portada-placeholder {
   width: 100%;
   aspect-ratio: 2 / 3;
@@ -90,7 +239,6 @@
   color: var(--color-texto-sec);
   line-height: 1.5;
   margin-top: var(--space-1);
-  /* Dos líneas máximo con fade */
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -119,7 +267,6 @@
   }
 }
 
-/* Estado vacío cuando no hay resultados */
 .catalogo-vacio {
   grid-column: 1 / -1;
   text-align: center;
@@ -210,7 +357,6 @@
   border-radius: 2px;
 }
 
-/* Ocultar el botón limpiar cuando no hay filtros activos */
 .filtros__limpiar[hidden] {
   display: none;
 }
@@ -246,7 +392,6 @@
   }
 }
 
-/* Indicador de progreso */
 .cuestionario__progreso {
   display: flex;
   gap: var(--space-1);
@@ -270,7 +415,6 @@
   opacity: 0.5;
 }
 
-/* Pregunta */
 .cuestionario__pregunta {
   font-family: var(--font-display);
   font-size: var(--fs-h2);
@@ -280,7 +424,6 @@
   margin-bottom: var(--space-3);
 }
 
-/* Opciones de respuesta */
 .cuestionario__opciones {
   display: flex;
   flex-direction: column;
@@ -336,7 +479,7 @@
    ============================================ */
 
 .resultado {
-  display: none; /* Se muestra con JS */
+  display: none;
   animation: entradaResultado 400ms var(--ease-entrada) forwards;
 }
 
@@ -345,14 +488,8 @@
 }
 
 @keyframes entradaResultado {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
 }
 
 .resultado__libro {
@@ -377,14 +514,10 @@
 }
 
 @media (min-width: 600px) {
-  .resultado__portada {
-    width: 160px;
-  }
+  .resultado__portada { width: 160px; }
 }
 
-.resultado__info {
-  flex: 1;
-}
+.resultado__info { flex: 1; }
 
 .resultado__titulo {
   font-family: var(--font-display);
@@ -407,9 +540,7 @@
   margin-bottom: var(--space-2);
 }
 
-.resultado__tag {
-  margin-bottom: var(--space-3);
-}
+.resultado__tag { margin-bottom: var(--space-3); }
 
 .resultado__curatorial {
   font-size: var(--fs-body);
@@ -445,9 +576,7 @@
   transition: color var(--transition-mid);
 }
 
-.ficha__volver:hover {
-  color: var(--color-violeta);
-}
+.ficha__volver:hover { color: var(--color-violeta); }
 
 .ficha__volver:focus-visible {
   outline: 2px solid var(--color-violeta);
@@ -481,9 +610,7 @@
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
 }
 
-.ficha__datos {
-  flex: 1;
-}
+.ficha__datos { flex: 1; }
 
 .ficha__titulo {
   font-family: var(--font-display);
@@ -507,9 +634,7 @@
   margin-bottom: var(--space-2);
 }
 
-.ficha__tag {
-  margin-bottom: var(--space-4);
-}
+.ficha__tag { margin-bottom: var(--space-4); }
 
 .ficha__seccion-titulo {
   font-family: var(--font-display);
@@ -523,6 +648,19 @@
   font-size: var(--fs-body-lg);
   line-height: 1.65;
   color: var(--color-texto);
+}
+
+.ficha__bloque {
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 1px solid rgba(74, 83, 157, 0.12);
+}
+
+.ficha__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
 }
 
 /* ============================================
@@ -552,7 +690,6 @@
   margin-bottom: var(--space-4);
 }
 
-/* Acento decorativo en el hero */
 .hero__acento {
   display: inline;
   color: var(--color-rosa);
@@ -560,7 +697,6 @@
 
 /* ============================================
    TARJETA HORIZONTAL (catálogo)
-   Layout: portada izquierda · info derecha
    ============================================ */
 
 .libro-card-h {
@@ -658,12 +794,8 @@
 }
 
 @media (min-width: 768px) {
-  .libro-card-h__portada-wrap {
-    width: 90px;
-  }
-  .libro-card-h__titulo {
-    font-size: var(--fs-h3);
-  }
+  .libro-card-h__portada-wrap { width: 90px; }
+  .libro-card-h__titulo { font-size: var(--fs-h3); }
 }
 
 /* ============================================
@@ -674,9 +806,7 @@
   padding: var(--space-5) 0 var(--space-6);
 }
 
-.catalogo-header {
-  margin-bottom: var(--space-4);
-}
+.catalogo-header { margin-bottom: var(--space-4); }
 
 .catalogo-titulo {
   font-family: var(--font-display);
@@ -728,23 +858,6 @@
 }
 
 /* ============================================
-   BLOQUES DE CONTENIDO DE LA FICHA
-   ============================================ */
-
-.ficha__bloque {
-  margin-top: var(--space-4);
-  padding-top: var(--space-3);
-  border-top: 1px solid rgba(74, 83, 157, 0.12);
-}
-
-.ficha__acciones {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  margin-top: var(--space-5);
-}
-
-/* ============================================
    PÁGINA QUIÉN SOY
    ============================================ */
 
@@ -757,10 +870,7 @@
   gap: var(--space-5);
 }
 
-/* Encabezado de la página */
-.qs-encabezado {
-  margin-bottom: var(--space-1);
-}
+.qs-encabezado { margin-bottom: var(--space-1); }
 
 .qs-titulo {
   font-family: var(--font-display);
@@ -770,7 +880,6 @@
   letter-spacing: -0.02em;
 }
 
-/* Bloques de contenido */
 .qs-bloque {
   background-color: #ffffff;
   border-radius: var(--radius-card);
@@ -794,20 +903,15 @@
   max-width: 65ch;
 }
 
-.qs-texto + .qs-texto {
-  margin-top: var(--space-2);
-}
+.qs-texto + .qs-texto { margin-top: var(--space-2); }
 
-/* Bloque de presentación: foto + texto */
 .qs-presentacion {
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
 }
 
-.qs-foto-wrap {
-  flex-shrink: 0;
-}
+.qs-foto-wrap { flex-shrink: 0; }
 
 .qs-foto {
   width: 110px;
@@ -817,7 +921,6 @@
   display: block;
 }
 
-/* Placeholder mientras no hay foto */
 .qs-foto-placeholder {
   width: 110px;
   height: 110px;
@@ -831,7 +934,6 @@
   color: var(--color-texto-sec);
 }
 
-/* Desktop: foto y texto en fila */
 @media (min-width: 600px) {
   .qs-presentacion {
     flex-direction: row;
@@ -840,7 +942,6 @@
   }
 }
 
-/* Bloque de contacto */
 .qs-contacto {
   background-color: var(--color-fondo-alt);
   border-color: transparent;
@@ -888,9 +989,7 @@
   transition: color var(--transition-mid);
 }
 
-.qs-contacto-item:hover {
-  color: var(--color-ciruela);
-}
+.qs-contacto-item:hover { color: var(--color-ciruela); }
 
 .qs-contacto-item:focus-visible {
   outline: 2px solid var(--color-violeta);
