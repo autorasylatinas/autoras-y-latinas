@@ -9,17 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- PANTALLA DE INTRO (splash screen) ---
   const intro = document.getElementById('intro');
   if (intro) {
-    // La intro dura ~4s (duración del video de Canva) + 500ms de fade out
+    // La intro dura exactamente 4s — se oculta sin fade
     setTimeout(() => {
-      intro.classList.add('saliendo');
-      // Cuando termina la animación de salida, ocultar del DOM
-      intro.addEventListener('animationend', () => {
-        intro.style.display = 'none';
-        intro.setAttribute('aria-hidden', 'true');
-        // Lanzar animaciones de entrada del contenido principal
-        iniciarAnimacionesEntrada();
-      }, { once: true });
-    }, 4500);
+      intro.style.display = 'none';
+      intro.setAttribute('aria-hidden', 'true');
+      // Lanzar animaciones de entrada del contenido principal
+      iniciarAnimacionesEntrada();
+    }, 4000);
   } else {
     // Si no hay intro (páginas internas), animar de todas formas
     iniciarAnimacionesEntrada();
