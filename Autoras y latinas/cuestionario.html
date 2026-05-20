@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Encontrá tu lectura — Autoras y Latinas</title>
+  <meta name="description" content="Respondé dos preguntas y encontrá el libro latinoamericano escrito por una autora latina que dialoga con tu momento." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://autorasylatinas.vercel.app/cuestionario.html" />
+  <meta property="og:title" content="Encontrá tu lectura — Autoras y Latinas" />
+  <meta property="og:description" content="Respondé dos preguntas y encontrá el libro latinoamericano escrito por una autora latina que dialoga con tu momento." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="header header--fucsia" role="banner">
+    <div class="container">
+      <div class="header__inner header__inner--centrado">
+
+        <a href="index.html" class="header__logo-img" aria-label="Autoras y Latinas — Inicio">
+          <img src="assets/logo.png" alt="Autoras y Latinas" class="header__logo-imagen" />
+        </a>
+
+        <nav class="header__nav header__nav--centrado" aria-label="Navegación principal">
+          <a href="catalogo.html">Catálogo</a>
+          <a href="quien-soy.html">Quién soy</a>
+        </nav>
+
+        <button
+          class="header__hamburger"
+          id="hamburger"
+          aria-expanded="false"
+          aria-controls="menu-mobile"
+          aria-label="Abrir menú"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
+      <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
+        <a href="catalogo.html">Catálogo</a>
+        <a href="quien-soy.html">Quién soy</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================
+       CONTENIDO PRINCIPAL
+       ============================================ -->
+  <main>
+    <div class="container">
+      <div class="cuestionario-page">
+
+        <h1 class="cuestionario-page__titulo animar-solo">Encontrá tu lectura</h1>
+        <p class="cuestionario-page__bajada animar-solo">Dos preguntas. Un libro que te pertenece.</p>
+
+        <!-- CUESTIONARIO -->
+        <section id="cuestionario" aria-labelledby="cuestionario-titulo">
+          <h2 class="sr-only" id="cuestionario-titulo">Cuestionario de descubrimiento</h2>
+
+          <div class="cuestionario" role="form" aria-live="polite">
+
+            <!-- Indicador de progreso -->
+            <div class="cuestionario__progreso" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="2" aria-label="Paso 1 de 2">
+              <div class="cuestionario__paso activo" id="paso-1"></div>
+              <div class="cuestionario__paso" id="paso-2"></div>
+            </div>
+
+            <!-- Pregunta 1 -->
+            <div class="cuestionario__paso-contenido" id="pregunta-1">
+              <p class="cuestionario__pregunta">¿Desde dónde llegás hoy?</p>
+              <div class="cuestionario__opciones" role="group" aria-labelledby="pregunta-1-label">
+                <span class="sr-only" id="pregunta-1-label">Elegí la opción que mejor describe tu momento</span>
+
+                <button class="opcion" data-rama="A" aria-pressed="false">
+                  <span class="opcion__texto">Estoy en un momento de mucho cuidado</span>
+                  <span class="opcion__descripcion">De otros o de mí misma</span>
+                </button>
+
+                <button class="opcion" data-rama="B" aria-pressed="false">
+                  <span class="opcion__texto">Siento que algo mío fue quitado, ignorado o borrado</span>
+                  <span class="opcion__descripcion"></span>
+                </button>
+
+                <button class="opcion" data-rama="C" aria-pressed="false">
+                  <span class="opcion__texto">Me preocupa el mundo que habitamos, el ambiente, el futuro</span>
+                  <span class="opcion__descripcion"></span>
+                </button>
+
+                <button class="opcion" data-rama="D" aria-pressed="false">
+                  <span class="opcion__texto">Cargo con algo del pasado</span>
+                  <span class="opcion__descripcion">Propio, familiar o colectivo</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Pregunta 2 (se genera con JS) -->
+            <div class="cuestionario__paso-contenido" id="pregunta-2" hidden></div>
+
+            <!-- Resultado (se genera con JS) -->
+            <div class="resultado" id="resultado" hidden aria-live="assertive"></div>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">Autoras y Latinas</span>
+        <div class="footer__links">
+          <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">
+            Instagram
+          </a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="quien-soy.html">Quién soy</a>
+        </div>
+      </div>
+      <p class="footer__creditos">
+        TIF — Licenciatura en Ciencias de la Comunicación, FSOC UBA · 2026
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/cuestionario.js"></script>
+  <script src="js/animations.js"></script>
+
+</body>
+</html>
