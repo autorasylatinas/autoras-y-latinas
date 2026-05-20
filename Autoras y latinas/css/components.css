@@ -136,21 +136,9 @@
   color: #ffffff !important;
 }
 
-/* En desktop ocultar hamburguesa */
-@media (min-width: 768px) {
-  .header__hamburger {
-    display: none;
-  }
-  .header__menu-mobile {
-    display: none !important;
-  }
-}
-
-/* En mobile ocultar nav desktop */
-@media (max-width: 767px) {
-  .header__nav {
-    display: none;
-  }
+/* Nav de texto siempre oculto — usamos solo hamburguesa */
+.header__nav {
+  display: none !important;
 }
 
 /* ============================================
