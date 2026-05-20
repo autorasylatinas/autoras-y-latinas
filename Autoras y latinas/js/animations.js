@@ -9,19 +9,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- PANTALLA DE INTRO (splash screen) ---
   const intro = document.getElementById('intro');
   if (intro) {
-    // La intro dura exactamente 4s — se oculta sin fade
     setTimeout(() => {
       intro.style.display = 'none';
       intro.setAttribute('aria-hidden', 'true');
-      // Lanzar animaciones de entrada del contenido principal
       iniciarAnimacionesEntrada();
     }, 3000);
   } else {
-    // Si no hay intro (páginas internas), animar de todas formas
     iniciarAnimacionesEntrada();
   }
 
-  // --- MENÚ HAMBURGUESA (mobile) ---
+  // --- MENÚ HAMBURGUESA ---
   const hamburger = document.getElementById('hamburger');
   const menuMobile = document.getElementById('menu-mobile');
 
@@ -39,15 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Submenú de categorías dentro del hamburguesa
+    // Submenú de categorías — colapsado por defecto, se abre al tocar "Catálogo ▾"
     const submenuToggle = document.getElementById('submenu-toggle');
     const submenuCategorias = document.getElementById('submenu-categorias');
+
     if (submenuToggle && submenuCategorias) {
-      submenuToggle.addEventListener('click', () => {
+      // Asegurarse que arranca colapsado
+      submenuCategorias.classList.remove('abierto');
+      submenuToggle.classList.remove('abierto');
+
+      submenuToggle.addEventListener('click', (e) => {
+        // Evitar que el click cierre el menú principal
+        e.stopPropagation();
         const estaAbierto = submenuCategorias.classList.contains('abierto');
         submenuCategorias.classList.toggle('abierto', !estaAbierto);
         submenuToggle.classList.toggle('abierto', !estaAbierto);
-        submenuToggle.setAttribute('aria-expanded', !estaAbierto);
+        submenuToggle.setAttribute('aria-expanded', String(!estaAbierto));
       });
     }
 
@@ -84,17 +88,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // --- ANIMACIONES DE ENTRADA POR SCROLL ---
 function iniciarAnimacionesEntrada() {
-  // Observar todos los elementos con clase .animar y .animar-solo
   const elementosAnimables = document.querySelectorAll('.animar, .animar-solo');
   if (!elementosAnimables.length) return;
 
-  // Usar IntersectionObserver para activar animaciones al entrar en viewport
   const observador = new IntersectionObserver(
     (entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          // Dejar de observar una vez que ya animó
           observador.unobserve(entry.target);
         }
       });

@@ -12,14 +12,46 @@ let filtroActivo = {
 
 let todosLosLibros = [];
 
+// --- Mapeo de slugs de URL a nombres de categoría ---
+const CATEGORIAS_URL = {
+  'cuido':          'Cuido y cuido, ¿quién me cuida a mí?',
+  'arrancaron':     'Me arrancaron algo que era mío',
+  'tierra':         'La tierra que habito',
+  'desaparecieron': 'Desaparecieron y se fueron'
+};
+
 // --- Inicialización ---
 
 document.addEventListener('DOMContentLoaded', async () => {
   await cargarLibros();
   generarFiltros();
+  leerParametrosURL(); // Lee ?categoria= de la URL y aplica el filtro
   renderizarCatalogo();
   asignarEventoLimpiar();
 });
+
+// --- Leer parámetros de la URL y aplicar filtro automáticamente ---
+
+function leerParametrosURL() {
+  const params = new URLSearchParams(window.location.search);
+  const categoriaSlug = params.get('categoria');
+
+  if (categoriaSlug && CATEGORIAS_URL[categoriaSlug]) {
+    const nombreCategoria = CATEGORIAS_URL[categoriaSlug];
+    filtroActivo.categoria = nombreCategoria;
+
+    // Marcar el botón correspondiente como activo
+    const botones = document.querySelectorAll('.filtro-btn[data-tipo="categoria"]');
+    botones.forEach(btn => {
+      if (btn.dataset.valor === nombreCategoria) {
+        btn.classList.add('activo');
+        btn.setAttribute('aria-pressed', 'true');
+      }
+    });
+
+    actualizarBotonLimpiar();
+  }
+}
 
 // --- Cargar books.json ---
 
@@ -38,10 +70,8 @@ async function cargarLibros() {
 // --- Generar botones de filtro dinámicamente desde los datos ---
 
 function generarFiltros() {
-  // Obtener países únicos y ordenarlos alfabéticamente
   const paises = [...new Set(todosLosLibros.map(l => l.pais))].sort();
 
-  // Obtener categorías únicas (mantener el orden definido en los datos)
   const categoriasOrden = [
     'Cuido y cuido, ¿quién me cuida a mí?',
     'Me arrancaron algo que era mío',
@@ -49,11 +79,9 @@ function generarFiltros() {
     'Desaparecieron y se fueron'
   ];
 
-  // Contenedores
   const contenedorPais = document.getElementById('filtros-pais');
   const contenedorCategoria = document.getElementById('filtros-categoria');
 
-  // Generar botones de país
   paises.forEach(pais => {
     const btn = document.createElement('button');
     btn.className = 'filtro-btn';
@@ -65,7 +93,6 @@ function generarFiltros() {
     contenedorPais.appendChild(btn);
   });
 
-  // Generar botones de categoría
   categoriasOrden.forEach(cat => {
     const btn = document.createElement('button');
     btn.className = 'filtro-btn';
@@ -83,29 +110,23 @@ function generarFiltros() {
 function toggleFiltro(tipo, valor, btnClickeado) {
   const yaActivo = filtroActivo[tipo] === valor;
 
-  // Si el filtro ya estaba activo, lo apagamos (toggle)
   if (yaActivo) {
     filtroActivo[tipo] = null;
     btnClickeado.classList.remove('activo');
     btnClickeado.setAttribute('aria-pressed', 'false');
   } else {
-    // Desactivar el botón anterior del mismo tipo
     const botonesDelTipo = document.querySelectorAll(`.filtro-btn[data-tipo="${tipo}"]`);
     botonesDelTipo.forEach(btn => {
       btn.classList.remove('activo');
       btn.setAttribute('aria-pressed', 'false');
     });
 
-    // Activar el nuevo
     filtroActivo[tipo] = valor;
     btnClickeado.classList.add('activo');
     btnClickeado.setAttribute('aria-pressed', 'true');
   }
 
-  // Mostrar u ocultar botón limpiar
   actualizarBotonLimpiar();
-
-  // Re-renderizar
   renderizarCatalogo();
 }
 
@@ -124,7 +145,6 @@ function asignarEventoLimpiar() {
     filtroActivo.pais = null;
     filtroActivo.categoria = null;
 
-    // Desactivar todos los botones
     document.querySelectorAll('.filtro-btn').forEach(btn => {
       btn.classList.remove('activo');
       btn.setAttribute('aria-pressed', 'false');
@@ -152,12 +172,10 @@ function renderizarCatalogo() {
   const contador = document.getElementById('catalogo-contador');
   const librosFiltrados = filtrarLibros();
 
-  // Actualizar contador
   contador.textContent = librosFiltrados.length === 12
     ? '12 libros'
     : `${librosFiltrados.length} de 12 libros`;
 
-  // Limpiar lista
   lista.innerHTML = '';
 
   if (librosFiltrados.length === 0) {
@@ -172,13 +190,11 @@ function renderizarCatalogo() {
     return;
   }
 
-  // Crear tarjetas
   librosFiltrados.forEach((libro, i) => {
     const tarjeta = crearTarjeta(libro, i);
     lista.appendChild(tarjeta);
   });
 
-  // Re-iniciar animaciones para las tarjetas recién creadas
   if (typeof iniciarAnimacionesEntrada === 'function') {
     iniciarAnimacionesEntrada();
   }
@@ -191,7 +207,6 @@ function crearTarjeta(libro, indice) {
   articulo.className = 'libro-card-h animar';
   articulo.setAttribute('role', 'listitem');
 
-  // Extraer las primeras dos frases del texto curatorial para el extracto
   const extracto = extraerExtracto(libro.texto_curatorial);
 
   articulo.innerHTML = `
@@ -226,7 +241,6 @@ function crearTarjeta(libro, indice) {
 function extraerExtracto(texto) {
   if (!texto) return '';
   if (texto.length <= 120) return texto;
-  // Cortar en el espacio más cercano a los 120 caracteres
   const corte = texto.lastIndexOf(' ', 120);
   return texto.substring(0, corte) + '…';
 }
