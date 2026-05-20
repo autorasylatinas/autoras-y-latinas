@@ -177,6 +177,11 @@ function renderizarCatalogo() {
     const tarjeta = crearTarjeta(libro, i);
     lista.appendChild(tarjeta);
   });
+
+  // Re-iniciar animaciones para las tarjetas recién creadas
+  if (typeof iniciarAnimacionesEntrada === 'function') {
+    iniciarAnimacionesEntrada();
+  }
 }
 
 // --- Crear una tarjeta de libro (layout horizontal) ---
