@@ -7,14 +7,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // --- PANTALLA DE INTRO (splash screen) ---
-
   const intro = document.getElementById('intro');
-
   if (intro) {
-    // La intro dura ~1.4s antes de salir (el texto entra a 200ms y la línea a 800ms)
+    // La intro dura ~4s (duración del video de Canva) + 500ms de fade out
     setTimeout(() => {
       intro.classList.add('saliendo');
-
       // Cuando termina la animación de salida, ocultar del DOM
       intro.addEventListener('animationend', () => {
         intro.style.display = 'none';
@@ -22,22 +19,19 @@ document.addEventListener('DOMContentLoaded', () => {
         // Lanzar animaciones de entrada del contenido principal
         iniciarAnimacionesEntrada();
       }, { once: true });
-
-    }, 1400);
+    }, 4500);
   } else {
     // Si no hay intro (páginas internas), animar de todas formas
     iniciarAnimacionesEntrada();
   }
 
   // --- MENÚ HAMBURGUESA (mobile) ---
-
   const hamburger = document.getElementById('hamburger');
   const menuMobile = document.getElementById('menu-mobile');
 
   if (hamburger && menuMobile) {
     hamburger.addEventListener('click', () => {
       const estaAbierto = menuMobile.classList.contains('abierto');
-
       if (estaAbierto) {
         menuMobile.classList.remove('abierto');
         hamburger.setAttribute('aria-expanded', 'false');
@@ -68,10 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- MARCAR ENLACE ACTIVO EN LA NAVEGACIÓN ---
-
   const paginaActual = window.location.pathname.split('/').pop() || 'index.html';
   const linksNav = document.querySelectorAll('.header__nav a, .header__menu-mobile a');
-
   linksNav.forEach(link => {
     const href = link.getAttribute('href');
     if (href === paginaActual) {
@@ -83,11 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // --- ANIMACIONES DE ENTRADA POR SCROLL ---
-
 function iniciarAnimacionesEntrada() {
   // Observar todos los elementos con clase .animar y .animar-solo
   const elementosAnimables = document.querySelectorAll('.animar, .animar-solo');
-
   if (!elementosAnimables.length) return;
 
   // Usar IntersectionObserver para activar animaciones al entrar en viewport
@@ -102,8 +92,8 @@ function iniciarAnimacionesEntrada() {
       });
     },
     {
-      threshold: 0.1,       // Se activa cuando el 10% del elemento es visible
-      rootMargin: '0px 0px -40px 0px'  // Un poco antes del borde inferior
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
     }
   );
 
