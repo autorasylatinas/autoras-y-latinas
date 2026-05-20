@@ -10,7 +10,7 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://autorasylatinas.com/" />
+  <meta property="og:url" content="https://autorasylatinas.vercel.app/" />
   <meta property="og:title" content="Autoras y Latinas — Buscador de lecturas latinoamericanas" />
   <meta property="og:description" content="Encontrá tu próxima lectura entre 12 libros escritos por autoras latinoamericanas que dialogan con el contexto político y social de América Latina." />
   <meta property="og:image" content="assets/og-image.jpg" />
@@ -48,15 +48,17 @@
   <!-- ============================================
        HEADER
        ============================================ -->
-  <header class="header" role="banner">
+  <header class="header header--fucsia" role="banner">
     <div class="container">
-      <div class="header__inner">
-        <a href="index.html" class="header__logo" aria-label="Autoras y Latinas — Inicio">
-          Autoras y Latinas
+      <div class="header__inner header__inner--centrado">
+
+        <!-- Logo imagen -->
+        <a href="index.html" class="header__logo-img" aria-label="Autoras y Latinas — Inicio">
+          <img src="assets/logo.png" alt="Autoras y Latinas" class="header__logo-imagen" />
         </a>
 
-        <!-- Navegación desktop -->
-        <nav class="header__nav" aria-label="Navegación principal">
+        <!-- Navegación debajo del logo -->
+        <nav class="header__nav header__nav--centrado" aria-label="Navegación principal">
           <a href="catalogo.html">Catálogo</a>
           <a href="quien-soy.html">Quién soy</a>
         </nav>
@@ -73,6 +75,7 @@
           <span></span>
           <span></span>
         </button>
+
       </div>
 
       <!-- Menú mobile -->
@@ -88,90 +91,19 @@
        ============================================ -->
   <main>
 
-    <!-- Layout de dos columnas en desktop -->
-    <div class="home-layout container">
+    <div class="container">
+      <section class="hero hero--home" aria-labelledby="hero-titulo">
 
-      <!-- SIDEBAR (solo desktop) -->
-      <aside class="home-sidebar" aria-label="Descripción del proyecto">
-        <div class="home-sidebar__inner">
-          <h2 class="home-sidebar__nombre animar-solo">Autoras y Latinas</h2>
-          <p class="home-sidebar__descripcion animar-solo">
-            Un buscador de lecturas latinoamericanas escritas por autoras latinas que dialogan con el contexto social, cultural y político de América Latina.
-          </p>
-          <nav class="home-sidebar__nav animar-solo" aria-label="Navegación secundaria">
-            <a href="catalogo.html">→ Catálogo</a>
-            <a href="quien-soy.html">→ Quién soy</a>
-          </nav>
-        </div>
-      </aside>
+        <p class="hero__descripcion animar-solo">
+          Un buscador de lecturas latinoamericanas escritas por autoras latinas que dialogan con el contexto social, cultural y político de América Latina.
+        </p>
 
-      <!-- CONTENIDO PRINCIPAL -->
-      <div class="home-main">
+        <a href="cuestionario.html" class="btn btn-primary animar-solo">
+          Encontrá tu lectura
+        </a>
 
-        <!-- HERO -->
-        <section class="hero" aria-labelledby="hero-titulo">
-          <h1 class="hero__titulo animar-solo" id="hero-titulo">
-            Lorem ipsum dolor sit amet consectetur
-          </h1>
-          <p class="hero__bajada animar-solo">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-          </p>
-          <a href="#cuestionario" class="btn btn-primary animar-solo">
-            Encontrá tu lectura
-          </a>
-        </section>
-
-        <!-- CUESTIONARIO -->
-        <section id="cuestionario" aria-labelledby="cuestionario-titulo">
-          <h2 class="sr-only" id="cuestionario-titulo">Cuestionario de descubrimiento</h2>
-
-          <div class="cuestionario" role="form" aria-live="polite">
-
-            <!-- Indicador de progreso -->
-            <div class="cuestionario__progreso" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="2" aria-label="Paso 1 de 2">
-              <div class="cuestionario__paso activo" id="paso-1"></div>
-              <div class="cuestionario__paso" id="paso-2"></div>
-            </div>
-
-            <!-- Pregunta 1 -->
-            <div class="cuestionario__paso-contenido" id="pregunta-1">
-              <p class="cuestionario__pregunta">¿Desde dónde llegás hoy?</p>
-              <div class="cuestionario__opciones" role="group" aria-labelledby="pregunta-1-label">
-                <span class="sr-only" id="pregunta-1-label">Elegí la opción que mejor describe tu momento</span>
-
-                <button class="opcion" data-rama="A" aria-pressed="false">
-                  <span class="opcion__texto">Estoy en un momento de mucho cuidado</span>
-                  <span class="opcion__descripcion">De otros o de mí misma</span>
-                </button>
-
-                <button class="opcion" data-rama="B" aria-pressed="false">
-                  <span class="opcion__texto">Siento que algo mío fue quitado, ignorado o borrado</span>
-                  <span class="opcion__descripcion"></span>
-                </button>
-
-                <button class="opcion" data-rama="C" aria-pressed="false">
-                  <span class="opcion__texto">Me preocupa el mundo que habitamos, el ambiente, el futuro</span>
-                  <span class="opcion__descripcion"></span>
-                </button>
-
-                <button class="opcion" data-rama="D" aria-pressed="false">
-                  <span class="opcion__texto">Cargo con algo del pasado</span>
-                  <span class="opcion__descripcion">Propio, familiar o colectivo</span>
-                </button>
-              </div>
-            </div>
-
-            <!-- Pregunta 2 (se genera con JS) -->
-            <div class="cuestionario__paso-contenido" id="pregunta-2" hidden></div>
-
-            <!-- Resultado (se genera con JS) -->
-            <div class="resultado" id="resultado" hidden aria-live="assertive"></div>
-
-          </div>
-        </section>
-
-      </div><!-- /home-main -->
-    </div><!-- /home-layout -->
+      </section>
+    </div>
 
     <!-- SUSCRIPCIÓN -->
     <section class="suscripcion" aria-labelledby="suscripcion-titulo">
@@ -184,7 +116,6 @@
           <p class="suscripcion__bajada animar-solo">
             Suscribite para recibir las novedades de nuestro club de lectura.
           </p>
-          <!-- Reemplazar este formulario con el embed de Brevo cuando esté disponible -->
           <form class="suscripcion__form animar-solo" action="#" method="post" novalidate>
             <input
               class="suscripcion__input"
@@ -235,7 +166,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/cuestionario.js"></script>
   <script src="js/animations.js"></script>
 
 </body>
