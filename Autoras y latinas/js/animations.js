@@ -39,6 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    // Submenú de categorías dentro del hamburguesa
+    const submenuToggle = document.getElementById('submenu-toggle');
+    const submenuCategorias = document.getElementById('submenu-categorias');
+    if (submenuToggle && submenuCategorias) {
+      submenuToggle.addEventListener('click', () => {
+        const estaAbierto = submenuCategorias.classList.contains('abierto');
+        submenuCategorias.classList.toggle('abierto', !estaAbierto);
+        submenuToggle.classList.toggle('abierto', !estaAbierto);
+        submenuToggle.setAttribute('aria-expanded', !estaAbierto);
+      });
+    }
+
     // Cerrar el menú al hacer clic en un link
     menuMobile.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
