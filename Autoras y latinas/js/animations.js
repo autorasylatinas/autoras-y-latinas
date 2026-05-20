@@ -1,232 +1,111 @@
 /* ============================================
-   AUTORAS Y LATINAS — catalogo.js
-   Carga el catálogo desde books.json,
-   genera los filtros y renderiza las tarjetas
+   AUTORAS Y LATINAS — animations.js
+   Pantalla de intro, menú hamburguesa y
+   animaciones de entrada por scroll
    ============================================ */
 
-// --- Estado de los filtros activos ---
-let filtroActivo = {
-  pais: null,
-  categoria: null
-};
+document.addEventListener('DOMContentLoaded', () => {
 
-let todosLosLibros = [];
+  // --- PANTALLA DE INTRO (splash screen) ---
 
-// --- Inicialización ---
+  const intro = document.getElementById('intro');
 
-document.addEventListener('DOMContentLoaded', async () => {
-  await cargarLibros();
-  generarFiltros();
-  renderizarCatalogo();
-  asignarEventoLimpiar();
-});
+  if (intro) {
+    // La intro dura ~1.4s antes de salir (el texto entra a 200ms y la línea a 800ms)
+    setTimeout(() => {
+      intro.classList.add('saliendo');
 
-// --- Cargar books.json ---
+      // Cuando termina la animación de salida, ocultar del DOM
+      intro.addEventListener('animationend', () => {
+        intro.style.display = 'none';
+        intro.setAttribute('aria-hidden', 'true');
+        // Lanzar animaciones de entrada del contenido principal
+        iniciarAnimacionesEntrada();
+      }, { once: true });
 
-async function cargarLibros() {
-  try {
-    const respuesta = await fetch('./books.json');
-    todosLosLibros = await respuesta.json();
-  } catch (error) {
-    console.error('Error cargando books.json:', error);
-    document.getElementById('catalogo-lista').innerHTML = `
-      <p class="catalogo-vacio">No se pudo cargar el catálogo. Intentá de nuevo.</p>
-    `;
-  }
-}
-
-// --- Generar botones de filtro dinámicamente desde los datos ---
-
-function generarFiltros() {
-  // Obtener países únicos y ordenarlos alfabéticamente
-  const paises = [...new Set(todosLosLibros.map(l => l.pais))].sort();
-
-  // Obtener categorías únicas (mantener el orden definido en los datos)
-  const categoriasOrden = [
-    'Cuido y cuido, ¿quién me cuida a mí?',
-    'Me arrancaron algo que era mío',
-    'La tierra que habito',
-    'Desaparecieron y se fueron'
-  ];
-
-  // Contenedores
-  const contenedorPais = document.getElementById('filtros-pais');
-  const contenedorCategoria = document.getElementById('filtros-categoria');
-
-  // Generar botones de país
-  paises.forEach(pais => {
-    const btn = document.createElement('button');
-    btn.className = 'filtro-btn';
-    btn.textContent = pais;
-    btn.dataset.tipo = 'pais';
-    btn.dataset.valor = pais;
-    btn.setAttribute('aria-pressed', 'false');
-    btn.addEventListener('click', () => toggleFiltro('pais', pais, btn));
-    contenedorPais.appendChild(btn);
-  });
-
-  // Generar botones de categoría
-  categoriasOrden.forEach(cat => {
-    const btn = document.createElement('button');
-    btn.className = 'filtro-btn';
-    btn.textContent = cat;
-    btn.dataset.tipo = 'categoria';
-    btn.dataset.valor = cat;
-    btn.setAttribute('aria-pressed', 'false');
-    btn.addEventListener('click', () => toggleFiltro('categoria', cat, btn));
-    contenedorCategoria.appendChild(btn);
-  });
-}
-
-// --- Toggle de un filtro ---
-
-function toggleFiltro(tipo, valor, btnClickeado) {
-  const yaActivo = filtroActivo[tipo] === valor;
-
-  // Si el filtro ya estaba activo, lo apagamos (toggle)
-  if (yaActivo) {
-    filtroActivo[tipo] = null;
-    btnClickeado.classList.remove('activo');
-    btnClickeado.setAttribute('aria-pressed', 'false');
+    }, 1400);
   } else {
-    // Desactivar el botón anterior del mismo tipo
-    const botonesDelTipo = document.querySelectorAll(`.filtro-btn[data-tipo="${tipo}"]`);
-    botonesDelTipo.forEach(btn => {
-      btn.classList.remove('activo');
-      btn.setAttribute('aria-pressed', 'false');
-    });
-
-    // Activar el nuevo
-    filtroActivo[tipo] = valor;
-    btnClickeado.classList.add('activo');
-    btnClickeado.setAttribute('aria-pressed', 'true');
-  }
-
-  // Mostrar u ocultar botón limpiar
-  actualizarBotonLimpiar();
-
-  // Re-renderizar
-  renderizarCatalogo();
-}
-
-// --- Mostrar/ocultar el botón "Limpiar filtros" ---
-
-function actualizarBotonLimpiar() {
-  const btnLimpiar = document.getElementById('limpiar-filtros');
-  const hayFiltros = filtroActivo.pais || filtroActivo.categoria;
-  btnLimpiar.hidden = !hayFiltros;
-}
-
-// --- Asignar evento al botón limpiar ---
-
-function asignarEventoLimpiar() {
-  document.getElementById('limpiar-filtros').addEventListener('click', () => {
-    filtroActivo.pais = null;
-    filtroActivo.categoria = null;
-
-    // Desactivar todos los botones
-    document.querySelectorAll('.filtro-btn').forEach(btn => {
-      btn.classList.remove('activo');
-      btn.setAttribute('aria-pressed', 'false');
-    });
-
-    actualizarBotonLimpiar();
-    renderizarCatalogo();
-  });
-}
-
-// --- Filtrar libros según el estado activo ---
-
-function filtrarLibros() {
-  return todosLosLibros.filter(libro => {
-    const coincidePais = !filtroActivo.pais || libro.pais === filtroActivo.pais;
-    const coincideCategoria = !filtroActivo.categoria || libro.categoria === filtroActivo.categoria;
-    return coincidePais && coincideCategoria;
-  });
-}
-
-// --- Renderizar la grilla de tarjetas ---
-
-function renderizarCatalogo() {
-  const lista = document.getElementById('catalogo-lista');
-  const contador = document.getElementById('catalogo-contador');
-  const librosFiltrados = filtrarLibros();
-
-  // Actualizar contador
-  contador.textContent = librosFiltrados.length === 12
-    ? '12 libros'
-    : `${librosFiltrados.length} de 12 libros`;
-
-  // Limpiar lista
-  lista.innerHTML = '';
-
-  if (librosFiltrados.length === 0) {
-    lista.innerHTML = `
-      <div class="catalogo-vacio" role="listitem">
-        <p>No hay libros con esa combinación de filtros.</p>
-        <button class="btn btn-secondary" onclick="document.getElementById('limpiar-filtros').click()">
-          Limpiar filtros
-        </button>
-      </div>
-    `;
-    return;
-  }
-
-  // Crear tarjetas
-  librosFiltrados.forEach((libro, i) => {
-    const tarjeta = crearTarjeta(libro, i);
-    lista.appendChild(tarjeta);
-  });
-
-  // Re-iniciar animaciones para las tarjetas recién creadas
-  if (typeof iniciarAnimacionesEntrada === 'function') {
+    // Si no hay intro (páginas internas), animar de todas formas
     iniciarAnimacionesEntrada();
   }
-}
 
-// --- Crear una tarjeta de libro (layout horizontal) ---
+  // --- MENÚ HAMBURGUESA (mobile) ---
 
-function crearTarjeta(libro, indice) {
-  const articulo = document.createElement('article');
-  articulo.className = 'libro-card-h animar';
-  articulo.setAttribute('role', 'listitem');
+  const hamburger = document.getElementById('hamburger');
+  const menuMobile = document.getElementById('menu-mobile');
 
-  // Extraer las primeras dos frases del texto curatorial para el extracto
-  const extracto = extraerExtracto(libro.texto_curatorial);
+  if (hamburger && menuMobile) {
+    hamburger.addEventListener('click', () => {
+      const estaAbierto = menuMobile.classList.contains('abierto');
 
-  articulo.innerHTML = `
-    <a href="libros/${libro.id}.html" class="libro-card-h__link" aria-label="Ver ficha de ${libro.titulo} de ${libro.autora}">
-      <div class="libro-card-h__portada-wrap">
-        <img
-          class="libro-card-h__portada"
-          src="${libro.portada}"
-          alt="Portada de ${libro.titulo} de ${libro.autora}"
-          loading="lazy"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-        />
-        <div class="libro-card-h__portada-placeholder" style="display:none;" aria-hidden="true">
-          <span>Sin portada</span>
-        </div>
-      </div>
-      <div class="libro-card-h__body">
-        <span class="tag">${libro.categoria}</span>
-        <h2 class="libro-card-h__titulo">${libro.titulo}</h2>
-        <p class="libro-card-h__autora">${libro.autora}</p>
-        <p class="libro-card-h__meta">${libro.pais} · ${libro.anio}</p>
-        <p class="libro-card-h__extracto">${extracto}</p>
-      </div>
-    </a>
-  `;
+      if (estaAbierto) {
+        menuMobile.classList.remove('abierto');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('aria-label', 'Abrir menú');
+      } else {
+        menuMobile.classList.add('abierto');
+        hamburger.setAttribute('aria-expanded', 'true');
+        hamburger.setAttribute('aria-label', 'Cerrar menú');
+      }
+    });
 
-  return articulo;
-}
+    // Cerrar el menú al hacer clic en un link
+    menuMobile.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menuMobile.classList.remove('abierto');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
 
-// --- Extraer las primeras ~120 caracteres del texto curatorial ---
+    // Cerrar el menú al presionar Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menuMobile.classList.contains('abierto')) {
+        menuMobile.classList.remove('abierto');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.focus();
+      }
+    });
+  }
 
-function extraerExtracto(texto) {
-  if (!texto) return '';
-  if (texto.length <= 120) return texto;
-  // Cortar en el espacio más cercano a los 120 caracteres
-  const corte = texto.lastIndexOf(' ', 120);
-  return texto.substring(0, corte) + '…';
+  // --- MARCAR ENLACE ACTIVO EN LA NAVEGACIÓN ---
+
+  const paginaActual = window.location.pathname.split('/').pop() || 'index.html';
+  const linksNav = document.querySelectorAll('.header__nav a, .header__menu-mobile a');
+
+  linksNav.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === paginaActual) {
+      link.classList.add('activo');
+      link.setAttribute('aria-current', 'page');
+    }
+  });
+
+});
+
+// --- ANIMACIONES DE ENTRADA POR SCROLL ---
+
+function iniciarAnimacionesEntrada() {
+  // Observar todos los elementos con clase .animar y .animar-solo
+  const elementosAnimables = document.querySelectorAll('.animar, .animar-solo');
+
+  if (!elementosAnimables.length) return;
+
+  // Usar IntersectionObserver para activar animaciones al entrar en viewport
+  const observador = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Dejar de observar una vez que ya animó
+          observador.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.1,       // Se activa cuando el 10% del elemento es visible
+      rootMargin: '0px 0px -40px 0px'  // Un poco antes del borde inferior
+    }
+  );
+
+  elementosAnimables.forEach(el => observador.observe(el));
 }
