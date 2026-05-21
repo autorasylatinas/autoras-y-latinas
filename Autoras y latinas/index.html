@@ -28,13 +28,13 @@
   <link rel="stylesheet" href="css/layout.css" />
 
   <style>
-    /* ── Banner hero full width ── */
+    /* ── Banner hero ── */
     .hero__banner {
-      width: 100vw;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-bottom: 48px;
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto 48px auto;
+      border-radius: 24px;
+      overflow: hidden;
       line-height: 0;
     }
 
@@ -54,6 +54,7 @@
 
     @media (max-width: 767px) {
       .hero__banner {
+        border-radius: 16px;
         margin-bottom: 32px;
       }
       .hero__cta {
@@ -130,21 +131,23 @@
        ============================================ -->
   <main>
 
-    <!-- Banner full width — fuera del container -->
-    <div class="hero__banner animar-solo">
-      <img
-        src="assets/hero-banner.png"
-        alt="Mapa de América Latina con los países de las autoras del catálogo. Texto: Encontrá tu próxima lectura entre autoras que escriben desde adentro."
-      />
-    </div>
-
-    <!-- Botón centrado -->
     <div class="container">
+
+      <!-- Banner centrado con bordes redondeados -->
+      <div class="hero__banner animar-solo">
+        <img
+          src="assets/hero-banner.png"
+          alt="Mapa de América Latina con los países de las autoras del catálogo. Texto: Encontrá tu próxima lectura entre autoras que escriben desde adentro."
+        />
+      </div>
+
+      <!-- Botón centrado -->
       <div class="hero__cta animar-solo">
         <a href="catalogo.html" class="btn btn-primary">
-          Explorá el catálogo
+          Encontrá tu lectura
         </a>
       </div>
+
     </div>
 
     <!-- SUSCRIPCIÓN -->
