@@ -28,13 +28,14 @@
   <link rel="stylesheet" href="css/layout.css" />
 
   <style>
-    /* ── Banner hero ── */
+    /* ── Banner hero full width ── */
     .hero__banner {
-      width: 100%;
-      display: block;
-      border-radius: 16px;
-      overflow: hidden;
-      margin-bottom: 32px;
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 48px;
+      line-height: 0;
     }
 
     .hero__banner img {
@@ -44,10 +45,19 @@
       object-fit: cover;
     }
 
+    /* ── Botón centrado bajo el banner ── */
+    .hero__cta {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 64px;
+    }
+
     @media (max-width: 767px) {
       .hero__banner {
-        border-radius: 12px;
-        margin-bottom: 24px;
+        margin-bottom: 32px;
+      }
+      .hero__cta {
+        margin-bottom: 48px;
       }
     }
   </style>
@@ -77,18 +87,15 @@
     <div class="container">
       <div class="header__inner">
 
-        <!-- Logo imagen -->
         <a href="index.html" class="header__logo-img" aria-label="Autoras y Latinas — Inicio">
           <img src="assets/logo.png" alt="Autoras y Latinas" class="header__logo-imagen" />
         </a>
 
-        <!-- Navegación desktop -->
         <nav class="header__nav" aria-label="Navegación principal">
           <a href="catalogo.html">Catálogo</a>
           <a href="quien-soy.html">Quién soy</a>
         </nav>
 
-        <!-- Botón hamburguesa mobile -->
         <button
           class="header__hamburger"
           id="hamburger"
@@ -103,7 +110,6 @@
 
       </div>
 
-      <!-- Menú mobile con submenú de categorías -->
       <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
         <button class="header__submenu-toggle" id="submenu-toggle" aria-expanded="false">
           Catálogo <span class="flecha" aria-hidden="true">▾</span>
@@ -124,27 +130,21 @@
        ============================================ -->
   <main>
 
+    <!-- Banner full width — fuera del container -->
+    <div class="hero__banner animar-solo">
+      <img
+        src="assets/hero-banner.png"
+        alt="Mapa de América Latina con los países de las autoras del catálogo. Texto: Encontrá tu próxima lectura entre autoras que escriben desde adentro."
+      />
+    </div>
+
+    <!-- Botón centrado -->
     <div class="container">
-      <section class="hero hero--home" aria-labelledby="hero-titulo">
-
-        <!-- Banner -->
-        <div class="hero__banner animar-solo">
-          <img
-            src="assets/hero-banner.png"
-            alt="Mapa de América Latina con los países de las autoras del catálogo, sobre fondo naranja. Texto: Encontrá tu próxima lectura entre autoras que escriben desde adentro."
-          />
-        </div>
-
-        <!-- Descripción + botón -->
-        <p class="hero__descripcion animar-solo">
-          Un buscador de lecturas latinoamericanas escritas por autoras latinas que dialogan con el contexto social, cultural y político de América Latina.
-        </p>
-
-        <a href="cuestionario.html" class="btn btn-primary animar-solo">
-          Encontrá tu lectura
+      <div class="hero__cta animar-solo">
+        <a href="catalogo.html" class="btn btn-primary">
+          Explorá el catálogo
         </a>
-
-      </section>
+      </div>
     </div>
 
     <!-- SUSCRIPCIÓN -->
@@ -207,7 +207,6 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="js/animations.js"></script>
 
 </body>
