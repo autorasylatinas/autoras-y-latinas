@@ -26,6 +26,31 @@
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/animations.css" />
   <link rel="stylesheet" href="css/layout.css" />
+
+  <style>
+    /* ── Banner hero ── */
+    .hero__banner {
+      width: 100%;
+      display: block;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 32px;
+    }
+
+    .hero__banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    @media (max-width: 767px) {
+      .hero__banner {
+        border-radius: 12px;
+        margin-bottom: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -102,6 +127,15 @@
     <div class="container">
       <section class="hero hero--home" aria-labelledby="hero-titulo">
 
+        <!-- Banner -->
+        <div class="hero__banner animar-solo">
+          <img
+            src="assets/hero-banner.png"
+            alt="Mapa de América Latina con los países de las autoras del catálogo, sobre fondo naranja. Texto: Encontrá tu próxima lectura entre autoras que escriben desde adentro."
+          />
+        </div>
+
+        <!-- Descripción + botón -->
         <p class="hero__descripcion animar-solo">
           Un buscador de lecturas latinoamericanas escritas por autoras latinas que dialogan con el contexto social, cultural y político de América Latina.
         </p>
