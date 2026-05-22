@@ -229,7 +229,7 @@ function renderizarResultado(libro) {
         <h3 class="resultado__titulo">${libro.titulo}</h3>
         <p class="resultado__autora">${libro.autora}</p>
         <p class="resultado__meta">${libro.pais} · ${libro.anio}</p>
-        <p class="resultado__curatorial">${libro.texto_curatorial}</p>
+        <p class="resultado__curatorial">${libro.sinopsis}</p>
         <div class="resultado__acciones">
           <a href="libros/${libro.id}.html" class="btn btn-secondary">
             Ver ficha completa
