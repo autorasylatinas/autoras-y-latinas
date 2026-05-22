@@ -25,12 +25,10 @@ const CATEGORIAS_URL = {
 document.addEventListener('DOMContentLoaded', async () => {
   await cargarLibros();
   generarFiltros();
-  leerParametrosURL(); // Lee ?categoria= de la URL y aplica el filtro
+  leerParametrosURL();
   renderizarCatalogo();
   asignarEventoLimpiar();
 });
-
-// --- Leer parámetros de la URL y aplicar filtro automáticamente ---
 
 function leerParametrosURL() {
   const params = new URLSearchParams(window.location.search);
@@ -40,7 +38,6 @@ function leerParametrosURL() {
     const nombreCategoria = CATEGORIAS_URL[categoriaSlug];
     filtroActivo.categoria = nombreCategoria;
 
-    // Marcar el botón correspondiente como activo
     const botones = document.querySelectorAll('.filtro-btn[data-tipo="categoria"]');
     botones.forEach(btn => {
       if (btn.dataset.valor === nombreCategoria) {
@@ -53,8 +50,6 @@ function leerParametrosURL() {
   }
 }
 
-// --- Cargar books.json ---
-
 async function cargarLibros() {
   try {
     const respuesta = await fetch('./books.json');
@@ -66,8 +61,6 @@ async function cargarLibros() {
     `;
   }
 }
-
-// --- Generar botones de filtro dinámicamente desde los datos ---
 
 function generarFiltros() {
   const paises = [...new Set(todosLosLibros.map(l => l.pais))].sort();
@@ -105,8 +98,6 @@ function generarFiltros() {
   });
 }
 
-// --- Toggle de un filtro ---
-
 function toggleFiltro(tipo, valor, btnClickeado) {
   const yaActivo = filtroActivo[tipo] === valor;
 
@@ -130,15 +121,11 @@ function toggleFiltro(tipo, valor, btnClickeado) {
   renderizarCatalogo();
 }
 
-// --- Mostrar/ocultar el botón "Limpiar filtros" ---
-
 function actualizarBotonLimpiar() {
   const btnLimpiar = document.getElementById('limpiar-filtros');
   const hayFiltros = filtroActivo.pais || filtroActivo.categoria;
   btnLimpiar.hidden = !hayFiltros;
 }
-
-// --- Asignar evento al botón limpiar ---
 
 function asignarEventoLimpiar() {
   document.getElementById('limpiar-filtros').addEventListener('click', () => {
@@ -155,8 +142,6 @@ function asignarEventoLimpiar() {
   });
 }
 
-// --- Filtrar libros según el estado activo ---
-
 function filtrarLibros() {
   return todosLosLibros.filter(libro => {
     const coincidePais = !filtroActivo.pais || libro.pais === filtroActivo.pais;
@@ -164,8 +149,6 @@ function filtrarLibros() {
     return coincidePais && coincideCategoria;
   });
 }
-
-// --- Renderizar la grilla de tarjetas ---
 
 function renderizarCatalogo() {
   const lista = document.getElementById('catalogo-lista');
@@ -207,7 +190,8 @@ function crearTarjeta(libro, indice) {
   articulo.className = 'libro-card-h animar';
   articulo.setAttribute('role', 'listitem');
 
-  const extracto = extraerExtracto(libro.texto_curatorial);
+  // Usar sinopsis para el extracto de la tarjeta
+  const extracto = extraerExtracto(libro.sinopsis);
 
   articulo.innerHTML = `
     <a href="libros/${libro.id}.html" class="libro-card-h__link" aria-label="Ver ficha de ${libro.titulo} de ${libro.autora}">
@@ -236,7 +220,7 @@ function crearTarjeta(libro, indice) {
   return articulo;
 }
 
-// --- Extraer las primeras ~120 caracteres del texto curatorial ---
+// --- Extraer las primeras ~120 caracteres de la sinopsis ---
 
 function extraerExtracto(texto) {
   if (!texto) return '';
