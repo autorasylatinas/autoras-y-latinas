@@ -105,7 +105,6 @@ async function inicializar() {
   const opcionesP1 = document.querySelectorAll('#pregunta-1 .opcion');
   opcionesP1.forEach(btn => {
     btn.addEventListener('click', () => seleccionarRama(btn.dataset.rama));
-    // Soporte teclado: Enter y Espacio ya funcionan nativamente en <button>
   });
 }
 
@@ -145,7 +144,6 @@ function mostrarPregunta2(rama) {
   const datos = PREGUNTAS[rama];
   const contenedor = document.getElementById('pregunta-2');
 
-  // Construir el HTML de la pregunta 2
   const opcionesHTML = datos.opciones.map((opcion, i) => `
     <button class="opcion" data-libro="${opcion.libro}" aria-pressed="false">
       <span class="opcion__texto">${opcion.texto}</span>
@@ -162,23 +160,18 @@ function mostrarPregunta2(rama) {
   contenedor.hidden = false;
   contenedor.classList.add('entrando');
 
-  // Asignar eventos a las nuevas opciones
   const opcionesP2 = contenedor.querySelectorAll('.opcion');
   opcionesP2.forEach(btn => {
     btn.addEventListener('click', () => seleccionarLibro(btn.dataset.libro, btn));
   });
 
-  // Limpiar clase de animación después de que termine
   setTimeout(() => contenedor.classList.remove('entrando'), 300);
-
-  // Scroll suave hacia el cuestionario en mobile
   contenedor.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
 // --- Paso 3: el usuario elige un libro ---
 
 function seleccionarLibro(slug, btnSeleccionado) {
-  // Marcar visualmente la opción elegida
   const opciones = document.querySelectorAll('#pregunta-2 .opcion');
   opciones.forEach(btn => {
     const esEsta = btn === btnSeleccionado;
@@ -186,12 +179,10 @@ function seleccionarLibro(slug, btnSeleccionado) {
     btn.setAttribute('aria-pressed', esEsta ? 'true' : 'false');
   });
 
-  // Actualizar progreso
   document.getElementById('paso-2').classList.remove('activo');
   document.getElementById('paso-2').classList.add('completado');
-  actualizarProgressbar(3); // completado
+  actualizarProgressbar(3);
 
-  // Breve pausa para que se vea la selección antes de mostrar resultado
   setTimeout(() => mostrarResultado(slug), 400);
 }
 
@@ -204,7 +195,6 @@ function mostrarResultado(slug) {
     return;
   }
 
-  // Ocultar pregunta 2
   const p2 = document.getElementById('pregunta-2');
   p2.classList.add('saliendo');
   setTimeout(() => {
@@ -216,6 +206,13 @@ function mostrarResultado(slug) {
 
 function renderizarResultado(libro) {
   const contenedor = document.getElementById('resultado');
+
+  // Botón Buscalibre solo si el libro tiene el campo buscalibre
+  const btnBuscalibre = libro.buscalibre
+    ? `<a href="${libro.buscalibre}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+         Comprar en Buscalibre
+       </a>`
+    : '';
 
   contenedor.innerHTML = `
     <div class="resultado__libro">
@@ -234,15 +231,10 @@ function renderizarResultado(libro) {
         <p class="resultado__meta">${libro.pais} · ${libro.anio}</p>
         <p class="resultado__curatorial">${libro.texto_curatorial}</p>
         <div class="resultado__acciones">
-          <a href="libros/${libro.id}.html" class="btn btn-primary">
+          <a href="libros/${libro.id}.html" class="btn btn-secondary">
             Ver ficha completa
           </a>
-          <a href="catalogo.html" class="btn btn-secondary">
-            Ver catálogo completo
-          </a>
-          <button class="btn btn-secondary" id="btn-reiniciar" aria-label="Volver a empezar el cuestionario">
-            Volver a empezar
-          </button>
+          ${btnBuscalibre}
         </div>
       </div>
     </div>
@@ -250,49 +242,7 @@ function renderizarResultado(libro) {
 
   contenedor.hidden = false;
   contenedor.classList.add('visible');
-
-  // Asignar evento al botón de reinicio
-  document.getElementById('btn-reiniciar').addEventListener('click', reiniciarCuestionario);
-
-  // Scroll suave al resultado
   contenedor.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-}
-
-// --- Reiniciar el cuestionario ---
-
-function reiniciarCuestionario() {
-  ramaSeleccionada = null;
-
-  // Resetear progreso
-  document.getElementById('paso-1').className = 'cuestionario__paso activo';
-  document.getElementById('paso-2').className = 'cuestionario__paso';
-  actualizarProgressbar(1);
-
-  // Resetear opciones de la pregunta 1
-  const opcionesP1 = document.querySelectorAll('#pregunta-1 .opcion');
-  opcionesP1.forEach(btn => {
-    btn.classList.remove('seleccionada');
-    btn.setAttribute('aria-pressed', 'false');
-  });
-
-  // Ocultar pregunta 2 y resultado
-  const p2 = document.getElementById('pregunta-2');
-  p2.hidden = true;
-  p2.innerHTML = '';
-
-  const resultado = document.getElementById('resultado');
-  resultado.hidden = true;
-  resultado.classList.remove('visible');
-  resultado.innerHTML = '';
-
-  // Mostrar pregunta 1 con animación
-  const p1 = document.getElementById('pregunta-1');
-  p1.hidden = false;
-  p1.classList.add('entrando');
-  setTimeout(() => p1.classList.remove('entrando'), 300);
-
-  // Scroll al inicio del cuestionario
-  document.getElementById('cuestionario').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 // --- Actualizar el progressbar de accesibilidad ---
