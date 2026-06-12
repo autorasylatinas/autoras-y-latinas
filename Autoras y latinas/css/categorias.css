@@ -1,0 +1,247 @@
+/* ============================================
+   AUTORAS Y LATINAS — categorias.css
+   Estilos de las páginas individuales de categoría
+   ============================================ */
+
+/* ============================================
+   HERO DE CATEGORÍA
+   ============================================ */
+
+.cat-hero {
+  background-color: var(--cat-color, var(--color-rosa));
+  padding: var(--space-5) 0 var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.cat-volver {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--fs-small);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: var(--space-3);
+  transition: color var(--transition-mid);
+  text-decoration: none;
+}
+
+.cat-volver:hover {
+  color: #ffffff;
+}
+
+.cat-volver:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.cat-hero__etiqueta {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-2);
+}
+
+.cat-hero__titulo {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 5vw, 52px);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  max-width: 18ch;
+}
+
+/* El amarillo y el turquesa tienen texto oscuro */
+.cat-hero[style*="--cat-color: var(--cat-desaparecieron)"] .cat-volver,
+.cat-hero[style*="--cat-color: var(--cat-tranquilidad)"] .cat-volver {
+  color: rgba(26, 18, 8, 0.6);
+}
+
+.cat-hero[style*="--cat-color: var(--cat-desaparecieron)"] .cat-volver:hover,
+.cat-hero[style*="--cat-color: var(--cat-tranquilidad)"] .cat-volver:hover {
+  color: var(--color-texto);
+}
+
+.cat-hero[style*="--cat-color: var(--cat-desaparecieron)"] .cat-hero__etiqueta,
+.cat-hero[style*="--cat-color: var(--cat-tranquilidad)"] .cat-hero__etiqueta {
+  color: rgba(26, 18, 8, 0.6);
+}
+
+.cat-hero[style*="--cat-color: var(--cat-desaparecieron)"] .cat-hero__titulo,
+.cat-hero[style*="--cat-color: var(--cat-tranquilidad)"] .cat-hero__titulo {
+  color: var(--color-texto);
+}
+
+/* ============================================
+   CONTENIDO DE LA PÁGINA
+   ============================================ */
+
+.cat-contenido {
+  max-width: 720px;
+  margin-inline: auto;
+  padding-bottom: var(--space-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+/* ============================================
+   TEXTO CURATORIAL
+   ============================================ */
+
+.cat-texto {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.cat-texto p {
+  font-size: var(--fs-body-lg);
+  line-height: 1.7;
+  color: var(--color-texto);
+  max-width: 65ch;
+}
+
+/* Cita destacada (usada en "Me arrancaron") */
+.cat-cita {
+  border-left: 3px solid var(--color-rosa);
+  padding-left: var(--space-3);
+  margin-bottom: var(--space-1);
+}
+
+.cat-cita p {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--color-texto);
+  line-height: 1.4;
+  margin-bottom: var(--space-1);
+}
+
+.cat-cita cite {
+  font-size: var(--fs-small);
+  font-style: normal;
+  color: var(--color-texto-sec);
+  font-weight: 500;
+}
+
+/* ============================================
+   GRILLA DE LIBROS
+   ============================================ */
+
+.cat-libros__titulo {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  color: var(--color-texto);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(74, 83, 157, 0.12);
+}
+
+.cat-libros__lista {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+@media (min-width: 540px) {
+  .cat-libros__lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ============================================
+   TARJETA DE LIBRO EN PÁGINA DE CATEGORÍA
+   ============================================ */
+
+.cat-libro-card {
+  background-color: #ffffff;
+  border-radius: var(--radius-card);
+  border: 1px solid rgba(74, 83, 157, 0.15);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: transform var(--transition-slow), box-shadow var(--transition-slow);
+}
+
+.cat-libro-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.cat-libro-card__link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.cat-libro-card__link:focus-visible {
+  outline: 2px solid var(--color-violeta);
+  outline-offset: 3px;
+  border-radius: var(--radius-card);
+}
+
+.cat-libro-card__portada-wrap {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  background-color: var(--color-fondo-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cat-libro-card__portada {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.cat-libro-card__portada-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--color-texto-sec);
+  text-align: center;
+  padding: var(--space-2);
+}
+
+.cat-libro-card__body {
+  padding: var(--space-2) var(--space-3) var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cat-libro-card__titulo {
+  font-family: var(--font-display);
+  font-size: var(--fs-body);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-texto);
+  letter-spacing: -0.01em;
+  margin-top: var(--space-1);
+}
+
+.cat-libro-card__autora {
+  font-size: var(--fs-small);
+  font-weight: 500;
+  color: var(--color-ciruela);
+}
+
+.cat-libro-card__meta {
+  font-size: 12px;
+  color: var(--color-texto-sec);
+}
