@@ -1,15 +1,15 @@
 [
   {
-    "id": "nueve-lunas",
-    "titulo": "Nueve lunas",
-    "autora": "Gabriela Wiener",
-    "pais": "Perú",
-    "anio": 2009,
+    "id": "limpia",
+    "titulo": "Limpia",
+    "autora": "Alia Trabucco Zerán",
+    "pais": "Chile",
+    "anio": 2022,
     "categoria": "Cuido y cuido, ¿quién me cuida a mí?",
-    "portada": "assets/portadas/nuevelunas.jpg",
-    "sinopsis": "La célebre cronista peruana utiliza el lenguaje de la crónica para narrar su propio embarazo y deja un registro contemporáneo de lo que hoy significa tener un hijo. Con su estilo lleno de desparpajo inteligente, Wiener se mete de lleno con temas universales como el nacimiento, la muerte, la migración, el dolor psíquico, el dolor físico y el paso del tiempo. Un antimanual de madres primerizas, una guía impráctica para superar la nada dulce espera, una confesión de mujer indómita y contradictoria.",
-    "buscalibre": "https://www.buscalibre.com.ar/libro-nueve-lunas/9788439738411/p/53153315?afiliado=5bd1144d2c1104dd1a69",
-    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    "portada": "assets/portadas/limpia.webp",
+    "sinopsis": "Estela deja a su madre en el sur para trabajar en la casa de una familia en Santiago de Chile y allí se queda los siguientes siete años, limpiando y criando a una niña acosada por la ansiedad, cuya muerte conocemos al comienzo de la novela. Como en una tragedia griega, la tensión crece con cada página, con cada personaje o elemento: la perra callejera, el veneno, la pistola, la confesión inconfesable del «señor», la aparición de Carlos, hasta un desenlace tan poderoso como inevitable.",
+    "buscalibre": "https://www.buscalibre.com.ar/libro-limpia/9789566058458/p/54355857?afiliado=5bd1144d2c1104dd1a69",
+    "dialoga": "Alia revela en una entrevista que utiliza la palabra con múltiples connotaciones. «Limpia» tanto adjetivo como una orden, reflejando cómo se manifiesta la limpieza dentro de la historia y reflejando la desigualdad y las diferencias de clase en Chile a través de la perspectiva de una empleada doméstica. Esta obra analiza la brecha de clase, la presión social por mantener apariencias en la clase acomodada y cómo estas expectativas afectan al crecimiento y la salud mental de una niña quien desarrolla conductas autodestructivas, como negarse a comer, romper objetos o esconder cosas para culpar a otros, reflejando su malestar ante la falta de libertad y presión por destacar. Se retrata la limpieza como un esfuerzo inútil y constante: la suciedad y el caos siempre regresan. Esto simboliza que las injusticias sociales y los conflictos estructurales no se eliminan, sino que se acumulan bajo la superficie, alimentando un descontento que eventualmente desemboca en la tragedia."
   },
   {
     "id": "el-matrimonio-de-los-peces-rojos",
@@ -18,22 +18,34 @@
     "pais": "México",
     "anio": 2013,
     "categoria": "Cuido y cuido, ¿quién me cuida a mí?",
-    "portada": "assets/portadas/elmatrimoniodelospecesrojos.jpg",
-    "sinopsis": "En estas cinco narraciones intensas y de atmósfera delicada, Guadalupe Nettel propone un cruce de caminos entre el mundo animal y el universo humano para hablar de temas tan naturales como la ferocidad de la vida en pareja, la maternidad cuando es deseada y cuando no lo es, las crisis existenciales de la adolescencia o los lazos inimaginables que pueden establecerse entre dos enamorados. Espacios magistralmente construidos en los que nos preguntamos cómo y en qué momento se fraguan en nosotros las decisiones más íntimas.",
+    "portada": "assets/portadas/el-matrimonio-de-los-peces-rojos.webp",
+    "sinopsis": "En estas cinco narraciones intensas y de atmósfera delicada, Guadalupe Nettel nos propone un cruce de caminos entre el mundo animal y el universo humano para hablar de temas tan naturales como la ferocidad de la vida en pareja, la maternidad —cuando es deseada y cuando no lo es—, las crisis existenciales de la adolescencia o los lazos inimaginables que pueden establecerse entre dos enamorados.",
     "buscalibre": "https://www.buscalibre.com.ar/libro-matrimonio-de-los-peces-rojos-el/9788483931448/p/29752645?afiliado=5bd1144d2c1104dd1a69",
-    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    "dialoga": "La autora escribe este libro de cuentos donde utiliza a los animales para que sus personajes se vean reflejados en ellos. Actúan como un espejo de emociones, permitiendo que los protagonistas proyecten sus propias crisis, tensiones, y deseos reprimidos sin necesidad de expresarlos verbalmente. Los comportamientos de los animales funcionan como una analogía de las dinámicas de pareja, la maternidad o la soledad. Por ejemplo, en El matrimonio de los peces rojos, la hostilidad del confinamiento en la pecera simboliza el desgaste natural de una relación humana. La casa es comparada con una pecera donde la pareja está atrapada. La autora se pregunta, ¿qué instintos y ferocidades ocultamos tras el velo de la civilización? ¿Los aceptamos y convivimos con ellos? No son solo metáforas literarias, son catalizadores que también ayudan a cada lectora a descifrar la intimidad y la complejidad de las relaciones interpersonales."
   },
   {
-    "id": "primera-persona",
-    "titulo": "Primera persona",
-    "autora": "Margarita García Robayo",
+    "id": "esta-herida-llena-de-peces",
+    "titulo": "Esta herida llena de peces",
+    "autora": "Lorena Salazar Meza",
     "pais": "Colombia",
-    "anio": 2017,
+    "anio": 2021,
     "categoria": "Cuido y cuido, ¿quién me cuida a mí?",
-    "portada": "assets/portadas/primerapersona.jpg",
-    "sinopsis": "En este libro de crónicas y relatos inclasificables el lector es arrastrado como por una ola violenta. De una madre singular a un padre aún más singular, de sus relaciones sepultadas a la maternidad del amamantamiento esclavo, del amor y la vulnerabilidad al cinismo neurótico, en Primera persona el yo se desliza con una escritura certera y exquisita. García Robayo entrega más de lo que alguien puede esperar de una cronista honesta: la transparencia abisal de sus sentidos.",
-    "buscalibre": "https://www.buscalibre.com.ar/libro-primera-persona/9789873783975/p/51543026?afiliado=5bd1144d2c1104dd1a69",
-    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    "portada": "assets/portadas/esta-herida-llena-de-peces.webp",
+    "sinopsis": "En Quibdó, una madre y su niño se embarcan en una canoa y comienzan un viaje hacia el norte por el Atrato. Con el correr del río, se revela el verdadero motivo del viaje: el encuentro con la madre biológica del niño. Pero el viaje resulta ser, también, el encuentro con el miedo y con un destino trágico. Esta herida llena de peces es una novela delicada y salvaje, que nos lleva de viaje por el Chocó, nos traslada a la selva colombiana y nos mece como el río a la canoa.",
+    "buscalibre": "https://www.buscalibre.com.ar/libro-esta-herida-llena-de-peces/9789874756664/p/54197448?afiliado=5bd1144d2c1104dd1a69",
+    "dialoga": "Esta obra nació como un proyecto final de una maestría en España que realizó la autora, donde se apoya de la metáfora del río como línea de tiempo. El recorrido que realizan una madre y su hijo por el río Atrato es también una estructura narrativa que guía el avance de los acontecimientos. Hablando sobre el final del libro, este se basa en un hecho real trágico de Quibdó que su autora necesitaba integrar no como una crónica, sino desde la emoción y la indignación, para que no fuera simplemente una noticia olvidada. Ella siente una profunda rabia de cómo los medios de comunicación cubren estos sucesos: mencionados una vez al año, provocando una indignación momentánea que se olvida rápidamente. El impacto que quiere lograr es que la lectora conecte con la tragedia a un nivel más profundo y duradero."
+  },
+  {
+    "id": "la-hora-de-la-estrella",
+    "titulo": "La hora de la estrella",
+    "autora": "Clarice Lispector",
+    "pais": "Brasil",
+    "anio": 1977,
+    "categoria": "Me arrancaron algo que era mío",
+    "portada": "assets/portadas/la-hora-de-la-estrella.webp",
+    "sinopsis": "Con La hora de la estrella Clarice Lispector puso el punto final a una gran carrera que constituyó uno de los momentos más altos de la literatura brasileña moderna. Esta es «la historia de una inocencia herida, de una miseria anónima, una breve e intensa visión del absurdo que supone una existencia anodina...». En las páginas de esta obra, considerada una de sus más importantes, aparece en toda su magnitud el personalísimo estilo de Clarice Lispector.",
+    "buscalibre": "https://www.buscalibre.com.ar/libro-hora-de-la-estrella-la/9789877258004/p/66881946?afiliado=5bd1144d2c1104dd1a69",
+    "dialoga": "El personaje de Macabea representa a aquellos seres invisibilizados por la miseria y el exilio social. La ignorancia juega un papel fundamental, ya que funciona como un mecanismo de protección frente a su realidad: debido a que ella no es plenamente consciente de ser víctima de un sistema social que la margina y la exilia, logra sobrevivir sin el peso devastador de esa verdad. La novela de Clarice Lispector, publicada en 1977 poco antes de su fallecimiento, es una crítica a la desigualdad, la exclusión y marginación en una sociedad brasileña de los años 70, que habla de las mujeres con pocas opciones para su supervivencia. También se destaca que se elige a un narrador hombre para poder narrar la historia de Macabea de una forma fría y cruel, porque el problema literario que plantea la autora es narrar una historia de alguien que apenas se percibe existente en una cruda realidad."
   },
   {
     "id": "la-mucama-de-omicunle",
@@ -42,34 +54,22 @@
     "pais": "República Dominicana",
     "anio": 2015,
     "categoria": "Me arrancaron algo que era mío",
-    "portada": "assets/portadas/lamucamadeomicunle.jpg",
-    "sinopsis": "La historia arranca en el apartamento de la santera y asesora del Presidente dominicano Esther Escudero. Su joven mucama está a punto de vivir una historia de pasados, presentes y futuros vertiginosa. Las deidades afroantillanas que habitan el mar Caribe, la música tradicional y la música electrónica, el sexo en todas sus formas, los bucaneros del siglo XVII son algunos de los cimientos sobre los que se alza este texto lleno de intrigas y deseos. Una novela que habla del arte contemporáneo y la contaminación de los mares con una sutileza que rehúye el adoctrinamiento.",
+    "portada": "assets/portadas/la-mucama-de-omicunle.webp",
+    "sinopsis": "Esta apabullante novela, que supone la consagración de Rita Indiana como narradora, tiene tantas capas de lectura y tantos giros fascinantes que rehúye toda síntesis, todo encorsetamiento. La historia arranca en el apartamento de la santera y asesora del Presidente dominicano Esther Escudero, llamada también Omicunlé. Su joven mucama está a punto de vivir una historia de pasados, presentes y futuros vertiginosa, en un mundo donde las deidades afroantillanas, la música tradicional y la música electrónica, el sexo, los bucaneros del siglo XVII y la contaminación de los mares conviven.",
     "buscalibre": "https://www.buscalibre.com.ar/libro-la-mucama-de-omicunle/9788416291083/p/46458350?afiliado=5bd1144d2c1104dd1a69",
-    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    "dialoga": "Rita Indiana no pide permiso para escribir, mezcla registros políticos, fantásticos y sociales para producir sus novelas. Incorpora el lenguaje, la música y la espiritualidad de la región del Caribe de forma auténtica, escribiendo con la conciencia del territorio que habita. Esta es una obra de ciencia ficción cyberpunk situada en una República Dominicana futura tras una catástrofe ecológica. El sincretismo, fusión de diferentes culturas, es fundamental en la obra de la autora porque funciona como hilo conductor que permite representar la complejidad, la identidad y la historia del Caribe, permitiendo ver la frontera entre lo real y lo fantástico, lo sagrado y lo pagano. De esta forma, reafirma que la identidad de la región es inherentemente diversa y multifacética."
   },
   {
-    "id": "la-cabeza-del-santo",
-    "titulo": "La cabeza del santo",
-    "autora": "Socorro Acioli",
-    "pais": "Brasil",
-    "anio": 2014,
+    "id": "las-voladoras",
+    "titulo": "Las voladoras",
+    "autora": "Mónica Ojeda",
+    "pais": "Ecuador",
+    "anio": 2020,
     "categoria": "Me arrancaron algo que era mío",
-    "portada": "assets/portadas/lacabezadelsanto.jpg",
-    "sinopsis": "Poco antes de morir, la madre de Samuel le pidió emprender dos viajes: el primero para encontrar a su abuela y a su padre, y el segundo para encender una vela al pie de tres santos. En la búsqueda de cumplir con los últimos designios de Mariinha, Samuel llega a Candeia —un pueblo fantasma— y encuentra refugio en lo que más tarde se da cuenta es la cabeza gigantesca de la estatua inacabada de un santo. Ahí descubre que es capaz de escuchar los rezos que las mujeres solteras de los alrededores dedican a san Antonio.",
-    "buscalibre": "https://www.buscalibre.com.ar/libro-la-cabeza-del-santo/9786071678379/p/54971644?afiliado=5bd1144d2c1104dd1a69",
-    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-  },
-  {
-    "id": "ustedes-brillan-en-lo-oscuro",
-    "titulo": "Ustedes brillan en lo oscuro",
-    "autora": "Liliana Colanzi",
-    "pais": "Bolivia",
-    "anio": 2022,
-    "categoria": "Me arrancaron algo que era mío",
-    "portada": "assets/portadas/ustedesbrillanenlooscuro.jpg",
-    "sinopsis": "Los cuentos de Liliana Colanzi exploran diversas formas de narrar el tiempo: el viaje geológico en una cueva, la búsqueda de las raíces históricas de la explotación del caucho en las ruinas de un pueblo amazónico, la temporalidad dislocada de una colonia religiosa. La radiación es un agente invisible que afecta a los jóvenes que viven cerca de una central nuclear andina. Un libro galardonado con el Premio Ribera del Duero que crea espacios abigarrados y enigmáticos con una escritura inquietante y sensorial.",
-    "buscalibre": "https://www.buscalibre.com.ar/libro-ustedes-brillan-en-lo-oscuro/9788483933145/p/54133190?afiliado=5bd1144d2c1104dd1a69",
-    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    "portada": "assets/portadas/las-voladoras.webp",
+    "sinopsis": "Criaturas que se suben a los tejados y alzan el vuelo, una adolescente apasionada por la sangre, una profesora que recoge la cabeza de la vecina en su jardín, dos gemelas ruidistas en un festival de música experimental, mujeres que se lanzan desde lo alto de una montaña, terremotos apocalípticos, un chamán que escribe un conjuro para revivir a su hija. Las voladoras reúne ocho cuentos que se ubican en ciudades, pueblos, páramos y volcanes donde la violencia y el misticismo pertenecen a un mismo plano ritual y poético.",
+    "buscalibre": "https://www.buscalibre.com.ar/libro-las-voladoras/9788483932827/p/53003310?afiliado=5bd1144d2c1104dd1a69",
+    "dialoga": "La obra de Mónica Ojeda se destaca por su estética gótica, elementos de realismo sucio y una atmósfera que combina la mitología andina con el terror. Son ocho relatos que introducen elementos de tradición oral, fruto de una exhaustiva investigación por parte de la autora sobre mitos andinos. El paisaje andino que atraviesa cada cuento es un elemento protagonista que dota a cada relato de una atmósfera opresiva y mítica. A lo largo del libro, la geografía de los Andes —marcada por sus volcanes, montañas, cenizas y piedras— se entrelaza íntimamente con las historias de los personajes, potenciando los sentimientos de miedo, dolor y duelo. Ojeda utiliza esta geografía para profundizar en el miedo tanto mítico como real, generando un efecto de incomodidad donde lo sobrenatural y lo tangible se confunden."
   },
   {
     "id": "mugre-rosa",
@@ -78,34 +78,34 @@
     "pais": "Uruguay",
     "anio": 2020,
     "categoria": "La tierra que habito",
-    "portada": "assets/portadas/mugrerosa.jpg",
-    "sinopsis": "En una ciudad portuaria asolada por una plaga misteriosa, una mujer intenta descifrar por qué su mundo se desmorona. No es solo el acecho de la enfermedad y la muerte, las algas y los vientos pestíferos, los amasijos rosáceos que son ya lo único que se puede comer, sino el colapso de todos sus vínculos afectivos, la incertidumbre, la eclosión de una soledad radical. Con una prosa inquietante y rica en hallazgos poéticos, Trías construye un universo extraordinario que descubre la inmensa belleza y el inmenso dolor que hay en la fragilidad de la vida.",
-    "buscalibre": "https://www.buscalibre.com.ar/libro-mugre-rosa-mapa-de-las-lenguas/9789585581456/p/53199685?afiliado=5bd1144d2c1104dd1a69",
-    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    "portada": "assets/portadas/mugre-rosa.webp",
+    "sinopsis": "En una ciudad portuaria asolada por una plaga misteriosa, una mujer intenta descifrar por qué su mundo se desmorona. No es sólo el acecho de la enfermedad y la muerte, las algas y los vientos pestíferos, los amasijos rosáceos que son ya lo único que se puede comer, sino el colapso de todos sus vínculos afectivos, la incertidumbre, la eclosión de una soledad radical.",
+    "buscalibre": "https://www.buscalibre.com.ar/libro-mugre-rosa-mapa-de-las-lenguas/9789566248477/p/63539820?afiliado=5bd1144d2c1104dd1a69",
+    "dialoga": "Esta novela fue escrita antes del COVID-19 y publicada en 2020. Las raíces de la idea provienen de preocupaciones previas sobre crisis ambientales y pandemias: no es un don profético, sino una sensibilidad artística hacia las tensiones del inconsciente colectivo. El corazón de la historia no es la pandemia en sí, sino el impacto de esta en las relaciones de la protagonista: con un matrimonio desgastado, la relación con su madre y el vínculo con Mauro, un niño que padece un síndrome extraño basado en el síndrome de Prader-Willi. Ese mismo síndrome funciona como un espejo de la insaciabilidad humana, donde el consumo desenfrenado de recursos conduce a una ciudad portuaria infestada con referencias a Montevideo. Es una ciudad transfigurada para crear una atmósfera universal, pero que dialoga con el contexto de su ciudad de origen."
   },
   {
-    "id": "derroche",
-    "titulo": "Derroche",
-    "autora": "María Sonia Cristoff",
+    "id": "distancia-de-rescate",
+    "titulo": "Distancia de rescate",
+    "autora": "Samanta Schweblin",
     "pais": "Argentina",
+    "anio": 2014,
+    "categoria": "La tierra que habito",
+    "portada": "assets/portadas/distancia-de-rescate.webp",
+    "sinopsis": "David, apenas un niño, se sienta al lado de Amanda, una joven que agoniza en el hospital de un pequeño pueblo rural. Ella no es su madre. Él no es su hijo. Pero entre ambos se despliega una trama inquietante de almas rotas, campos envenenados y una familia desesperada. Distancia de rescate es una pesadilla para desvelados, una advertencia. Absorbente, inquietante y tensa, con esta su primera novela premiada en todo el mundo y llevada al cine, Samanta Schweblin consigue envolver al lector en un aura de desconcierto y amenaza psicológica permanente.",
+    "buscalibre": "https://www.buscalibre.com.ar/libro-distancia-de-rescate/9789877694130/p/64595560?afiliado=5bd1144d2c1104dd1a69",
+    "dialoga": "«Distancia de rescate» es el vínculo invisible que mantiene a una madre unida a sus hijos, permitiéndoles cuidarlos y protegerlos a pesar de la distancia física. Representa la obsesión de los padres por calcular cuánto tiempo tardarían en proteger a sus hijos ante cualquier peligro, una alarma mental que, según la autora, nunca se apaga. La novela se clasifica dentro del género horror latinoamericano y gótico contemporáneo, destacando por su atmósfera ambigua y perturbadora, donde las vidas de dos madres se entrelazan tras la muerte de un niño por envenenamiento. La autora utiliza el entorno rural no como un idilio, sino para denunciar el abuso y la destrucción de la naturaleza. Los elementos perturbadores parecen recursos literarios, pero son una realidad cotidiana en el campo argentino vinculada al uso de pesticidas, lo que hace que la historia sea aún más aterradora por su veracidad."
+  },
+  {
+    "id": "ustedes-brillan-en-lo-oscuro",
+    "titulo": "Ustedes brillan en lo oscuro",
+    "autora": "Liliana Colanzi",
+    "pais": "Bolivia",
     "anio": 2022,
     "categoria": "La tierra que habito",
-    "portada": "assets/portadas/derroche.jpg",
-    "sinopsis": "Una carta sorprende a Lucrecia. Entre frases iracundas contra el trabajo y el mito del progreso, su tía recién fallecida encriptó el mapa de un tesoro enterrado en medio de La Pampa. Irónica y corrosiva, sin perder el sentido del humor, Cristoff revela el extractivismo vital que subyace en tantas prácticas contemporáneas. Del mail a la autobiografía, de la crónica de viajes al retrato y el telegrama, la novela se va armando en una superposición de personajes, formatos y géneros al modo de los números de las ferias o los circos ambulantes.",
-    "buscalibre": "https://www.buscalibre.com.ar/libro-derroche-mapa-de-las-lenguas/9788439742241/p/54499046?afiliado=5bd1144d2c1104dd1a69",
-    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-  },
-  {
-    "id": "chamanes-electricos-en-la-fiesta-del-sol",
-    "titulo": "Chamanes eléctricos en la fiesta del sol",
-    "autora": "Mónica Ojeda",
-    "pais": "Ecuador",
-    "anio": 2024,
-    "categoria": "La tierra que habito",
-    "portada": "assets/portadas/chamaneselectricosenlafiestadelsol.jpg",
-    "sinopsis": "Año 5540 del calendario andino. Noa decide escaparse de su Guayaquil natal para asistir al Ruido Solar, un macrofestival que congrega durante ocho días a músicos, bailarines, poetas y chamanes a los pies de uno de los volcanes de los Andes. Para Noa será la primera parada antes de ir al reencuentro del padre que la abandonó de niña. Sostenida por una lírica extraordinaria y un sentido brutal del ritmo, es un viaje místico al corazón primitivo de la música y de la danza en un mundo que solo conoce la pérdida y el desamparo.",
-    "buscalibre": "https://www.buscalibre.com.ar/libro-chamanes-electricos-en-la-fiesta-del-sol/9789877693515/p/56102731?afiliado=5bd1144d2c1104dd1a69",
-    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    "portada": "assets/portadas/ustedes-brillan-en-lo-oscuro.webp",
+    "sinopsis": "Los cuentos de Liliana Colanzi exploran diversas formas de narrar el tiempo: como el viaje geológico en una cueva, la búsqueda de las raíces históricas de la explotación del caucho en las ruinas de un pueblo amazónico, o la temporalidad dislocada de una colonia religiosa. En este libro la radiación es un agente invisible que afecta a los jóvenes que viven cerca de una central nuclear andina y a los recolectores de chatarra de una ciudad brasileña.",
+    "buscalibre": "https://www.buscalibre.com.ar/libro-ustedes-brillan-en-lo-oscuro/9788483933145/p/54133190?afiliado=5bd1144d2c1104dd1a69",
+    "dialoga": "Ganadora del VII Premio Ribera del Duero, esta obra consta de seis cuentos. En «Los ojos más verdes» aborda la aspiración de ciertos sectores a estándares europeos y el rechazo a lo indígena. La autora utiliza la literatura para exponer las desigualdades y los problemas subyacentes de su propio contexto cultural. El cuento «La cueva» destaca porque el protagonista es un espacio físico: una cueva. La historia se construye mediante escenas que ocurren en un mismo lugar pero en distintas épocas, abarcando desde la prehistoria hasta el futuro. Aborda la ecología desde una perspectiva distópica y de ciencia ficción, enfocándose en las consecuencias del descuido humano sobre el entorno. En el cuento «Atomito» presenta una ciudad latinoamericana marcada por un futuro decadente, donde se describe la existencia de basureros de chatarra y un ambiente post-apocalíptico tras la instalación de una central nuclear."
   },
   {
     "id": "atras-queda-la-tierra",
@@ -114,10 +114,22 @@
     "pais": "Venezuela",
     "anio": 2024,
     "categoria": "Desaparecieron y se fueron",
-    "portada": "assets/portadas/atrasquedalatierra.jpg",
-    "sinopsis": "Mientras su mundo se cae a pedazos, la narradora conecta una serie de memorias, palabras e imágenes para escribir una conmovedora novela de no ficción sobre el dolor que provocan el despojo y la violencia. Esta es la historia de millones de venezolanos, pero también de todo quien haya tenido que sufrir el exilio. El testimonio de la catástrofe de una nación que una madre le intenta contar a su hijo, un pequeño niño que no se siente parte de ningún país, sino de todos al mismo tiempo.",
+    "portada": "assets/portadas/atras-queda-la-tierra.webp",
+    "sinopsis": "Mientras su mundo se cae a pedazos, la narradora de Atrás queda la tierra conecta una serie de memorias, palabras e imágenes para escribir una conmovedora novela de no ficción sobre el dolor que provocan el despojo y la violencia. Esta es la historia de millones de venezolanos, pero también de todo quien haya tenido que sufrir el exilio. Atrás queda la tierra es el testimonio de la catástrofe de una nación que una madre le intenta contar a su hijo.",
     "buscalibre": "https://www.buscalibre.com.ar/libro-atras-queda-la-tierra/9786316598554/p/62425159?afiliado=5bd1144d2c1104dd1a69",
-    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    "dialoga": "Exiliada en Chile desde 2016, la autora venezolana escribió una novela que en realidad es una carta de una madre a su hijo para explicarle la catástrofe de su nación y el sentimiento de no pertenecer a ninguna parte. Esta novela ayuda a tener una postura crítica sobre los conflictos de Venezuela donde el fraude electoral es uno de los ejes, permitiendo visibilizar historias individuales y nombres propios en medio de un contexto donde la información suele volverse efímera o superficial en las redes sociales. Al documentar el desplazamiento y el dolor con un enfoque narrativo, se dignifica a quienes han sufrido el exilio. Frente a la censura y el cierre de medios de comunicación, la literatura se convierte en un registro histórico y testimonial. La autora enfatiza que, aunque el libro es una denuncia contra la situación en Venezuela, también es un llamado a la hermandad latinoamericana y a la solidaridad entre los países de acogida."
+  },
+  {
+    "id": "atusparia",
+    "titulo": "Atusparia",
+    "autora": "Gabriela Wiener",
+    "pais": "Perú",
+    "anio": 2024,
+    "categoria": "Desaparecieron y se fueron",
+    "portada": "assets/portadas/atusparia.webp",
+    "sinopsis": "Una política de izquierda víctima del lawfare se encuentra prisionera en una cárcel de alta seguridad en las entrañas de la selva amazónica. Se hace llamar Atusparia, como el líder de la resistencia indígena peruana del siglo XIX. El amor en tiempos del capitalismo la engulle en una espiral de drogas y sexualidad frenética que la alejarán de los viejos ideales de su educación hasta que el llamado de sus raíces la llevarán a emprender un viaje al pie del lago Titicaca.",
+    "buscalibre": "https://www.buscalibre.com.ar/libro-atusparia/9789877693829/p/63073859?afiliado=5bd1144d2c1104dd1a69",
+    "dialoga": "El libro narra la historia política de una mujer, líder de izquierda, desde su formación durante los años 80 hasta un desenlace polémico. Wiener se inspiró en su propia experiencia escolar en un colegio fundado por personas que estudiaron en la Unión Soviética, donde se fusionaba la educación científica y socialista con el indigenismo y la realidad social peruana. La autora critica a las historias de izquierda que suelen ser machistas y a menudo borran el papel fundamental de las mujeres en la logística, el sostenimiento y la resistencia política. No solo denuncia que la criminalización de la protesta social y de los líderes indígenas no es una herramienta compleja, sino racismo; también sostiene que el Estado ha utilizado históricamente el lawfare para desactivar resistencias y perseguir a quienes defienden sus territorios frente al extractivismo multinacional."
   },
   {
     "id": "todos-se-van",
@@ -126,21 +138,45 @@
     "pais": "Cuba",
     "anio": 2006,
     "categoria": "Desaparecieron y se fueron",
-    "portada": "assets/portadas/todossevan.jpeg",
-    "sinopsis": "Relato en forma de diario personal que abarca de los ocho a los veinte años de Nieve Guerra. Este libro narra la infancia y la adolescencia de su protagonista, quien desde su nacimiento viaja a la deriva de su propia vida gracias a que el Estado cubano decide su destino. Nieve resiste la vida azarosa de sus padres y el pánico de crecer en una sociedad controladora hasta la asfixia que le va restando todas sus posesiones afectivas. Una novela de ficción que recrea el diario de infancia de su autora mientras espera en su isla el regreso de sus amores.",
+    "portada": "assets/portadas/todos-se-van.webp",
+    "sinopsis": "Relato en forma de diario personal que abarca de los ocho a los veinte años de Nieve Guerra. Este libro narra la infancia y la adolescencia de su protagonista, quien desde su nacimiento viaja a la deriva de su propia vida gracias a que el Estado cubano decide su destino, siempre supeditado a un incierto desenlace signado por un matiz político-social. Nieve resiste la vida azarosa de sus padres y el pánico de crecer en una sociedad controladora hasta la asfixia.",
     "buscalibre": "https://www.buscalibre.com.ar/libro-todos-se-van/9788433997821/p/46304564?afiliado=5bd1144d2c1104dd1a69",
-    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    "dialoga": "Wendy Guerra comenzó su carrera como escritora cuando era apenas una niña, escribiendo diarios para su madre. Durante un tiempo de separación física, ella le pidió que llevara un diario para contarle todo lo que sucedía mientras estaban lejos. El ejercicio de registro cotidiano se convirtió, con el paso del tiempo, en la materia prima de la novela Todos se van. El diario no solo fue un vínculo con su madre, sino el origen de su voz literaria, transformando una vivencia íntima y dolorosa en una obra que explora su infancia y adolescencia en Cuba. El formato de autoficción le permitió tomar su propia experiencia de vida y transformarla en una novela, cambiando nombre y recreando situaciones, mezclando elementos reales con ficción."
   },
   {
-    "id": "marciano",
-    "titulo": "Marciano",
-    "autora": "Nona Fernández",
-    "pais": "Chile",
+    "id": "tanto",
+    "titulo": "Tanto",
+    "autora": "Nurit Kasztelan",
+    "pais": "Argentina",
+    "anio": 2023,
+    "categoria": "Me dio tranquilidad",
+    "portada": "assets/portadas/tanto.webp",
+    "sinopsis": "Helena abandona la ciudad para pasar una temporada en el campo. No sabe qué quiere, ni qué le sobra, ni qué le falta, pero está buscando. De a poco pareciera percibir el paso del tiempo de otra manera, se orienta por la ubicación del sol, por la densidad del viento. El canto de los pájaros ya no es una masa sonora amorfa, sino que cree reconocer a un benteveo, a un chimango, a un zorzal. Entre las voces de naturalistas decimonónicos, viajeros y poetas, Nurit Kasztelan compone una primera novela tan bella como cautivante.",
+    "buscalibre": "https://www.buscalibre.com.ar/libro-tanto/9789877123012/p/55019949?afiliado=5bd1144d2c1104dd1a69",
+    "dialoga": "Nurit es poeta, escritora, librera y editora. Ella siempre cuenta que aunque la trama de su novela transcurre en la pampa argentina, ella escribió la obra desde la ciudad, basándose en investigaciones y lecturas de naturalistas. Esta imaginación es tan sólida que muchos lectores creen erróneamente que ella vivió allí. La novela explora la introspección del personaje y su relación con el paisaje. Inspirada en la figura literaria del «desplazamiento», utilizó la descripción del entorno para narrar los estados internos de la protagonista, especialmente en un contexto de silencio absoluto. La protagonista busca alejarse del ruido de la ciudad, intentando encontrar en el silencio del campo un refugio de pausa y detenimiento, explorando la filosofía japonesa Wabi-sabi."
+  },
+  {
+    "id": "budin-del-cielo",
+    "titulo": "Budín del Cielo",
+    "autora": "María Luque",
+    "pais": "Argentina",
     "anio": 2025,
-    "categoria": "Desaparecieron y se fueron",
-    "portada": "assets/portadas/marciano.jpg",
-    "sinopsis": "Esta novela protagoniza a Mauricio Hernández Norambuena, uno de los últimos revolucionarios de las guerras floridas latinoamericanas. La narradora lo visita en la cárcel para hacerle preguntas, convocando en un notable tejido de voces a varios personajes para entender cómo fue su historia: la de alguien que agitó la resistencia a la dictadura, estuvo en el atentado a Pinochet y luego derivó entre ilusiones perdidas, muertes, prisiones y fugas. Una novela electrizante que aterriza en la mente de un personaje complejo para entenderlo en toda su intensidad y contradicción.",
-    "buscalibre": "https://www.buscalibre.com.ar/libro-marciano/9789566248699/p/64581171?afiliado=5bd1144d2c1104dd1a69",
-    "texto_curatorial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    "categoria": "Me dio tranquilidad",
+    "portada": "assets/portadas/budin-del-cielo.webp",
+    "sinopsis": "Rosa es una señora feliz. Jubilada de una de las pasiones de su vida —enseñar matemática a «sus pichoncitos» en el colegio—, vive sola en un departamento lleno de luz que da a la calle, visita con regularidad a su médico de cabecera y se preocupa por su vecina Norma. Quizás el gran amor de su vida haya sido, y todavía sea, Sandro. Tiene buena mano para la cocina, la pone contenta recibir noticias de sus alumnos y, sobre todo, disfruta de un don que no oculta a nadie: puede hablar con las flores y los pájaros.",
+    "buscalibre": "https://www.buscalibre.com.ar/libro-budin-del-cielo/9788412816099/p/63663298?afiliado=5bd1144d2c1104dd1a69",
+    "dialoga": "María Luque es autora e ilustradora; durante la pandemia comenzó a observar pájaros en un parque cercano, fascinada por sus comportamientos y dinámicas, lo que luego se convertiría en un pilar fundamental de la historia. El personaje de Rosa está inspirado en su tía abuela Roma, una maestra que siempre compartía anécdotas sobre sus alumnos. Como ilustradora, hubiera sido «muy fácil» para ella hacer que su personaje fuera maestra de artes plásticas. Sin embargo, en sus proyectos le gusta investigar temas nuevos y aprender cosas que le son ajenas, por lo que eligió las matemáticas como un reto personal. El título del libro surge del recuerdo de su padre de que su tía Roma preparaba una receta llamada «Budín del cielo»."
+  },
+  {
+    "id": "bibliotecas",
+    "titulo": "Bibliotecas",
+    "autora": "AA.VV. (Editorial Godot)",
+    "pais": "Argentina",
+    "anio": 2023,
+    "categoria": "Me dio tranquilidad",
+    "portada": "assets/portadas/bibliotecas.webp",
+    "sinopsis": "¿Qué define una biblioteca? ¿Hay algo que podamos decir que es una biblioteca? ¿Un mueble? ¿Una cantidad de libros determinada? Con este libro nos vamos a dar cuenta de que no hay una definición única. Están quienes fusionan sus bibliotecas al casarse y quienes prefieren mantenerlas separadas. También hay bibliotecas inmateriales: libros leídos pero no acumulados, desperdigados por el universo.",
+    "buscalibre": "https://www.buscalibre.com.ar/libro-bibliotecas/9789878928470/p/54508739?afiliado=5bd1144d2c1104dd1a69",
+    "dialoga": "Este libro es una obra publicada por Ediciones Godot para celebrar sus 15 años de trayectoria y su obra número 200. Explora las historias personales detrás de las colecciones de libros de destacados escritores latinoamericanos. Más allá de cómo se organizan los libros, el libro se enfoca en las experiencias humanas relacionadas con las bibliotecas: pérdida de libros durante separaciones, la unión de bibliotecas al convivir en pareja, y curiosidades personales como la de un autor que perdió su «escondite». También explora el concepto de bibliotecas mentales: esos libros que ya no se poseen físicamente, pero que permanecen en la memoria y sirven de referencia a la hora de escribir. El libro incluye contribuciones de autoras como Katya Adaui, Selva Almada, Jazmina Barrera, Mercedes Halfon, Brenda Lozano, Carla Maliandi y Dolores Reyes, entre otras."
   }
 ]
