@@ -28,36 +28,255 @@
   <link rel="stylesheet" href="css/layout.css" />
 
   <style>
-    /* ── Banner hero ── */
-    .hero__banner {
-      width: 100%;
-      max-width: 760px;
-      margin: 40px auto 40px auto;
-      border-radius: 24px;
+    /* ════════════════════════════════════════
+       HERO — Sección de apertura
+    ════════════════════════════════════════ */
+
+    .hero {
+      position: relative;
       overflow: hidden;
-      line-height: 0;
+      padding: 72px 0 80px;
+      /* Fondo ligeramente más cálido que el crema base */
+      background: #f5f0e8;
     }
 
-    .hero__banner img {
-      width: 100%;
-      height: auto;
-      display: block;
+    /* ── Formas decorativas SVG monocromáticas ── */
+    /* Cada figura usa UN solo color de la paleta con opacidad baja */
+
+    .hero__formas {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
     }
 
-    /* ── Botón centrado bajo el banner ── */
-    .hero__cta {
+    /* Círculo grande — amarillo ocre, esquina superior derecha */
+    .hero__forma-1 {
+      position: absolute;
+      top: -60px;
+      right: -80px;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      background: #e89b21;
+      opacity: 0.12;
+    }
+
+    /* Rectángulo rotado — fucsia, borde inferior izquierdo */
+    .hero__forma-2 {
+      position: absolute;
+      bottom: -40px;
+      left: -60px;
+      width: 280px;
+      height: 200px;
+      border-radius: 32px;
+      background: #e1549d;
+      opacity: 0.10;
+      transform: rotate(-18deg);
+    }
+
+    /* Círculo mediano — índigo, centro-izquierda */
+    .hero__forma-3 {
+      position: absolute;
+      top: 40%;
+      left: -30px;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: #4a539d;
+      opacity: 0.08;
+    }
+
+    /* Elipse — turquesa, arriba centro */
+    .hero__forma-4 {
+      position: absolute;
+      top: -20px;
+      left: 38%;
+      width: 180px;
+      height: 90px;
+      border-radius: 50%;
+      background: #8fc9c3;
+      opacity: 0.18;
+    }
+
+    /* Cuadrado pequeño rotado — ciruela, derecha medio */
+    .hero__forma-5 {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+      background: #7c3a60;
+      opacity: 0.10;
+      transform: rotate(30deg);
+    }
+
+    /* ── Contenido del hero ── */
+
+    .hero__contenido {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+    }
+
+    /* Eyebrow — etiqueta pequeña encima del título */
+    .hero__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--fuente-body);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-fucsia);
+      margin-bottom: 20px;
+    }
+
+    .hero__eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 1.5px;
+      background: currentColor;
+    }
+
+    /* Título principal — el display más grande del sitio */
+    .hero__titulo {
+      font-family: var(--fuente-display);
+      font-weight: 800;
+      font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+      line-height: 1.08;
+      color: var(--color-texto);
+      margin: 0 0 28px;
+      /* La última palabra en color acento */
+    }
+
+    .hero__titulo em {
+      font-style: normal;
+      color: var(--color-fucsia);
+    }
+
+    /* Subtítulo / descripción */
+    .hero__subtitulo {
+      font-family: var(--fuente-body);
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      line-height: 1.65;
+      color: var(--color-texto-sec);
+      margin: 0 0 40px;
+      max-width: 540px;
+    }
+
+    /* CTAs */
+    .hero__ctas {
       display: flex;
-      justify-content: center;
-      margin-bottom: 120px;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
+    .hero__cta-secundario {
+      font-family: var(--fuente-body);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-indigo);
+      text-decoration: none;
+      border-bottom: 1.5px solid transparent;
+      transition: border-color 200ms ease, color 200ms ease;
+    }
+
+    .hero__cta-secundario:hover {
+      border-color: var(--color-indigo);
+    }
+
+    .hero__cta-secundario:focus-visible {
+      outline: 2px solid var(--color-indigo);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* ════════════════════════════════════════
+       SECCIÓN CUESTIONARIO
+    ════════════════════════════════════════ */
+
+    .seccion-cuestionario {
+      padding: 72px 0 96px;
+    }
+
+    .seccion-cuestionario__encabezado {
+      margin-bottom: 48px;
+    }
+
+    .seccion-cuestionario__kicker {
+      display: inline-block;
+      font-family: var(--fuente-body);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-amarillo);
+      margin-bottom: 12px;
+    }
+
+    .seccion-cuestionario__titulo {
+      font-family: var(--fuente-display);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      color: var(--color-texto);
+      margin: 0 0 12px;
+      line-height: 1.2;
+    }
+
+    .seccion-cuestionario__desc {
+      font-family: var(--fuente-body);
+      font-size: 0.95rem;
+      color: var(--color-texto-sec);
+      margin: 0;
+    }
+
+    /* ── Mobile ── */
     @media (max-width: 767px) {
-      .hero__banner {
-        border-radius: 16px;
-        margin: 24px auto 24px auto;
+      .hero {
+        padding: 48px 0 56px;
       }
-      .hero__cta {
-        margin-bottom: 80px;
+
+      .hero__forma-1 {
+        width: 220px;
+        height: 220px;
+        top: -40px;
+        right: -50px;
+      }
+
+      .hero__forma-2 {
+        width: 180px;
+        height: 130px;
+        bottom: -30px;
+        left: -40px;
+      }
+
+      .hero__forma-3 {
+        display: none;
+      }
+
+      .hero__forma-4 {
+        width: 120px;
+        height: 60px;
+      }
+
+      .hero__forma-5 {
+        display: none;
+      }
+
+      .hero__ctas {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .seccion-cuestionario {
+        padding: 48px 0 72px;
       }
     }
   </style>
@@ -119,19 +338,64 @@
 
   <!-- CONTENIDO PRINCIPAL -->
   <main>
-    <div class="container">
-      <div class="hero__banner animar-solo">
-        <img
-          src="assets/hero-banner.png"
-          alt="Mapa de América Latina con los países de las autoras del catálogo. Texto: Encontrá tu próxima lectura entre autoras que escriben desde adentro."
-        />
+
+    <!-- ── SECCIÓN 1: HERO ── -->
+    <section class="hero" aria-label="Presentación del proyecto">
+
+      <!-- Formas decorativas monocromáticas (colores del sitio, baja opacidad) -->
+      <div class="hero__formas" aria-hidden="true">
+        <div class="hero__forma-1"></div>
+        <div class="hero__forma-2"></div>
+        <div class="hero__forma-3"></div>
+        <div class="hero__forma-4"></div>
+        <div class="hero__forma-5"></div>
       </div>
-      <div class="hero__cta animar-solo">
-        <a href="cuestionario.html" class="btn btn-primary">
-          Encontrá tu lectura
-        </a>
+
+      <div class="container">
+        <div class="hero__contenido animar-solo">
+
+          <span class="hero__eyebrow">15 libros · 5 países · una sola pregunta</span>
+
+          <h1 class="hero__titulo">
+            Ellas escribieron<br>
+            lo que estás <em>sintiendo.</em>
+          </h1>
+
+          <p class="hero__subtitulo">
+            Quince libros escritos por autoras latinas que dialogan con el momento que atravesamos. Respondé dos preguntas y encontrá tu próxima lectura.
+          </p>
+
+          <div class="hero__ctas">
+            <a href="cuestionario.html" class="btn btn-primary">Empezar</a>
+            <a href="catalogo.html" class="hero__cta-secundario">O explorá el catálogo completo →</a>
+          </div>
+
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- ── SECCIÓN 2: CUESTIONARIO ── -->
+    <section class="seccion-cuestionario" id="cuestionario" aria-label="Cuestionario de descubrimiento">
+      <div class="container">
+
+        <div class="seccion-cuestionario__encabezado animar-solo">
+          <span class="seccion-cuestionario__kicker">El cuestionario</span>
+          <h2 class="seccion-cuestionario__titulo">¿Por dónde empezamos?</h2>
+          <p class="seccion-cuestionario__desc">Dos preguntas. Un libro. Sin respuestas incorrectas.</p>
+        </div>
+
+        <!--
+          CUESTIONARIO: acá va el bloque del cuestionario de descubrimiento
+          que ya está implementado. No se toca su lógica ni su HTML interno.
+          El JS de cuestionario.js lo inicializa automáticamente.
+        -->
+        <div id="cuestionario-app" class="animar-solo">
+          <!-- El cuestionario se renderiza acá desde cuestionario.js -->
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
   <!-- FOOTER -->

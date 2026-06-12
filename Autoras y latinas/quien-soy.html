@@ -26,6 +26,246 @@
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/animations.css" />
   <link rel="stylesheet" href="css/layout.css" />
+
+  <style>
+    /* ── Página Quién soy ── */
+
+    .qs-pagina {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 0 80px;
+    }
+
+    /* ── Encabezado con etiqueta tipo editorial ── */
+    .qs-encabezado {
+      margin-bottom: 56px;
+    }
+
+    .qs-encabezado__etiqueta {
+      display: inline-block;
+      font-family: var(--fuente-body);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-fucsia);
+      margin-bottom: 16px;
+    }
+
+    .qs-titulo {
+      font-family: var(--fuente-display);
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 800;
+      color: var(--color-texto);
+      line-height: 1.05;
+      margin: 0;
+    }
+
+    /* ── Bloque presentación: foto + texto ── */
+    .qs-presentacion {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 40px;
+      align-items: start;
+      margin-bottom: 64px;
+    }
+
+    /* Foto */
+    .qs-foto-wrap {
+      position: relative;
+    }
+
+    .qs-foto-placeholder,
+    .qs-foto-real {
+      width: 180px;
+      height: 220px;
+      border-radius: 16px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .qs-foto-placeholder {
+      background: var(--color-fondo-alt);
+      border: 1.5px dashed var(--color-turquesa);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qs-foto-placeholder span {
+      font-family: var(--fuente-body);
+      font-size: 12px;
+      color: var(--color-texto-sec);
+    }
+
+    /* Acento de color detrás de la foto */
+    .qs-foto-wrap::before {
+      content: '';
+      position: absolute;
+      inset: 8px -8px -8px 8px;
+      background: var(--color-turquesa);
+      opacity: 0.3;
+      border-radius: 16px;
+      z-index: -1;
+    }
+
+    /* Nombre y bio */
+    .qs-nombre {
+      font-family: var(--fuente-display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--color-texto);
+      margin: 0 0 16px;
+      line-height: 1.15;
+    }
+
+    /* ── Secciones de texto ── */
+    .qs-bloque {
+      margin-bottom: 56px;
+    }
+
+    .qs-bloque-titulo {
+      font-family: var(--fuente-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--color-indigo);
+      margin: 0 0 20px;
+      line-height: 1.2;
+    }
+
+    .qs-texto {
+      font-family: var(--fuente-body);
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--color-texto);
+      margin: 0 0 16px;
+    }
+
+    .qs-texto:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Separador entre secciones ── */
+    .qs-separador {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 56px 0;
+    }
+
+    .qs-separador::before,
+    .qs-separador::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--color-fondo-alt);
+    }
+
+    .qs-separador__punto {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-fucsia);
+      opacity: 0.6;
+      flex-shrink: 0;
+    }
+
+    /* ── Contacto ── */
+    .qs-contacto {
+      background: var(--color-fondo-alt);
+      border-radius: 20px;
+      padding: 32px 36px;
+    }
+
+    .qs-contacto-label {
+      font-family: var(--fuente-body);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-texto-sec);
+      margin: 0 0 20px;
+    }
+
+    .qs-contacto-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .qs-contacto-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--fuente-body);
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--color-indigo);
+      text-decoration: none;
+      transition: color 200ms ease;
+    }
+
+    .qs-contacto-item:hover {
+      color: var(--color-fucsia);
+    }
+
+    .qs-contacto-item:focus-visible {
+      outline: 2px solid var(--color-indigo);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    .qs-contacto-icono {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      color: inherit;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 767px) {
+      .qs-pagina {
+        padding: 32px 0 64px;
+      }
+
+      .qs-encabezado {
+        margin-bottom: 40px;
+      }
+
+      .qs-titulo {
+        font-size: 2.2rem;
+      }
+
+      /* En mobile: foto arriba, texto abajo */
+      .qs-presentacion {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        margin-bottom: 48px;
+      }
+
+      .qs-foto-wrap {
+        width: fit-content;
+      }
+
+      .qs-foto-placeholder,
+      .qs-foto-real {
+        width: 140px;
+        height: 170px;
+      }
+
+      .qs-bloque {
+        margin-bottom: 40px;
+      }
+
+      .qs-separador {
+        margin: 40px 0;
+      }
+
+      .qs-contacto {
+        padding: 24px 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -65,40 +305,60 @@
     <div class="container">
       <div class="qs-pagina">
 
+        <!-- Encabezado -->
         <div class="qs-encabezado animar-solo">
-          <div class="separador"></div>
+          <span class="qs-encabezado__etiqueta">El proyecto</span>
           <h1 class="qs-titulo">Quién soy</h1>
         </div>
 
-        <section class="qs-bloque qs-presentacion animar-solo" aria-labelledby="qs-presentacion-titulo">
+        <!-- Presentación: foto + bio -->
+        <section class="qs-presentacion animar-solo" aria-labelledby="qs-nombre">
+
           <div class="qs-foto-wrap" aria-hidden="true">
+            <!--
+              FOTO: cuando tengas la imagen lista, reemplazá el bloque de abajo
+              con: <img src="assets/foto-leo.jpg" alt="Leonora" class="qs-foto-real" />
+              y eliminá el div qs-foto-placeholder
+            -->
             <div class="qs-foto-placeholder"><span>Foto</span></div>
           </div>
+
           <div class="qs-presentacion__texto">
-            <h2 class="qs-bloque-titulo" id="qs-presentacion-titulo">Lorem ipsum nombre</h2>
+            <h2 class="qs-nombre" id="qs-nombre">Leo</h2>
             <p class="qs-texto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Mi nombre es Leonora, pero me conocen como Leo. Nací en Banfield, la misma ciudad donde creció Julio Cortázar, y fui al mismo colegio que este autor. Me enamoré de la lectura durante la primaria, cuando me regalaban libros que me parecían cortos, mientras admiraba una biblioteca hasta el techo que llenó mi familia. Yo también tuve mi lugar en esa biblioteca; los tres estantes a mi nombre me quedaron chicos.
             </p>
             <p class="qs-texto">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Mi momento preferido para leer siempre fueron las vacaciones de verano, cuando viajaba en auto a Brasil con mi familia, sin amigos y sin conocer el idioma. No hice amigos, pero llevaba libros y aprendí el idioma para nunca quedarme sin lecturas. También conocí Paraguay y Uruguay. Tuve amigos de Colombia, Venezuela, Perú, Ecuador. Siempre sentí la necesidad de conocer otros lugares de Latinoamérica, otras autoras, otras historias, otras culturas.
             </p>
           </div>
         </section>
 
+        <!-- Separador -->
+        <div class="qs-separador" aria-hidden="true">
+          <span class="qs-separador__punto"></span>
+          <span class="qs-separador__punto"></span>
+          <span class="qs-separador__punto"></span>
+        </div>
+
+        <!-- Por qué este proyecto -->
         <section class="qs-bloque animar-solo" aria-labelledby="qs-proyecto-titulo">
           <h2 class="qs-bloque-titulo" id="qs-proyecto-titulo">Por qué este proyecto</h2>
-          <p class="qs-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          <p class="qs-texto">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis.</p>
-          <p class="qs-texto">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit.</p>
+          <p class="qs-texto">
+            Me inspira ver recomendaciones personalizadas en redes sociales y sentí que había una deuda pendiente con las escritoras latinoamericanas: agruparlas según las categorías que exponen. No es lo mismo una autora que habla de ecología que otra que habla de maternidad. Tampoco es lo mismo leer una autora del Caribe que una de Argentina.
+          </p>
+          <p class="qs-texto">
+            Este proyecto propone encontrar una lectura que dialogue con lo que estés atravesando, y al mismo tiempo situarte dentro de una región que está atravesando una crisis de legitimación. En este contexto, leer autoras y latinas no es un gesto cultural neutro: es insistir en que hay otras formas de nombrar lo que pasa.
+          </p>
+          <p class="qs-texto">
+            Al mismo tiempo, el mercado editorial sigue concentrado; sigue siendo más fácil acceder a literatura traducida del inglés que a una autora boliviana o venezolana. Un buscador curado es una respuesta concreta a esa desigualdad de circulación.
+          </p>
+          <p class="qs-texto">
+            Las redes sociales fragmentaron la atención pero también crearon comunidades lectoras enormes. Este sitio va dedicado a aquellas creadoras que visibilizan diferentes autoras, géneros, narrativas e historias. Gracias por inspirarme.
+          </p>
         </section>
 
-        <section class="qs-bloque animar-solo" aria-labelledby="qs-libros-titulo">
-          <h2 class="qs-bloque-titulo" id="qs-libros-titulo">Por qué estos 15 libros</h2>
-          <p class="qs-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p class="qs-texto">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-          <p class="qs-texto">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-        </section>
-
+        <!-- Contacto -->
         <section class="qs-bloque qs-contacto animar-solo" aria-labelledby="qs-contacto-titulo">
           <h2 class="qs-contacto-label" id="qs-contacto-titulo">Contacto</h2>
           <div class="qs-contacto-links">
