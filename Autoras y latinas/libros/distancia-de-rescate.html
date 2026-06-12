@@ -1,182 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Distancia de rescate — Samanta Schweblin | Autoras y Latinas</title>
-  <meta name="description" content="Por qué Distancia de rescate de Samanta Schweblin dialoga con Latinoamérica hoy.">
-  <meta property="og:title" content="Distancia de rescate — Samanta Schweblin">
-  <meta property="og:description" content="Por qué Distancia de rescate de Samanta Schweblin dialoga con Latinoamérica hoy.">
-  <meta property="og:image" content="../assets/portadas/distancia-de-rescate.webp">
-  <meta property="og:url" content="https://autoras-y-latinas.vercel.app/libros/distancia-de-rescate">
-  <meta property="og:type" content="article">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..60,700;12..60,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/components.css">
-  <link rel="stylesheet" href="../css/animations.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Distancia de rescate — Samanta Schweblin · Autoras y Latinas</title>
+  <meta name="description" content="Distancia de rescate de Samanta Schweblin (Argentina, 2014). David, apenas un niño, se sienta al lado de Amanda, una joven que agoniza en el hospital de un pequeño pueblo rural. Ella no es su madre. Él no es su…" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://autorasylatinas.com/libros/distancia-de-rescate.html" />
+  <meta property="og:title" content="Distancia de rescate — Samanta Schweblin · Autoras y Latinas" />
+  <meta property="og:description" content="Distancia de rescate de Samanta Schweblin. David, apenas un niño, se sienta al lado de Amanda, una joven que agoniza en el hospital de un pequeño pueblo rural. Ella no es su madre. Él no es su…" />
+  <meta property="og:image" content="../assets/portadas/distancia-de-rescate.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
 </head>
 <body>
 
   <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="../index.html" class="site-logo">Autoras y Latinas</a>
-      <nav class="nav-desktop" aria-label="Navegación principal">
-        <a href="../catalogo.html">Catálogo</a>
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <a href="../index.html" class="header__logo-img" aria-label="Autoras y Latinas — Inicio">
+          <img src="../assets/logo.png" alt="Autoras y Latinas" class="header__logo-imagen" />
+        </a>
+        <nav class="header__nav" aria-label="Navegación principal">
+          <a href="../catalogo.html">Catálogo</a>
+          <a href="../quien-soy.html">Quién soy</a>
+        </nav>
+        <button
+          class="header__hamburger"
+          id="hamburger"
+          aria-expanded="false"
+          aria-controls="menu-mobile"
+          aria-label="Abrir menú"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
+        <button class="header__submenu-toggle" id="submenu-toggle" aria-expanded="false">
+          Catálogo <span class="flecha" aria-hidden="true">▾</span>
+        </button>
+        <div class="header__submenu" id="submenu-categorias">
+          <a href="../catalogo.html?categoria=cuido">Cuido y cuido, ¿quién me cuida a mí?</a>
+          <a href="../catalogo.html?categoria=arrancaron">Me arrancaron algo que era mío</a>
+          <a href="../catalogo.html?categoria=tierra">La tierra que habito</a>
+          <a href="../catalogo.html?categoria=desaparecieron">Desaparecieron y se fueron</a>
+          <a href="../catalogo.html?categoria=tranquilidad">Me dio tranquilidad</a>
+        </div>
         <a href="../quien-soy.html">Quién soy</a>
       </nav>
-      <button class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
-        <span></span><span></span><span></span>
-      </button>
     </div>
-    <nav id="nav-mobile" class="nav-mobile" aria-label="Menú móvil" hidden>
-      <a href="../catalogo.html">Catálogo</a>
-      <a href="../quien-soy.html">Quién soy</a>
-    </nav>
   </header>
 
-  <!-- MAIN -->
-  <main class="ficha-main">
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
     <div class="container">
+      <article class="ficha" aria-labelledby="ficha-titulo">
 
-      <!-- Botón volver -->
-      <a href="../catalogo.html" class="btn-volver">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        Volver al catálogo
-      </a>
+        <!-- Botón volver -->
+        <a href="../catalogo.html" class="ficha__volver animar-solo">
+          ← Volver al catálogo
+        </a>
 
-      <!-- Tarjeta ficha -->
-      <article class="ficha-card">
+        <!-- Layout interno: portada + datos -->
+        <div class="ficha__contenido animar-solo">
 
-        <!-- Portada -->
-        <div class="ficha-portada">
-          <img
-            src="../assets/portadas/distancia-de-rescate.webp"
-            alt="Portada de Distancia de rescate, de Samanta Schweblin"
-            class="portada-img"
-            onerror="this.src='https://via.placeholder.com/400x600/f0ebe1/4a3f30?text=Distancia+de+rescate'"
-          >
+          <!-- Portada -->
+          <div class="ficha__portada-wrap">
+            <img
+              class="ficha__portada"
+              src="../assets/portadas/distancia-de-rescate.webp"
+              alt="Portada de Distancia de rescate de Samanta Schweblin"
+              loading="eager"
+            />
+          </div>
+
+          <!-- Datos del libro -->
+          <div class="ficha__datos">
+
+            <div class="ficha__tag">
+              <span class="tag">La tierra que habito</span>
+            </div>
+
+            <h1 class="ficha__titulo" id="ficha-titulo">Distancia de rescate</h1>
+            <p class="ficha__autora">Samanta Schweblin</p>
+            <p class="ficha__meta">Argentina · 2014</p>
+
+            <!-- Sinopsis -->
+            <div class="ficha__bloque">
+              <h2 class="ficha__seccion-titulo">De qué trata</h2>
+              <p class="ficha__curatorial">David, apenas un niño, se sienta al lado de Amanda, una joven que agoniza en el hospital de un pequeño pueblo rural. Ella no es su madre. Él no es su hijo. Pero entre ambos se despliega una trama inquietante de almas rotas, campos envenenados y una familia desesperada. Distancia de rescate es una pesadilla para desvelados, una advertencia.</p>
+            </div>
+
+            <!-- Texto curatorial -->
+            <div class="ficha__bloque">
+              <h2 class="ficha__seccion-titulo">Por qué dialoga con Latinoamérica hoy</h2>
+              <p class="ficha__curatorial">«Distancia de rescate» es el vínculo invisible que mantiene a una madre unida a sus hijos, permitiéndoles cuidarlos y protegerlos a pesar de la distancia física. Representa la obsesión de los padres por calcular cuánto tiempo tardarían en proteger a sus hijos ante cualquier peligro, una alarma mental que, según la autora, nunca se apaga. La novela se clasifica dentro del género horror latinoamericano y gótico contemporáneo, destacando por su atmósfera ambigua y perturbadora, donde las vidas de dos madres se entrelazan tras la muerte de un niño por envenenamiento. La autora utiliza el entorno rural no como un idilio, sino para denunciar el abuso y la destrucción de la naturaleza. Los elementos perturbadores parecen recursos literarios, pero son una realidad cotidiana en el campo argentino vinculada al uso de pesticidas, lo que hace que la historia sea aún más aterradora por su veracidad.</p>
+            </div>
+
+            <!-- Acciones -->
+            <div class="ficha__acciones">
+              <a href="../catalogo.html" class="btn btn-secondary">
+                ← Ver catálogo completo
+              </a>
+              <a href="https://www.buscalibre.com.ar/libro-distancia-de-rescate/9789877694130/p/64595560?afiliado=5bd1144d2c1104dd1a69" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                Comprar en Buscalibre
+              </a>
+            </div>
+
+          </div>
         </div>
 
-        <!-- Información -->
-        <div class="ficha-info">
-
-          <!-- Etiqueta categoría -->
-          <span class="etiqueta-categoria">La tierra que habito</span>
-
-          <!-- Título y autora -->
-          <h1 class="ficha-titulo">Distancia de rescate</h1>
-          <p class="ficha-autora">Samanta Schweblin</p>
-
-          <!-- Metadatos -->
-          <dl class="ficha-meta">
-            <div class="meta-fila">
-              <dt>País</dt>
-              <dd>Argentina</dd>
-            </div>
-            <div class="meta-fila">
-              <dt>Año</dt>
-              <dd>2014</dd>
-            </div>
-          </dl>
-
-          <!-- Sinopsis -->
-          <div class="ficha-sinopsis">
-            <h2 class="seccion-titulo">Sinopsis</h2>
-            <p>David, apenas un niño, se sienta al lado de Amanda, una joven que agoniza en el hospital de un pequeño pueblo rural. Ella no es su madre. Él no es su hijo. Pero entre ambos se despliega una trama inquietante de almas rotas, campos envenenados y una familia desesperada.</p>
-          </div>
-
-          <!-- Por qué dialoga con Latinoamérica hoy -->
-          <div class="ficha-dialoga">
-            <h2 class="seccion-titulo">Por qué dialoga con Latinoamérica hoy</h2>
-            <p>«Distancia de rescate» es el vínculo invisible que mantiene a una madre unida a sus hijos, permitiéndoles cuidarlos y protegerlos a pesar de la distancia física. Representa la obsesión de los padres por calcular cuánto tiempo tardarían en proteger a sus hijos ante cualquier peligro, una alarma mental que, según la autora, nunca se apaga. La novela se clasifica dentro del género horror latinoamericano y gótico contemporáneo, destacando por su atmósfera ambigua y perturbadora, donde las vidas de dos madres se entrelazan tras la muerte de un niño por envenenamiento. La autora utiliza el entorno rural no como un idilio, sino para denunciar el abuso y la destrucción de la naturaleza. Los elementos perturbadores parecen recursos literarios, pero son una realidad cotidiana en el campo argentino vinculada al uso de pesticidas, lo que hace que la historia sea aún más aterradora por su veracidad.</p>
-          </div>
-
-          <!-- Acciones -->
-          <div class="ficha-acciones">
-            <a
-              href="https://www.buscalibre.com.ar/libro-distancia-de-rescate/9789877694130/p/64595560?afiliado=5bd1144d2c1104dd1a69"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn-primario"
-            >
-              Conseguir el libro
-            </a>
-            <button class="btn-secundario btn-instagram" id="btn-compartir" aria-label="Compartir en Instagram">
-              Compartir en Instagram
-            </button>
-          </div>
-
-        </div>
       </article>
-
     </div>
   </main>
 
-  <!-- Elemento oculto para generar imagen de Instagram -->
-  <div id="instagram-card" aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;width:1080px;height:1080px;">
-    <div class="ig-card-inner">
-      <div class="ig-portada">
-        <img src="../assets/portadas/distancia-de-rescate.webp" alt="" width="360" height="540">
-      </div>
-      <div class="ig-texto">
-        <p class="ig-sitio">Autoras y Latinas</p>
-        <p class="ig-categoria">La tierra que habito</p>
-        <p class="ig-titulo">Distancia de rescate</p>
-        <p class="ig-autora">Samanta Schweblin · Argentina</p>
-      </div>
-    </div>
-  </div>
-
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span class="footer-logo">Autoras y Latinas</span>
-      <nav class="footer-nav" aria-label="Enlaces del pie">
-        <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer">Instagram</a>
-      </nav>
-      <small class="footer-creditos">TIF · Licenciatura en Ciencias de la Comunicación · FSOC UBA · 2026</small>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">Autoras y Latinas</span>
+        <div class="footer__links">
+          <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">
+            Instagram
+          </a>
+          <a href="../catalogo.html">Catálogo</a>
+          <a href="../quien-soy.html">Quién soy</a>
+        </div>
+      </div>
+      <p class="footer__creditos">
+        TIF — Licenciatura en Ciencias de la Comunicación, FSOC UBA · 2026
+      </p>
     </div>
   </footer>
 
-  <script>
-    // Menú hamburguesa
-    const hamburger = document.querySelector('.nav-hamburger');
-    const navMobile = document.getElementById('nav-mobile');
-    hamburger.addEventListener('click', () => {
-      const abierto = hamburger.getAttribute('aria-expanded') === 'true';
-      hamburger.setAttribute('aria-expanded', String(!abierto));
-      navMobile.hidden = abierto;
-    });
-
-    // Botón compartir en Instagram — genera imagen con html2canvas
-    document.getElementById('btn-compartir').addEventListener('click', async () => {
-      const card = document.getElementById('instagram-card');
-      card.style.left = '0';
-      card.style.top = '0';
-      card.style.position = 'fixed';
-      card.style.zIndex = '-1';
-      try {
-        const canvas = await html2canvas(card, { scale: 1, useCORS: true, allowTaint: true });
-        const link = document.createElement('a');
-        link.download = 'autoras-y-latinas-distancia-de-rescate.png';
-        link.href = canvas.toDataURL('image/png');
-        link.click();
-      } catch (e) {
-        console.error('Error generando imagen:', e);
-      } finally {
-        card.style.left = '-9999px';
-        card.style.top = '-9999px';
-        card.style.position = 'absolute';
-        card.style.zIndex = '';
-      }
-    });
-  </script>
+  <!-- Scripts -->
+  <script src="../js/animations.js"></script>
 
 </body>
 </html>
