@@ -17,7 +17,8 @@ const CATEGORIAS_URL = {
   'cuido':          'Cuido y cuido, ¿quién me cuida a mí?',
   'arrancaron':     'Me arrancaron algo que era mío',
   'tierra':         'La tierra que habito',
-  'desaparecieron': 'Desaparecieron y se fueron'
+  'desaparecieron': 'Desaparecieron y se fueron',
+  'tranquilidad':   'Me dio tranquilidad'
 };
 
 // --- Inicialización ---
@@ -65,11 +66,13 @@ async function cargarLibros() {
 function generarFiltros() {
   const paises = [...new Set(todosLosLibros.map(l => l.pais))].sort();
 
+  // Las 5 categorías en orden de aparición en el catálogo
   const categoriasOrden = [
     'Cuido y cuido, ¿quién me cuida a mí?',
     'Me arrancaron algo que era mío',
     'La tierra que habito',
-    'Desaparecieron y se fueron'
+    'Desaparecieron y se fueron',
+    'Me dio tranquilidad'
   ];
 
   const contenedorPais = document.getElementById('filtros-pais');
@@ -155,9 +158,11 @@ function renderizarCatalogo() {
   const contador = document.getElementById('catalogo-contador');
   const librosFiltrados = filtrarLibros();
 
-  contador.textContent = librosFiltrados.length === 12
-    ? '12 libros'
-    : `${librosFiltrados.length} de 12 libros`;
+  // Total actualizado a 15 libros
+  const total = todosLosLibros.length;
+  contador.textContent = librosFiltrados.length === total
+    ? `${total} libros`
+    : `${librosFiltrados.length} de ${total} libros`;
 
   lista.innerHTML = '';
 
@@ -190,7 +195,6 @@ function crearTarjeta(libro, indice) {
   articulo.className = 'libro-card-h animar';
   articulo.setAttribute('role', 'listitem');
 
-  // Usar sinopsis para el extracto de la tarjeta
   const extracto = extraerExtracto(libro.sinopsis);
 
   articulo.innerHTML = `
