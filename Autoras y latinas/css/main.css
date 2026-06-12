@@ -28,6 +28,18 @@
   /* Hover states */
   --color-amarillo-dark: #d08a15;
 
+  /* Colores por categoría */
+  --cat-cuido:               #e1549d;
+  --cat-cuido-text:          #ffffff;
+  --cat-arrancaron:          #4a539d;
+  --cat-arrancaron-text:     #ffffff;
+  --cat-tierra:              #7c3a60;
+  --cat-tierra-text:         #ffffff;
+  --cat-desaparecieron:      #e89b21;
+  --cat-desaparecieron-text: #1a1208;
+  --cat-tranquilidad:        #8fc9c3;
+  --cat-tranquilidad-text:   #1a1208;
+
   /* Tipografías */
   --font-display: 'Bricolage Grotesque', sans-serif;
   --font-body:    'DM Sans', sans-serif;
@@ -507,6 +519,7 @@ p {
 
 /* ============================================
    FORMULARIO DE SUSCRIPCIÓN
+   (estilos mantenidos por si se reutiliza el componente)
    ============================================ */
 
 .suscripcion {
