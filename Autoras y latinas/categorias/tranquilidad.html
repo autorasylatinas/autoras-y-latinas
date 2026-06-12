@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Me dio tranquilidad — Autoras y Latinas</title>
+  <meta name="description" content="La escritura latinoamericana repone algo que el sistema destruye: el tiempo propio, la atención lenta, el espacio íntimo." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://autorasylatinas.vercel.app/categorias/tranquilidad.html" />
+  <meta property="og:title" content="Me dio tranquilidad — Autoras y Latinas" />
+  <meta property="og:description" content="La escritura latinoamericana repone algo que el sistema destruye: el tiempo propio, la atención lenta, el espacio íntimo." />
+  <meta property="og:image" content="../assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/categorias.css" />
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <a href="../index.html" class="header__logo-img" aria-label="Autoras y Latinas — Inicio">
+          <img src="../assets/logo.png" alt="Autoras y Latinas" class="header__logo-imagen" />
+        </a>
+        <nav class="header__nav" aria-label="Navegación principal">
+          <a href="../catalogo.html">Catálogo</a>
+          <a href="../quien-soy.html">Quién soy</a>
+        </nav>
+        <button class="header__hamburger" id="hamburger" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
+        <button class="header__submenu-toggle" id="submenu-toggle" aria-expanded="false">
+          Catálogo <span class="flecha" aria-hidden="true">▾</span>
+        </button>
+        <div class="header__submenu" id="submenu-categorias">
+          <a href="cuido.html">Cuido y cuido, ¿quién me cuida a mí?</a>
+          <a href="arrancaron.html">Me arrancaron algo que era mío</a>
+          <a href="tierra.html">La tierra que habito</a>
+          <a href="desaparecieron.html">Desaparecieron y se fueron</a>
+          <a href="tranquilidad.html">Me dio tranquilidad</a>
+        </div>
+        <a href="../quien-soy.html">Quién soy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="cat-hero" style="--cat-color: var(--cat-tranquilidad);">
+      <div class="container">
+        <a href="../catalogo.html" class="cat-volver">← Volver al catálogo</a>
+        <span class="cat-hero__etiqueta">Categoría</span>
+        <h1 class="cat-hero__titulo">Me dio tranquilidad</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="cat-contenido">
+
+        <article class="cat-texto animar-solo" aria-label="Texto de la categoría">
+          <p>La escritura latinoamericana no escapa del mundo que Nancy Fraser describe, sino que repone algo que este sistema destruye: el tiempo propio, la atención lenta, el espacio íntimo. Esto no es una huída del análisis, es la condición de posibilidad para seguir habitando el mundo, la puerta de entrada para las mujeres que leen lo que les presentan las grandes editoriales, pero que necesitan leer algo que dialogue con lo que viven.</p>
+          <p>Cuando surgió la idea de un "buscador de lecturas" con categorías, la primera pregunta fue "¿Por qué categorías?" y esta es la lógica de dicha decisión: que podamos encontrar lecturas que no se sientan pesadas, sino que sean un acompañamiento de lo que vivimos fuera de un libro.</p>
+          <p>Sin embargo, Bourdieu advierte que el campo intelectual es producto de un proceso histórico y que no puede disociarse de las condiciones históricas y sociales de su entorno. Es por ello que el hecho de que una obra literaria no sea un manifiesto político ni denuncie explícitamente las crisis del sistema no significa que esté aislada, sino que es una respuesta directa a las condiciones históricas de nuestro entorno. Frente a un sistema capitalista que exige hiperproductividad, velocidad y que expropia el tiempo, estas obras dialogan con su época ofreciendo el antídoto: la lentitud, el refugio y el detenimiento.</p>
+          <p>Me dio tranquilidad porque no escapan de la realidad, sino que construyen un territorio seguro dentro de ella, devolviendo a cada lectora el tiempo propio, la atención lenta y el espacio íntimo.</p>
+        </article>
+
+        <section class="cat-libros animar-solo" aria-labelledby="cat-libros-titulo">
+          <h2 class="cat-libros__titulo" id="cat-libros-titulo">Los libros</h2>
+          <div class="cat-libros__lista" id="cat-libros-lista"></div>
+        </section>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__creditos">© 2026 Autoras y Latinas</p>
+        <div class="footer__links">
+          <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
+          <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const CATEGORIA = 'Me dio tranquilidad';
+  </script>
+  <script src="../js/categoria-page.js"></script>
+  <script src="../js/animations.js"></script>
+
+</body>
+</html>

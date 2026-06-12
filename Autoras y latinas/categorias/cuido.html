@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cuido y cuido, ¿quién me cuida a mí? — Autoras y Latinas</title>
+  <meta name="description" content="El sistema económico extrae trabajo de cuidado sin reconocerlo ni remunerarlo. Tres libros que nombran lo que se da por descontado." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://autorasylatinas.vercel.app/categorias/cuido.html" />
+  <meta property="og:title" content="Cuido y cuido, ¿quién me cuida a mí? — Autoras y Latinas" />
+  <meta property="og:description" content="El sistema económico extrae trabajo de cuidado sin reconocerlo ni remunerarlo. Tres libros que nombran lo que se da por descontado." />
+  <meta property="og:image" content="../assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/categorias.css" />
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+        <a href="../index.html" class="header__logo-img" aria-label="Autoras y Latinas — Inicio">
+          <img src="../assets/logo.png" alt="Autoras y Latinas" class="header__logo-imagen" />
+        </a>
+        <nav class="header__nav" aria-label="Navegación principal">
+          <a href="../catalogo.html">Catálogo</a>
+          <a href="../quien-soy.html">Quién soy</a>
+        </nav>
+        <button class="header__hamburger" id="hamburger" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
+        <button class="header__submenu-toggle" id="submenu-toggle" aria-expanded="false">
+          Catálogo <span class="flecha" aria-hidden="true">▾</span>
+        </button>
+        <div class="header__submenu" id="submenu-categorias">
+          <a href="cuido.html">Cuido y cuido, ¿quién me cuida a mí?</a>
+          <a href="arrancaron.html">Me arrancaron algo que era mío</a>
+          <a href="tierra.html">La tierra que habito</a>
+          <a href="desaparecieron.html">Desaparecieron y se fueron</a>
+          <a href="tranquilidad.html">Me dio tranquilidad</a>
+        </div>
+        <a href="../quien-soy.html">Quién soy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero de categoría -->
+    <div class="cat-hero" style="--cat-color: var(--cat-cuido);">
+      <div class="container">
+        <a href="../catalogo.html" class="cat-volver">← Volver al catálogo</a>
+        <span class="cat-hero__etiqueta">Categoría</span>
+        <h1 class="cat-hero__titulo">Cuido y cuido, ¿quién me cuida a mí?</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="cat-contenido">
+
+        <!-- Texto curatorial -->
+        <article class="cat-texto animar-solo" aria-label="Texto de la categoría">
+          <p>Mi abuela me cuidaba todas las tardes, cuando mamá iba a trabajar. Mamá se apuraba a llegar para tener tiempo con nosotras, al mismo tiempo que ordenaba la casa, organizaba la cena y preparaba todo lo que tenía que estar listo para el día siguiente. No llegaba, siempre había una especie de desorden en una punta de la mesa, donde se acumulaban algunas cosas del día. Pero si ella nos cuidaba a nosotras, a mi hermana y a mi, ¿quién la cuidaba a ella?</p>
+          <p>Su tarea de cuidado representaba algo clave en el capitalismo: sostener un trabajo de crianza y sostén para que en el futuro nosotras seamos la fuerza de trabajo. No tuvo una remuneración, ni tampoco se le reconoció. El sistema capitalista tan solo supone que ella iba a poner su cuerpo para absorber aquel trabajo, acumulándose con su propio trabajo como docente. Fraser define la reproducción social como todas aquellas formas de cuidado, provisión e interacción que producen y mantienen a los seres humanos. Esta actividad es absolutamente necesaria para la existencia del trabajo asalariado y el funcionamiento del propio sistema capitalista que, percibe el cuerpo de las mujeres como una fábrica, que reproduce mano de obra.</p>
+          <p>En este contexto, me parece fundamental encontrar voces que la lectora pueda identificarse, poner palabras a aquello que el patriarcado le exigió que deje oculto en la esfera privada del hogar: un embarazo no deseado como expone Guadalupe Nettel en el cuento "Felina" de su libro El matrimonio de los peces rojos, cuando Alia Trabucco Zerán expone la desigualdad dentro de la burguesía chilena en Limpia, o las capas de la novela desgarradora que escribió Lorena Salazar bajo el nombre Está herida llena de peces. Estas autoras dialogan con el acto del cuidado, encontrandose en un contexto vulnerable donde se pone sobre la mesa una conversación necesaria para ponerle nombre a algo que nos impusieron sin preguntarnos.</p>
+        </article>
+
+        <!-- Libros de esta categoría -->
+        <section class="cat-libros animar-solo" aria-labelledby="cat-libros-titulo">
+          <h2 class="cat-libros__titulo" id="cat-libros-titulo">Los libros</h2>
+          <div class="cat-libros__lista" id="cat-libros-lista"></div>
+        </section>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__creditos">© 2026 Autoras y Latinas</p>
+        <div class="footer__links">
+          <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
+          <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const CATEGORIA = 'Cuido y cuido, ¿quién me cuida a mí?';
+  </script>
+  <script src="../js/categoria-page.js"></script>
+  <script src="../js/animations.js"></script>
+
+</body>
+</html>
