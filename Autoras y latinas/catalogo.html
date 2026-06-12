@@ -6,7 +6,7 @@
 
   <!-- SEO -->
   <title>Catálogo — Autoras y Latinas</title>
-  <meta name="description" content="15 libros escritos por autoras latinoamericanas. Filtrá por país y/o hacé clic en una categoría para leer su texto curatorial." />
+  <meta name="description" content="15 libros escritos por autoras latinoamericanas. Filtrá por país o hacé clic en una categoría para leer su texto curatorial." />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -49,11 +49,11 @@
           Catálogo <span class="flecha" aria-hidden="true">▾</span>
         </button>
         <div class="header__submenu" id="submenu-categorias">
-          <a href="catalogo.html?categoria=cuido">Cuido y cuido, ¿quién me cuida a mí?</a>
-          <a href="catalogo.html?categoria=arrancaron">Me arrancaron algo que era mío</a>
-          <a href="catalogo.html?categoria=tierra">La tierra que habito</a>
-          <a href="catalogo.html?categoria=desaparecieron">Desaparecieron y se fueron</a>
-          <a href="catalogo.html?categoria=tranquilidad">Me dio tranquilidad</a>
+          <a href="categorias/cuido.html">Cuido y cuido, ¿quién me cuida a mí?</a>
+          <a href="categorias/arrancaron.html">Me arrancaron algo que era mío</a>
+          <a href="categorias/tierra.html">La tierra que habito</a>
+          <a href="categorias/desaparecieron.html">Desaparecieron y se fueron</a>
+          <a href="categorias/tranquilidad.html">Me dio tranquilidad</a>
         </div>
         <a href="quien-soy.html">Quién soy</a>
       </nav>
@@ -69,7 +69,7 @@
           <div class="separador"></div>
           <h1 class="catalogo-titulo" id="catalogo-titulo">Catálogo</h1>
           <p class="catalogo-bajada">
-            15 libros escritos por autoras latinoamericanas. Filtrá por país o por categoría temática.
+            15 libros escritos por autoras latinoamericanas. Filtrá por país o hacé clic en una categoría para leer su texto curatorial.
           </p>
         </div>
 
@@ -97,7 +97,7 @@
           </div>
 
           <!-- Botones de categoría -->
-          <div class="filtros__grupo filtros__grupo--categoria" role="group" aria-label="Filtrar por categoría">
+          <div class="filtros__grupo filtros__grupo--categoria" role="group" aria-label="Navegar por categoría">
             <span class="filtros__label" id="label-categoria">Categoría</span>
             <div class="filtros__botones" id="filtros-categoria" aria-labelledby="label-categoria"></div>
           </div>
@@ -105,19 +105,6 @@
           <button class="filtros__limpiar" id="limpiar-filtros" hidden aria-label="Limpiar todos los filtros activos">
             ✕ Limpiar filtros
           </button>
-        </div>
-
-        <!-- Panel de descripción de categoría -->
-        <div
-          id="panel-categoria"
-          class="panel-categoria"
-          role="region"
-          aria-label="Descripción de categoría"
-          hidden
-        >
-          <button class="panel-categoria__cerrar" id="cerrar-panel" aria-label="Cerrar descripción de categoría">✕</button>
-          <h3 class="panel-categoria__titulo" id="panel-cat-titulo"></h3>
-          <p class="panel-categoria__texto" id="panel-cat-texto"></p>
         </div>
 
         <p class="catalogo-contador animar-solo" id="catalogo-contador" aria-live="polite" aria-atomic="true"></p>
