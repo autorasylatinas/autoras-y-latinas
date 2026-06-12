@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budín del Cielo — María Luque | Autoras y Latinas</title>
+  <meta name="description" content="Por qué Budín del Cielo de María Luque dialoga con Latinoamérica hoy.">
+  <meta property="og:title" content="Budín del Cielo — María Luque">
+  <meta property="og:description" content="Por qué Budín del Cielo de María Luque dialoga con Latinoamérica hoy.">
+  <meta property="og:image" content="../assets/portadas/budin-del-cielo.webp">
+  <meta property="og:url" content="https://autoras-y-latinas.vercel.app/libros/budin-del-cielo">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..60,700;12..60,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-logo">Autoras y Latinas</a>
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <a href="../catalogo.html">Catálogo</a>
+        <a href="../quien-soy.html">Quién soy</a>
+      </nav>
+      <button class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Menú móvil" hidden>
+      <a href="../catalogo.html">Catálogo</a>
+      <a href="../quien-soy.html">Quién soy</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="ficha-main">
+    <div class="container">
+
+      <!-- Botón volver -->
+      <a href="../catalogo.html" class="btn-volver">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Volver al catálogo
+      </a>
+
+      <!-- Tarjeta ficha -->
+      <article class="ficha-card">
+
+        <!-- Portada -->
+        <div class="ficha-portada">
+          <img
+            src="../assets/portadas/budin-del-cielo.webp"
+            alt="Portada de Budín del Cielo, de María Luque"
+            class="portada-img"
+            onerror="this.src='https://via.placeholder.com/400x600/f0ebe1/4a3f30?text=Budín+del+Cielo'"
+          >
+        </div>
+
+        <!-- Información -->
+        <div class="ficha-info">
+
+          <!-- Etiqueta categoría -->
+          <span class="etiqueta-categoria">Me dio tranquilidad</span>
+
+          <!-- Título y autora -->
+          <h1 class="ficha-titulo">Budín del Cielo</h1>
+          <p class="ficha-autora">María Luque</p>
+
+          <!-- Metadatos -->
+          <dl class="ficha-meta">
+            <div class="meta-fila">
+              <dt>País</dt>
+              <dd>Argentina</dd>
+            </div>
+            <div class="meta-fila">
+              <dt>Año</dt>
+              <dd>2025</dd>
+            </div>
+          </dl>
+
+          <!-- Sinopsis -->
+          <div class="ficha-sinopsis">
+            <h2 class="seccion-titulo">Sinopsis</h2>
+            <p>Rosa es una señora feliz. Jubilada de una de las pasiones de su vida —enseñar matemática a «sus pichoncitos» en el colegio—, vive sola en un departamento lleno de luz que da a la calle. Tiene buena mano para la cocina y disfruta de un don que no oculta a nadie: puede hablar con las flores y los pájaros.</p>
+          </div>
+
+          <!-- Por qué dialoga con Latinoamérica hoy -->
+          <div class="ficha-dialoga">
+            <h2 class="seccion-titulo">Por qué dialoga con Latinoamérica hoy</h2>
+            <p>María Luque es autora e ilustradora; durante la pandemia comenzó a observar pájaros en un parque cercano, fascinada por sus comportamientos y dinámicas, lo que luego se convertiría en un pilar fundamental de la historia. El personaje de Rosa está inspirado en su tía abuela Roma, una maestra que siempre compartía anécdotas sobre sus alumnos. Como ilustradora, hubiera sido «muy fácil» para ella hacer que su personaje fuera maestra de artes plásticas. Sin embargo, en sus proyectos le gusta investigar temas nuevos y aprender cosas que le son ajenas, por lo que eligió las matemáticas como un reto personal. El título del libro surge del recuerdo de su padre de que su tía Roma preparaba una receta llamada «Budín del cielo».</p>
+          </div>
+
+          <!-- Acciones -->
+          <div class="ficha-acciones">
+            <a
+              href="https://www.buscalibre.com.ar/libro-budin-del-cielo/9788412816099/p/63663298?afiliado=5bd1144d2c1104dd1a69"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primario"
+            >
+              Conseguir el libro
+            </a>
+            <button class="btn-secundario btn-instagram" id="btn-compartir" aria-label="Compartir en Instagram">
+              Compartir en Instagram
+            </button>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Elemento oculto para generar imagen de Instagram -->
+  <div id="instagram-card" aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;width:1080px;height:1080px;">
+    <div class="ig-card-inner">
+      <div class="ig-portada">
+        <img src="../assets/portadas/budin-del-cielo.webp" alt="" width="360" height="540">
+      </div>
+      <div class="ig-texto">
+        <p class="ig-sitio">Autoras y Latinas</p>
+        <p class="ig-categoria">Me dio tranquilidad</p>
+        <p class="ig-titulo">Budín del Cielo</p>
+        <p class="ig-autora">María Luque · Argentina</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">Autoras y Latinas</span>
+      <nav class="footer-nav" aria-label="Enlaces del pie">
+        <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+      <small class="footer-creditos">TIF · Licenciatura en Ciencias de la Comunicación · FSOC UBA · 2026</small>
+    </div>
+  </footer>
+
+  <script>
+    // Menú hamburguesa
+    const hamburger = document.querySelector('.nav-hamburger');
+    const navMobile = document.getElementById('nav-mobile');
+    hamburger.addEventListener('click', () => {
+      const abierto = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!abierto));
+      navMobile.hidden = abierto;
+    });
+
+    // Botón compartir en Instagram — genera imagen con html2canvas
+    document.getElementById('btn-compartir').addEventListener('click', async () => {
+      const card = document.getElementById('instagram-card');
+      card.style.left = '0';
+      card.style.top = '0';
+      card.style.position = 'fixed';
+      card.style.zIndex = '-1';
+      try {
+        const canvas = await html2canvas(card, { scale: 1, useCORS: true, allowTaint: true });
+        const link = document.createElement('a');
+        link.download = 'autoras-y-latinas-budin-del-cielo.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      } catch (e) {
+        console.error('Error generando imagen:', e);
+      } finally {
+        card.style.left = '-9999px';
+        card.style.top = '-9999px';
+        card.style.position = 'absolute';
+        card.style.zIndex = '';
+      }
+    });
+  </script>
+
+</body>
+</html>

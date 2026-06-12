@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Las voladoras — Mónica Ojeda | Autoras y Latinas</title>
+  <meta name="description" content="Por qué Las voladoras de Mónica Ojeda dialoga con Latinoamérica hoy.">
+  <meta property="og:title" content="Las voladoras — Mónica Ojeda">
+  <meta property="og:description" content="Por qué Las voladoras de Mónica Ojeda dialoga con Latinoamérica hoy.">
+  <meta property="og:image" content="../assets/portadas/las-voladoras.webp">
+  <meta property="og:url" content="https://autoras-y-latinas.vercel.app/libros/las-voladoras">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..60,700;12..60,800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-logo">Autoras y Latinas</a>
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <a href="../catalogo.html">Catálogo</a>
+        <a href="../quien-soy.html">Quién soy</a>
+      </nav>
+      <button class="nav-hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="nav-mobile" class="nav-mobile" aria-label="Menú móvil" hidden>
+      <a href="../catalogo.html">Catálogo</a>
+      <a href="../quien-soy.html">Quién soy</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="ficha-main">
+    <div class="container">
+
+      <!-- Botón volver -->
+      <a href="../catalogo.html" class="btn-volver">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Volver al catálogo
+      </a>
+
+      <!-- Tarjeta ficha -->
+      <article class="ficha-card">
+
+        <!-- Portada -->
+        <div class="ficha-portada">
+          <img
+            src="../assets/portadas/las-voladoras.webp"
+            alt="Portada de Las voladoras, de Mónica Ojeda"
+            class="portada-img"
+            onerror="this.src='https://via.placeholder.com/400x600/f0ebe1/4a3f30?text=Las+voladoras'"
+          >
+        </div>
+
+        <!-- Información -->
+        <div class="ficha-info">
+
+          <!-- Etiqueta categoría -->
+          <span class="etiqueta-categoria">Me arrancaron algo que era mío</span>
+
+          <!-- Título y autora -->
+          <h1 class="ficha-titulo">Las voladoras</h1>
+          <p class="ficha-autora">Mónica Ojeda</p>
+
+          <!-- Metadatos -->
+          <dl class="ficha-meta">
+            <div class="meta-fila">
+              <dt>País</dt>
+              <dd>Ecuador</dd>
+            </div>
+            <div class="meta-fila">
+              <dt>Año</dt>
+              <dd>2020</dd>
+            </div>
+          </dl>
+
+          <!-- Sinopsis -->
+          <div class="ficha-sinopsis">
+            <h2 class="seccion-titulo">Sinopsis</h2>
+            <p>Criaturas que se suben a los tejados y alzan el vuelo, una adolescente apasionada por la sangre, una profesora que recoge la cabeza de la vecina en su jardín, dos gemelas ruidistas en un festival de música experimental, mujeres que se lanzan desde lo alto de una montaña. Las voladoras reúne ocho cuentos donde la violencia y el misticismo pertenecen a un mismo plano ritual y poético.</p>
+          </div>
+
+          <!-- Por qué dialoga con Latinoamérica hoy -->
+          <div class="ficha-dialoga">
+            <h2 class="seccion-titulo">Por qué dialoga con Latinoamérica hoy</h2>
+            <p>La obra de Mónica Ojeda se destaca por su estética gótica, elementos de realismo sucio y una atmósfera que combina la mitología andina con el terror. Son ocho relatos que introducen elementos de tradición oral, fruto de una exhaustiva investigación por parte de la autora sobre mitos andinos. El paisaje andino que atraviesa cada cuento es un elemento protagonista que dota a cada relato de una atmósfera opresiva y mítica. A lo largo del libro, la geografía de los Andes —marcada por sus volcanes, montañas, cenizas y piedras— se entrelaza íntimamente con las historias de los personajes, potenciando los sentimientos de miedo, dolor y duelo. Ojeda utiliza esta geografía para profundizar en el miedo tanto mítico como real, generando un efecto de incomodidad donde lo sobrenatural y lo tangible se confunden.</p>
+          </div>
+
+          <!-- Acciones -->
+          <div class="ficha-acciones">
+            <a
+              href="https://www.buscalibre.com.ar/libro-las-voladoras/9788483932827/p/53003310?afiliado=5bd1144d2c1104dd1a69"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primario"
+            >
+              Conseguir el libro
+            </a>
+            <button class="btn-secundario btn-instagram" id="btn-compartir" aria-label="Compartir en Instagram">
+              Compartir en Instagram
+            </button>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Elemento oculto para generar imagen de Instagram -->
+  <div id="instagram-card" aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;width:1080px;height:1080px;">
+    <div class="ig-card-inner">
+      <div class="ig-portada">
+        <img src="../assets/portadas/las-voladoras.webp" alt="" width="360" height="540">
+      </div>
+      <div class="ig-texto">
+        <p class="ig-sitio">Autoras y Latinas</p>
+        <p class="ig-categoria">Me arrancaron algo que era mío</p>
+        <p class="ig-titulo">Las voladoras</p>
+        <p class="ig-autora">Mónica Ojeda · Ecuador</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">Autoras y Latinas</span>
+      <nav class="footer-nav" aria-label="Enlaces del pie">
+        <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+      <small class="footer-creditos">TIF · Licenciatura en Ciencias de la Comunicación · FSOC UBA · 2026</small>
+    </div>
+  </footer>
+
+  <script>
+    // Menú hamburguesa
+    const hamburger = document.querySelector('.nav-hamburger');
+    const navMobile = document.getElementById('nav-mobile');
+    hamburger.addEventListener('click', () => {
+      const abierto = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!abierto));
+      navMobile.hidden = abierto;
+    });
+
+    // Botón compartir en Instagram — genera imagen con html2canvas
+    document.getElementById('btn-compartir').addEventListener('click', async () => {
+      const card = document.getElementById('instagram-card');
+      card.style.left = '0';
+      card.style.top = '0';
+      card.style.position = 'fixed';
+      card.style.zIndex = '-1';
+      try {
+        const canvas = await html2canvas(card, { scale: 1, useCORS: true, allowTaint: true });
+        const link = document.createElement('a');
+        link.download = 'autoras-y-latinas-las-voladoras.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      } catch (e) {
+        console.error('Error generando imagen:', e);
+      } finally {
+        card.style.left = '-9999px';
+        card.style.top = '-9999px';
+        card.style.position = 'absolute';
+        card.style.zIndex = '';
+      }
+    });
+  </script>
+
+</body>
+</html>
