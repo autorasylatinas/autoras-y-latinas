@@ -173,9 +173,9 @@
 .libro-card__portada {
   width: 100%;
   aspect-ratio: 2 / 3;
-  object-fit: cover;
-  border-radius: var(--radius-img) var(--radius-img) 0 0;
+  object-fit: contain;
   background-color: var(--color-fondo-alt);
+  border-radius: var(--radius-img) var(--radius-img) 0 0;
 }
 
 .libro-card__portada-placeholder {
@@ -293,6 +293,37 @@
   white-space: nowrap;
 }
 
+/* Select de países */
+.filtros__select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--color-fondo);
+  border: 1.5px solid var(--color-violeta);
+  border-radius: var(--radius-tag);
+  padding: 8px 36px 8px 16px;
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  font-weight: 500;
+  color: var(--color-violeta);
+  cursor: pointer;
+  /* Flecha SVG inline en violeta */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234a539d' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  transition: border-color var(--transition-mid),
+              background-color var(--transition-mid);
+}
+
+.filtros__select:hover {
+  background-color: rgba(74, 83, 157, 0.06);
+}
+
+.filtros__select:focus {
+  outline: 2px solid var(--color-violeta);
+  outline-offset: 2px;
+}
+
+/* Botones de categoría */
 .filtro-btn {
   font-family: var(--font-body);
   font-weight: 500;
@@ -304,16 +335,49 @@
   color: var(--color-violeta);
   cursor: pointer;
   transition: background-color var(--transition-mid),
-              color var(--transition-mid);
+              color var(--transition-mid),
+              border-color var(--transition-mid);
 }
 
 .filtro-btn:hover {
   background-color: rgba(74, 83, 157, 0.1);
 }
 
+/* Estado activo genérico (fallback) */
 .filtro-btn.activo {
   background-color: var(--color-violeta);
   color: #ffffff;
+}
+
+/* Estados activos por categoría — colores específicos */
+.filtro-btn[data-valor="Cuido y cuido, ¿quién me cuida a mí?"].activo {
+  background-color: var(--cat-cuido);
+  border-color: var(--cat-cuido);
+  color: var(--cat-cuido-text);
+}
+
+.filtro-btn[data-valor="Me arrancaron algo que era mío"].activo {
+  background-color: var(--cat-arrancaron);
+  border-color: var(--cat-arrancaron);
+  color: var(--cat-arrancaron-text);
+}
+
+.filtro-btn[data-valor="La tierra que habito"].activo {
+  background-color: var(--cat-tierra);
+  border-color: var(--cat-tierra);
+  color: var(--cat-tierra-text);
+}
+
+.filtro-btn[data-valor="Desaparecieron y se fueron"].activo {
+  background-color: var(--cat-desaparecieron);
+  border-color: var(--cat-desaparecieron);
+  color: var(--cat-desaparecieron-text);
+}
+
+.filtro-btn[data-valor="Me dio tranquilidad"].activo {
+  background-color: var(--cat-tranquilidad);
+  border-color: var(--cat-tranquilidad);
+  color: var(--cat-tranquilidad-text);
 }
 
 .filtro-btn:focus-visible {
@@ -359,6 +423,127 @@
   .filtros__grupo {
     flex: 1;
   }
+}
+
+/* ============================================
+   ETIQUETAS DE CATEGORÍA — colores por categoría
+   Aplica a las tarjetas del catálogo y a las fichas
+   ============================================ */
+
+.tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: var(--radius-tag);
+  padding: 4px 12px;
+  line-height: 1.4;
+  /* Color por defecto (rosa) — se sobreescribe por data-categoria */
+  background-color: var(--color-rosa);
+  color: #ffffff;
+}
+
+.tag[data-categoria="Cuido y cuido, ¿quién me cuida a mí?"] {
+  background-color: var(--cat-cuido);
+  color: var(--cat-cuido-text);
+}
+
+.tag[data-categoria="Me arrancaron algo que era mío"] {
+  background-color: var(--cat-arrancaron);
+  color: var(--cat-arrancaron-text);
+}
+
+.tag[data-categoria="La tierra que habito"] {
+  background-color: var(--cat-tierra);
+  color: var(--cat-tierra-text);
+}
+
+.tag[data-categoria="Desaparecieron y se fueron"] {
+  background-color: var(--cat-desaparecieron);
+  color: var(--cat-desaparecieron-text);
+}
+
+.tag[data-categoria="Me dio tranquilidad"] {
+  background-color: var(--cat-tranquilidad);
+  color: var(--cat-tranquilidad-text);
+}
+
+/* ============================================
+   PANEL DE DESCRIPCIÓN DE CATEGORÍA
+   Aparece al tocar un botón de categoría
+   ============================================ */
+
+.panel-categoria {
+  position: relative;
+  background-color: var(--color-fondo-alt);
+  border-left: 3px solid var(--color-rosa); /* se sobreescribe por JS */
+  border-radius: var(--radius-card);
+  padding: 20px 24px 20px 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: var(--space-4);
+  animation: entradaPanel 300ms var(--ease-entrada) forwards;
+}
+
+.panel-categoria[hidden] {
+  display: none;
+}
+
+@keyframes entradaPanel {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.panel-categoria__cerrar {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--color-texto-sec);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-mid),
+              color var(--transition-mid);
+}
+
+.panel-categoria__cerrar:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: var(--color-texto);
+}
+
+.panel-categoria__cerrar:focus-visible {
+  outline: 2px solid var(--color-violeta);
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
+.panel-categoria__titulo {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  font-weight: 700;
+  color: var(--color-texto);
+  margin-bottom: var(--space-2);
+  padding-right: 32px; /* espacio para el botón X */
+  letter-spacing: -0.01em;
+}
+
+.panel-categoria__texto {
+  font-size: var(--fs-body);
+  line-height: 1.65;
+  color: var(--color-texto-sec);
+  max-width: 70ch;
 }
 
 /* ============================================
@@ -718,12 +903,16 @@
   width: 80px;
   flex-shrink: 0;
   background-color: var(--color-fondo-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Portadas completas, sin recorte */
 .libro-card-h__portada {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
