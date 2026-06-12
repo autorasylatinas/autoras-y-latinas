@@ -3,33 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
   <title>Esta herida llena de peces — Lorena Salazar Meza · Autoras y Latinas</title>
-  <meta name="description" content="Esta herida llena de peces de Lorena Salazar Meza (Colombia, 2021). En Quibdó, una madre y su niño se embarcan en una canoa y comienzan un viaje hacia el norte por el Atrato. Con el correr del río, se revela el verdade…" />
-
-  <!-- Open Graph -->
+  <meta name="description" content="Esta herida llena de peces de Lorena Salazar Meza (Colombia). Una madre y su hijo recorren el río Atrato en una novela que convierte la tragedia en memoria colectiva." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://autorasylatinas.com/libros/esta-herida-llena-de-peces.html" />
   <meta property="og:title" content="Esta herida llena de peces — Lorena Salazar Meza · Autoras y Latinas" />
-  <meta property="og:description" content="Esta herida llena de peces de Lorena Salazar Meza. En Quibdó, una madre y su niño se embarcan en una canoa y comienzan un viaje hacia el norte por el Atrato. Con el correr del río, se revela el verdade…" />
+  <meta property="og:description" content="Esta herida llena de peces de Lorena Salazar Meza. Una madre y su hijo recorren el río Atrato en una novela que convierte la tragedia en memoria colectiva." />
   <meta property="og:image" content="../assets/portadas/esta-herida-llena-de-peces.webp" />
   <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/components.css" />
   <link rel="stylesheet" href="../css/animations.css" />
   <link rel="stylesheet" href="../css/layout.css" />
 </head>
 <body>
-
-  <!-- HEADER -->
   <header class="header" role="banner">
     <div class="container">
       <div class="header__inner">
@@ -40,16 +30,8 @@
           <a href="../catalogo.html">Catálogo</a>
           <a href="../quien-soy.html">Quién soy</a>
         </nav>
-        <button
-          class="header__hamburger"
-          id="hamburger"
-          aria-expanded="false"
-          aria-controls="menu-mobile"
-          aria-label="Abrir menú"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="header__hamburger" id="hamburger" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
         </button>
       </div>
       <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
@@ -57,95 +39,61 @@
           Catálogo <span class="flecha" aria-hidden="true">▾</span>
         </button>
         <div class="header__submenu" id="submenu-categorias">
-          <a href="../catalogo.html?categoria=cuido">Cuido y cuido, ¿quién me cuida a mí?</a>
-          <a href="../catalogo.html?categoria=arrancaron">Me arrancaron algo que era mío</a>
-          <a href="../catalogo.html?categoria=tierra">La tierra que habito</a>
-          <a href="../catalogo.html?categoria=desaparecieron">Desaparecieron y se fueron</a>
-          <a href="../catalogo.html?categoria=tranquilidad">Me dio tranquilidad</a>
+          <a href="../categorias/cuido.html">Cuido y cuido, ¿quién me cuida a mí?</a>
+          <a href="../categorias/arrancaron.html">Me arrancaron algo que era mío</a>
+          <a href="../categorias/tierra.html">La tierra que habito</a>
+          <a href="../categorias/desaparecieron.html">Desaparecieron y se fueron</a>
+          <a href="../categorias/tranquilidad.html">Me dio tranquilidad</a>
         </div>
         <a href="../quien-soy.html">Quién soy</a>
       </nav>
     </div>
   </header>
-
-  <!-- CONTENIDO PRINCIPAL -->
   <main>
     <div class="container">
       <article class="ficha" aria-labelledby="ficha-titulo">
-
-        <!-- Botón volver -->
-        <a href="../catalogo.html" class="ficha__volver animar-solo">
-          ← Volver al catálogo
-        </a>
-
-        <!-- Layout interno: portada + datos -->
+        <a href="../catalogo.html" class="ficha__volver animar-solo">← Volver al catálogo</a>
         <div class="ficha__contenido animar-solo">
-
-          <!-- Portada -->
           <div class="ficha__portada-wrap">
-            <img
-              class="ficha__portada"
-              src="../assets/portadas/esta-herida-llena-de-peces.webp"
-              alt="Portada de Esta herida llena de peces de Lorena Salazar Meza"
-              loading="eager"
-            />
+            <img class="ficha__portada" src="../assets/portadas/esta-herida-llena-de-peces.webp" alt="Portada de Esta herida llena de peces de Lorena Salazar Meza" loading="eager" />
           </div>
-
-          <!-- Datos del libro -->
           <div class="ficha__datos">
-
             <div class="ficha__tag">
-              <span class="tag">Cuido y cuido, ¿quién me cuida a mí?</span>
+              <span class="tag" data-categoria="Cuido y cuido, ¿quién me cuida a mí?">Cuido y cuido, ¿quién me cuida a mí?</span>
             </div>
-
             <h1 class="ficha__titulo" id="ficha-titulo">Esta herida llena de peces</h1>
             <p class="ficha__autora">Lorena Salazar Meza</p>
-            <p class="ficha__meta">Colombia · 2021</p>
-
-            <!-- Sinopsis -->
+            <p class="ficha__meta">Colombia</p>
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">De qué trata</h2>
-              <p class="ficha__curatorial">En Quibdó, una madre y su niño se embarcan en una canoa y comienzan un viaje hacia el norte por el Atrato. Con el correr del río, se revela el verdadero motivo del viaje: el encuentro con la madre biológica del niño. Pero el viaje resulta ser, también, el encuentro con el miedo y con un destino trágico. Esta herida llena de peces es una novela delicada y salvaje, que nos lleva de viaje por el Chocó, nos traslada a la selva colombiana y nos mece como el río a la canoa.</p>
+              <p class="ficha__curatorial">Una madre y su hijo recorren el río Atrato. El río es al mismo tiempo línea de tiempo y estructura narrativa. La novela convierte un hecho real trágico de Quibdó en memoria colectiva, desde la emoción y la indignación.</p>
             </div>
-
-            <!-- Texto curatorial -->
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">Por qué dialoga con Latinoamérica hoy</h2>
-              <p class="ficha__curatorial">Esta obra nació como un proyecto final de una maestría en España que realizó la autora, donde se apoya de la metáfora del río como línea de tiempo. El recorrido que realizan una madre y su hijo por el río Atrato es también una estructura narrativa que guía el avance de los acontecimientos. Hablando sobre el final del libro, este se basa en un hecho real trágico de Quibdó que su autora necesitaba integrar no como una crónica, sino desde la emoción y la indignación, para que no fuera simplemente una noticia olvidada. Ella siente una profunda rabia de cómo los medios de comunicación cubren estos sucesos: mencionados una vez al año, provocando una indignación momentánea que se olvida rápidamente. El impacto que quiere lograr es que la lectora conecte con la tragedia a un nivel más profundo y duradero.</p>
+              <p class="ficha__curatorial">Esta obra nació como un proyecto final de una maestría en España que realizó la autora, donde se apoya de la metáfora del río como línea de tiempo. El recorrido que realizan una madre y su hijo por el río Atrato es también una estructura narrativa que guía el avance de los acontecimientos.</p>
+              <p class="ficha__curatorial">Hablando sobre el final del libro, este se basa en un hecho real trágico de Quibdó que su autora necesitaba integrar no como una crónica, sino desde la emoción y la indignación, para que no fuera simplemente una noticia olvidada. Ella siente una profunda rabia de cómo los medios de comunicación cubren estos sucesos: mencionados una vez al año, provocando una indignación momentánea que se olvida rápidamente. El impacto que quiere lograr es que la lectora conecte con la tragedia a un nivel más profundo y duradero.</p>
+              <p class="ficha__curatorial">El título de la novela es propuesto por la editora de Lorena Salazar y confirmado por la misma autora, ya que conecta profundamente con la esencia de la historia.</p>
             </div>
-
-            <!-- Acciones -->
             <div class="ficha__acciones">
-              <a href="../catalogo.html" class="btn btn-secondary">
-                ← Ver catálogo completo
-              </a>
-              <a href="https://www.buscalibre.com.ar/libro-esta-herida-llena-de-peces/9789874756664/p/54197448?afiliado=5bd1144d2c1104dd1a69" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Comprar en Buscalibre
-              </a>
+              <a href="../catalogo.html" class="btn btn-secondary">← Ver catálogo completo</a>
+              <a href="https://www.buscalibre.com.ar" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar en Buscalibre</a>
             </div>
-
           </div>
         </div>
-
       </article>
     </div>
   </main>
-
-  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__inner">
-      <p class="footer__creditos">© 2026 Autoras y Latinas</p>
-      <div class="footer__links">
-        <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
-        <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__creditos">© 2026 Autoras y Latinas</p>
+        <div class="footer__links">
+          <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
+          <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-
-  <!-- Scripts -->
+  </footer>
   <script src="../js/animations.js"></script>
-
 </body>
 </html>

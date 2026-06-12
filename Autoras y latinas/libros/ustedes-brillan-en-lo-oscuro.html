@@ -3,33 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
   <title>Ustedes brillan en lo oscuro — Liliana Colanzi · Autoras y Latinas</title>
-  <meta name="description" content="Ustedes brillan en lo oscuro de Liliana Colanzi (Bolivia, 2022). Los cuentos de Liliana Colanzi exploran diversas formas de narrar el tiempo: como el viaje geológico en una cueva, la búsqueda de las raíces histórica…" />
-
-  <!-- Open Graph -->
+  <meta name="description" content="Ustedes brillan en lo oscuro de Liliana Colanzi (Bolivia). Seis cuentos que abordan la ecología desde una perspectiva distópica y de ciencia ficción." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://autorasylatinas.com/libros/ustedes-brillan-en-lo-oscuro.html" />
   <meta property="og:title" content="Ustedes brillan en lo oscuro — Liliana Colanzi · Autoras y Latinas" />
-  <meta property="og:description" content="Ustedes brillan en lo oscuro de Liliana Colanzi. Los cuentos de Liliana Colanzi exploran diversas formas de narrar el tiempo: como el viaje geológico en una cueva, la búsqueda de las raíces histórica…" />
+  <meta property="og:description" content="Ustedes brillan en lo oscuro de Liliana Colanzi. Seis cuentos que abordan la ecología desde una perspectiva distópica." />
   <meta property="og:image" content="../assets/portadas/ustedes-brillan-en-lo-oscuro.webp" />
   <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/components.css" />
   <link rel="stylesheet" href="../css/animations.css" />
   <link rel="stylesheet" href="../css/layout.css" />
 </head>
 <body>
-
-  <!-- HEADER -->
   <header class="header" role="banner">
     <div class="container">
       <div class="header__inner">
@@ -40,16 +30,8 @@
           <a href="../catalogo.html">Catálogo</a>
           <a href="../quien-soy.html">Quién soy</a>
         </nav>
-        <button
-          class="header__hamburger"
-          id="hamburger"
-          aria-expanded="false"
-          aria-controls="menu-mobile"
-          aria-label="Abrir menú"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="header__hamburger" id="hamburger" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
         </button>
       </div>
       <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
@@ -57,95 +39,61 @@
           Catálogo <span class="flecha" aria-hidden="true">▾</span>
         </button>
         <div class="header__submenu" id="submenu-categorias">
-          <a href="../catalogo.html?categoria=cuido">Cuido y cuido, ¿quién me cuida a mí?</a>
-          <a href="../catalogo.html?categoria=arrancaron">Me arrancaron algo que era mío</a>
-          <a href="../catalogo.html?categoria=tierra">La tierra que habito</a>
-          <a href="../catalogo.html?categoria=desaparecieron">Desaparecieron y se fueron</a>
-          <a href="../catalogo.html?categoria=tranquilidad">Me dio tranquilidad</a>
+          <a href="../categorias/cuido.html">Cuido y cuido, ¿quién me cuida a mí?</a>
+          <a href="../categorias/arrancaron.html">Me arrancaron algo que era mío</a>
+          <a href="../categorias/tierra.html">La tierra que habito</a>
+          <a href="../categorias/desaparecieron.html">Desaparecieron y se fueron</a>
+          <a href="../categorias/tranquilidad.html">Me dio tranquilidad</a>
         </div>
         <a href="../quien-soy.html">Quién soy</a>
       </nav>
     </div>
   </header>
-
-  <!-- CONTENIDO PRINCIPAL -->
   <main>
     <div class="container">
       <article class="ficha" aria-labelledby="ficha-titulo">
-
-        <!-- Botón volver -->
-        <a href="../catalogo.html" class="ficha__volver animar-solo">
-          ← Volver al catálogo
-        </a>
-
-        <!-- Layout interno: portada + datos -->
+        <a href="../catalogo.html" class="ficha__volver animar-solo">← Volver al catálogo</a>
         <div class="ficha__contenido animar-solo">
-
-          <!-- Portada -->
           <div class="ficha__portada-wrap">
-            <img
-              class="ficha__portada"
-              src="../assets/portadas/ustedes-brillan-en-lo-oscuro.webp"
-              alt="Portada de Ustedes brillan en lo oscuro de Liliana Colanzi"
-              loading="eager"
-            />
+            <img class="ficha__portada" src="../assets/portadas/ustedes-brillan-en-lo-oscuro.webp" alt="Portada de Ustedes brillan en lo oscuro de Liliana Colanzi" loading="eager" />
           </div>
-
-          <!-- Datos del libro -->
           <div class="ficha__datos">
-
             <div class="ficha__tag">
-              <span class="tag">La tierra que habito</span>
+              <span class="tag" data-categoria="La tierra que habito">La tierra que habito</span>
             </div>
-
             <h1 class="ficha__titulo" id="ficha-titulo">Ustedes brillan en lo oscuro</h1>
             <p class="ficha__autora">Liliana Colanzi</p>
-            <p class="ficha__meta">Bolivia · 2022</p>
-
-            <!-- Sinopsis -->
+            <p class="ficha__meta">Bolivia</p>
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">De qué trata</h2>
-              <p class="ficha__curatorial">Los cuentos de Liliana Colanzi exploran diversas formas de narrar el tiempo: como el viaje geológico en una cueva, la búsqueda de las raíces históricas de la explotación del caucho en las ruinas de un pueblo amazónico, o la temporalidad dislocada de una colonia religiosa. En este libro la radiación es un agente invisible que afecta a los jóvenes que viven cerca de una central nuclear andina y a los recolectores de chatarra de una ciudad brasileña.</p>
+              <p class="ficha__curatorial">Seis cuentos ganadores del VII Premio Ribera del Duero. El territorio es el protagonista: una cueva que abarca desde la prehistoria hasta el futuro, ciudades latinoamericanas post-apocalípticas, el daño sobre los territorios más que sobre los cuerpos.</p>
             </div>
-
-            <!-- Texto curatorial -->
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">Por qué dialoga con Latinoamérica hoy</h2>
-              <p class="ficha__curatorial">Ganadora del VII Premio Ribera del Duero, esta obra consta de seis cuentos. En «Los ojos más verdes» aborda la aspiración de ciertos sectores a estándares europeos y el rechazo a lo indígena. La autora utiliza la literatura para exponer las desigualdades y los problemas subyacentes de su propio contexto cultural. El cuento «La cueva» destaca porque el protagonista es un espacio físico: una cueva. La historia se construye mediante escenas que ocurren en un mismo lugar pero en distintas épocas, abarcando desde la prehistoria hasta el futuro. Aborda la ecología desde una perspectiva distópica y de ciencia ficción, enfocándose en las consecuencias del descuido humano sobre el entorno. En el cuento «Atomito» presenta una ciudad latinoamericana marcada por un futuro decadente, con basureros de chatarra y un ambiente post-apocalíptico tras la instalación de una central nuclear.</p>
+              <p class="ficha__curatorial">Ganadora del VII Premio Ribera del Duero, esta obra consta de seis cuentos. En Los ojos más verdes aborda la aspiración de ciertos sectores a estándares europeos y el rechazo a lo indígena. La autora utiliza la literatura para exponer las desigualdades y los problemas subyacentes de su propio contexto cultural, reflejando en cuentos como Ustedes brillan en lo oscuro, cuento que da nombre al libro, la precariedad y el descuido institucional hacia las poblaciones vulnerables.</p>
+              <p class="ficha__curatorial">El cuento La cueva destaca porque el protagonista es un espacio físico: una cueva. La historia se construye mediante escenas que ocurren en un mismo lugar pero en distintas épocas, abarcando desde la prehistoria hasta el futuro.</p>
+              <p class="ficha__curatorial">Aborda la ecología desde una perspectiva distópica y de ciencia ficción, enfocándose en las consecuencias del descuido humano sobre el entorno. En el cuento Atomito presenta una ciudad latinoamericana marcada por un futuro decadente, donde se describe la existencia de basureros de chatarra y un ambiente post-apocalíptico tras la instalación de una central nuclear.</p>
             </div>
-
-            <!-- Acciones -->
             <div class="ficha__acciones">
-              <a href="../catalogo.html" class="btn btn-secondary">
-                ← Ver catálogo completo
-              </a>
-              <a href="https://www.buscalibre.com.ar/libro-ustedes-brillan-en-lo-oscuro/9788483933145/p/54133190?afiliado=5bd1144d2c1104dd1a69" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Comprar en Buscalibre
-              </a>
+              <a href="../catalogo.html" class="btn btn-secondary">← Ver catálogo completo</a>
+              <a href="https://www.buscalibre.com.ar" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar en Buscalibre</a>
             </div>
-
           </div>
         </div>
-
       </article>
     </div>
   </main>
-
-  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__inner">
-      <p class="footer__creditos">© 2026 Autoras y Latinas</p>
-      <div class="footer__links">
-        <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
-        <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__creditos">© 2026 Autoras y Latinas</p>
+        <div class="footer__links">
+          <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
+          <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-
-  <!-- Scripts -->
+  </footer>
   <script src="../js/animations.js"></script>
-
 </body>
 </html>

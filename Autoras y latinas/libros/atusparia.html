@@ -3,33 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
   <title>Atusparia — Gabriela Wiener · Autoras y Latinas</title>
-  <meta name="description" content="Atusparia de Gabriela Wiener (Perú, 2024). Una política de izquierda víctima del lawfare se encuentra prisionera en una cárcel de alta seguridad en las entrañas de la selva amazónica. Se hace l…" />
-
-  <!-- Open Graph -->
+  <meta name="description" content="Atusparia de Gabriela Wiener (Perú). La historia política de una mujer líder de izquierda, desde su formación en los años 80 hasta un desenlace polémico." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://autorasylatinas.com/libros/atusparia.html" />
   <meta property="og:title" content="Atusparia — Gabriela Wiener · Autoras y Latinas" />
-  <meta property="og:description" content="Atusparia de Gabriela Wiener. Una política de izquierda víctima del lawfare se encuentra prisionera en una cárcel de alta seguridad en las entrañas de la selva amazónica. Se hace l…" />
+  <meta property="og:description" content="Atusparia de Gabriela Wiener. La historia política de una mujer líder de izquierda desde su formación en los años 80." />
   <meta property="og:image" content="../assets/portadas/atusparia.webp" />
   <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/components.css" />
   <link rel="stylesheet" href="../css/animations.css" />
   <link rel="stylesheet" href="../css/layout.css" />
 </head>
 <body>
-
-  <!-- HEADER -->
   <header class="header" role="banner">
     <div class="container">
       <div class="header__inner">
@@ -40,16 +30,8 @@
           <a href="../catalogo.html">Catálogo</a>
           <a href="../quien-soy.html">Quién soy</a>
         </nav>
-        <button
-          class="header__hamburger"
-          id="hamburger"
-          aria-expanded="false"
-          aria-controls="menu-mobile"
-          aria-label="Abrir menú"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="header__hamburger" id="hamburger" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
         </button>
       </div>
       <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
@@ -57,94 +39,61 @@
           Catálogo <span class="flecha" aria-hidden="true">▾</span>
         </button>
         <div class="header__submenu" id="submenu-categorias">
-          <a href="../catalogo.html?categoria=cuido">Cuido y cuido, ¿quién me cuida a mí?</a>
-          <a href="../catalogo.html?categoria=arrancaron">Me arrancaron algo que era mío</a>
-          <a href="../catalogo.html?categoria=tierra">La tierra que habito</a>
-          <a href="../catalogo.html?categoria=desaparecieron">Desaparecieron y se fueron</a>
-          <a href="../catalogo.html?categoria=tranquilidad">Me dio tranquilidad</a>
+          <a href="../categorias/cuido.html">Cuido y cuido, ¿quién me cuida a mí?</a>
+          <a href="../categorias/arrancaron.html">Me arrancaron algo que era mío</a>
+          <a href="../categorias/tierra.html">La tierra que habito</a>
+          <a href="../categorias/desaparecieron.html">Desaparecieron y se fueron</a>
+          <a href="../categorias/tranquilidad.html">Me dio tranquilidad</a>
         </div>
         <a href="../quien-soy.html">Quién soy</a>
       </nav>
     </div>
   </header>
-
-  <!-- CONTENIDO PRINCIPAL -->
   <main>
     <div class="container">
       <article class="ficha" aria-labelledby="ficha-titulo">
-
-        <!-- Botón volver -->
-        <a href="../catalogo.html" class="ficha__volver animar-solo">
-          ← Volver al catálogo
-        </a>
-
-        <!-- Layout interno: portada + datos -->
+        <a href="../catalogo.html" class="ficha__volver animar-solo">← Volver al catálogo</a>
         <div class="ficha__contenido animar-solo">
-
-          <!-- Portada -->
           <div class="ficha__portada-wrap">
-            <img
-              class="ficha__portada"
-              src="../assets/portadas/atusparia.webp"
-              alt="Portada de Atusparia de Gabriela Wiener"
-              loading="eager"
-            />
+            <img class="ficha__portada" src="../assets/portadas/atusparia.webp" alt="Portada de Atusparia de Gabriela Wiener" loading="eager" />
           </div>
-
-          <!-- Datos del libro -->
           <div class="ficha__datos">
-
             <div class="ficha__tag">
-              <span class="tag">Desaparecieron y se fueron</span>
+              <span class="tag" data-categoria="Desaparecieron y se fueron">Desaparecieron y se fueron</span>
             </div>
-
             <h1 class="ficha__titulo" id="ficha-titulo">Atusparia</h1>
             <p class="ficha__autora">Gabriela Wiener</p>
-            <p class="ficha__meta">Perú · 2024</p>
-
-            <!-- Sinopsis -->
+            <p class="ficha__meta">Perú</p>
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">De qué trata</h2>
-              <p class="ficha__curatorial">Una política de izquierda víctima del lawfare se encuentra prisionera en una cárcel de alta seguridad en las entrañas de la selva amazónica. Se hace llamar Atusparia, como el líder de la resistencia indígena peruana del siglo XIX. El amor en tiempos del capitalismo la engulle en una espiral que la alejarán de los viejos ideales de su educación hasta que el llamado de sus raíces la llevan a mimetizarse con el héroe revolucionario de su infancia.</p>
+              <p class="ficha__curatorial">La historia política de una mujer líder de izquierda, desde su formación durante los años 80 hasta un desenlace polémico. Wiener se inspira en su experiencia escolar en un colegio fundado por personas que estudiaron en la Unión Soviética, donde se fusionaba la educación científica y socialista con el indigenismo.</p>
             </div>
-
-            <!-- Texto curatorial -->
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">Por qué dialoga con Latinoamérica hoy</h2>
-              <p class="ficha__curatorial">El libro narra la historia política de una mujer, líder de izquierda, desde su formación durante los años 80 hasta un desenlace polémico. Wiener se inspiró en su propia experiencia escolar en un colegio fundado por personas que estudiaron en la Unión Soviética, donde se fusionaba la educación científica y socialista con el indigenismo y la realidad social peruana. La autora critica a las historias de izquierda que suelen ser machistas y a menudo borran el papel fundamental de las mujeres en la logística, el sostenimiento y la resistencia política. No solo denuncia que la criminalización de la protesta social y de los líderes indígenas no es racismo simple, sino estructural; también sostiene que el Estado ha utilizado históricamente el lawfare para desactivar resistencias y perseguir a quienes defienden sus territorios frente al extractivismo multinacional.</p>
+              <p class="ficha__curatorial">El libro narra la historia política de una mujer, líder de izquierda, desde su formación durante los años 80 hasta un desenlace polémico. Wiener se inspiró en su propia experiencia escolar en un colegio fundado por personas que estudiaron en la Unión Soviética, donde se fusionaba la educación científica y socialista con el indigenismo y la realidad social peruana.</p>
+              <p class="ficha__curatorial">La autora critica de esta forma a las historias de izquierda que suelen ser machistas y a menudo borran el papel fundamental de las mujeres en la logística, el sostenimiento y la resistencia política.</p>
+              <p class="ficha__curatorial">No solo denuncia que la criminalización de la protesta social y de los líderes indígenas no es una herramienta compleja, sino racismo; también sostiene que el Estado ha utilizado históricamente la ley (a través del llamado lawfare) para desactivar resistencias y perseguir a quienes defienden sus territorios frente al extractivismo multinacional.</p>
             </div>
-
-            <!-- Acciones -->
             <div class="ficha__acciones">
-              <a href="../catalogo.html" class="btn btn-secondary">
-                ← Ver catálogo completo
-              </a>
-              <a href="https://www.buscalibre.com.ar/libro-atusparia/9789877693829/p/63073859?afiliado=5bd1144d2c1104dd1a69" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Comprar en Buscalibre
-              </a>
+              <a href="../catalogo.html" class="btn btn-secondary">← Ver catálogo completo</a>
+              <a href="https://www.buscalibre.com.ar" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar en Buscalibre</a>
             </div>
-
           </div>
         </div>
-
       </article>
     </div>
   </main>
-
-  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__inner">
-      <p class="footer__creditos">© 2026 Autoras y Latinas</p>
-      <div class="footer__links">
-        <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
-        <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__creditos">© 2026 Autoras y Latinas</p>
+        <div class="footer__links">
+          <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
+          <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-  <!-- Scripts -->
+  </footer>
   <script src="../js/animations.js"></script>
-
 </body>
 </html>

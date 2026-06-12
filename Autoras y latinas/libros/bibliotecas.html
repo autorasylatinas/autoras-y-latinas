@@ -3,33 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
-  <title>Bibliotecas — Editorial Godot · Autoras y Latinas</title>
-  <meta name="description" content="Bibliotecas de AA.VV. (Editorial Godot) (Argentina, 2023). ¿Qué define una biblioteca? ¿Hay algo que podamos decir que es una biblioteca? Con este libro nos vamos a dar cuenta de que no hay una definición únic…" />
-
-  <!-- Open Graph -->
+  <title>Bibliotecas — Varias autoras · Autoras y Latinas</title>
+  <meta name="description" content="Bibliotecas, publicado por Editorial Godot. Historias personales detrás de las colecciones de libros de destacados escritores latinoamericanos." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://autorasylatinas.com/libros/bibliotecas.html" />
-  <meta property="og:title" content="Bibliotecas — AA.VV. (Editorial Godot) · Autoras y Latinas" />
-  <meta property="og:description" content="Bibliotecas de AA.VV. (Editorial Godot). ¿Qué define una biblioteca? ¿Hay algo que podamos decir que es una biblioteca? Con este libro nos vamos a dar cuenta de que no hay una definición únic…" />
+  <meta property="og:title" content="Bibliotecas — Varias autoras · Autoras y Latinas" />
+  <meta property="og:description" content="Bibliotecas, Editorial Godot. Historias personales detrás de las colecciones de libros de escritores latinoamericanos." />
   <meta property="og:image" content="../assets/portadas/bibliotecas.webp" />
   <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/components.css" />
   <link rel="stylesheet" href="../css/animations.css" />
   <link rel="stylesheet" href="../css/layout.css" />
 </head>
 <body>
-
-  <!-- HEADER -->
   <header class="header" role="banner">
     <div class="container">
       <div class="header__inner">
@@ -40,16 +30,8 @@
           <a href="../catalogo.html">Catálogo</a>
           <a href="../quien-soy.html">Quién soy</a>
         </nav>
-        <button
-          class="header__hamburger"
-          id="hamburger"
-          aria-expanded="false"
-          aria-controls="menu-mobile"
-          aria-label="Abrir menú"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="header__hamburger" id="hamburger" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
         </button>
       </div>
       <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
@@ -57,94 +39,62 @@
           Catálogo <span class="flecha" aria-hidden="true">▾</span>
         </button>
         <div class="header__submenu" id="submenu-categorias">
-          <a href="../catalogo.html?categoria=cuido">Cuido y cuido, ¿quién me cuida a mí?</a>
-          <a href="../catalogo.html?categoria=arrancaron">Me arrancaron algo que era mío</a>
-          <a href="../catalogo.html?categoria=tierra">La tierra que habito</a>
-          <a href="../catalogo.html?categoria=desaparecieron">Desaparecieron y se fueron</a>
-          <a href="../catalogo.html?categoria=tranquilidad">Me dio tranquilidad</a>
+          <a href="../categorias/cuido.html">Cuido y cuido, ¿quién me cuida a mí?</a>
+          <a href="../categorias/arrancaron.html">Me arrancaron algo que era mío</a>
+          <a href="../categorias/tierra.html">La tierra que habito</a>
+          <a href="../categorias/desaparecieron.html">Desaparecieron y se fueron</a>
+          <a href="../categorias/tranquilidad.html">Me dio tranquilidad</a>
         </div>
         <a href="../quien-soy.html">Quién soy</a>
       </nav>
     </div>
   </header>
-
-  <!-- CONTENIDO PRINCIPAL -->
   <main>
     <div class="container">
       <article class="ficha" aria-labelledby="ficha-titulo">
-
-        <!-- Botón volver -->
-        <a href="../catalogo.html" class="ficha__volver animar-solo">
-          ← Volver al catálogo
-        </a>
-
-        <!-- Layout interno: portada + datos -->
+        <a href="../catalogo.html" class="ficha__volver animar-solo">← Volver al catálogo</a>
         <div class="ficha__contenido animar-solo">
-
-          <!-- Portada -->
           <div class="ficha__portada-wrap">
-            <img
-              class="ficha__portada"
-              src="../assets/portadas/bibliotecas.webp"
-              alt="Portada de Bibliotecas de AA.VV. (Editorial Godot)"
-              loading="eager"
-            />
+            <img class="ficha__portada" src="../assets/portadas/bibliotecas.webp" alt="Portada de Bibliotecas, Editorial Godot" loading="eager" />
           </div>
-
-          <!-- Datos del libro -->
           <div class="ficha__datos">
-
             <div class="ficha__tag">
-              <span class="tag">Me dio tranquilidad</span>
+              <span class="tag" data-categoria="Me dio tranquilidad">Me dio tranquilidad</span>
             </div>
-
             <h1 class="ficha__titulo" id="ficha-titulo">Bibliotecas</h1>
-            <p class="ficha__autora">AA.VV. (Editorial Godot)</p>
-            <p class="ficha__meta">Argentina · 2023</p>
-
-            <!-- Sinopsis -->
+            <p class="ficha__autora">Varias autoras</p>
+            <p class="ficha__meta">Editorial Godot</p>
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">De qué trata</h2>
-              <p class="ficha__curatorial">¿Qué define una biblioteca? ¿Hay algo que podamos decir que es una biblioteca? Con este libro nos vamos a dar cuenta de que no hay una definición única. Están quienes fusionan sus bibliotecas al casarse y quienes prefieren mantenerlas separadas. También hay bibliotecas inmateriales: libros leídos pero no acumulados, desperdigados por el universo.</p>
+              <p class="ficha__curatorial">Una obra publicada por Ediciones Godot para celebrar sus 15 años de trayectoria y su obra número 200. Escritores latinoamericanos —Katya Adaui, Selva Almada, Jazmina Barrera, Jorge Carrión y más— cuentan las historias personales detrás de sus colecciones de libros.</p>
             </div>
-
-            <!-- Texto curatorial -->
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">Por qué dialoga con Latinoamérica hoy</h2>
-              <p class="ficha__curatorial">Este libro es una obra publicada por Ediciones Godot para celebrar sus 15 años de trayectoria y su obra número 200. Explora las historias personales detrás de las colecciones de libros de destacados escritores latinoamericanos. Más allá de cómo se organizan los libros, el libro se enfoca en las experiencias humanas relacionadas con las bibliotecas: pérdida de libros durante separaciones, la unión de bibliotecas al convivir en pareja, y curiosidades personales como la de un autor que perdió su «escondite». También explora el concepto de bibliotecas mentales: esos libros que ya no se poseen físicamente, pero que permanecen en la memoria y sirven de referencia a la hora de escribir. El libro incluye contribuciones de autoras como Katya Adaui, Selva Almada, Jazmina Barrera, Mercedes Halfon, Brenda Lozano, Carla Maliandi y Dolores Reyes, entre otras.</p>
+              <p class="ficha__curatorial">Este libro es una obra publicada por Ediciones Godot para celebrar sus 15 años de trayectoria y su obra número 200. Explora las historias personales detrás de las colecciones de libros de destacados escritores latinoamericanos.</p>
+              <p class="ficha__curatorial">Más allá de cómo se organizan los libros (alfabéticamente o por colores), el libro se enfoca en las experiencias humanas relacionadas con las bibliotecas: pérdida de libros durante separaciones, la unión de bibliotecas al convivir en pareja, y curiosidades personales, como la de un autor que perdió su "escondite".</p>
+              <p class="ficha__curatorial">También explora el concepto de bibliotecas mentales: esos libros que ya no se poseen físicamente, pero que permanecen en la memoria y sirven de referencia a la hora de escribir.</p>
+              <p class="ficha__curatorial">El libro incluye contribuciones de autores como Katya Adaui, Selva Almada, Jazmina Barrera, Jorge Carrión, Luis Chitarroni, María Sonia Cristoff, Mercedes Halfon, Martín Kohan, Brenda Lozano, Carla Maliandi, Emiliano Monge, Dolores Reyes, Edgardo Scott y Reynaldo Sietecase.</p>
             </div>
-
-            <!-- Acciones -->
             <div class="ficha__acciones">
-              <a href="../catalogo.html" class="btn btn-secondary">
-                ← Ver catálogo completo
-              </a>
-              <a href="https://www.buscalibre.com.ar/libro-bibliotecas/9789878928470/p/54508739?afiliado=5bd1144d2c1104dd1a69" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Comprar en Buscalibre
-              </a>
+              <a href="../catalogo.html" class="btn btn-secondary">← Ver catálogo completo</a>
+              <a href="https://www.buscalibre.com.ar" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar en Buscalibre</a>
             </div>
-
           </div>
         </div>
-
       </article>
     </div>
   </main>
-
-  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__inner">
-      <p class="footer__creditos">© 2026 Autoras y Latinas</p>
-      <div class="footer__links">
-        <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
-        <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__creditos">© 2026 Autoras y Latinas</p>
+        <div class="footer__links">
+          <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
+          <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-  <!-- Scripts -->
+  </footer>
   <script src="../js/animations.js"></script>
-
 </body>
 </html>

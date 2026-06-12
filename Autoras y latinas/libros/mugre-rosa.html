@@ -3,33 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
-  <title>Mugre rosa — Fernanda Trías · Autoras y Latinas</title>
-  <meta name="description" content="Mugre rosa de Fernanda Trías (Uruguay, 2020). En una ciudad portuaria asolada por una plaga misteriosa, una mujer intenta descifrar por qué su mundo se desmorona. No es sólo el acecho de la enferm…" />
-
-  <!-- Open Graph -->
+  <title>Mugre Rosa — Fernanda Trías · Autoras y Latinas</title>
+  <meta name="description" content="Mugre Rosa de Fernanda Trías (Uruguay, 2020). Una distopía que sucede en Montevideo: una ciudad infestada por una epidemia que devela la insaciabilidad humana." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://autorasylatinas.com/libros/mugre-rosa.html" />
-  <meta property="og:title" content="Mugre rosa — Fernanda Trías · Autoras y Latinas" />
-  <meta property="og:description" content="Mugre rosa de Fernanda Trías. En una ciudad portuaria asolada por una plaga misteriosa, una mujer intenta descifrar por qué su mundo se desmorona. No es sólo el acecho de la enferm…" />
+  <meta property="og:title" content="Mugre Rosa — Fernanda Trías · Autoras y Latinas" />
+  <meta property="og:description" content="Mugre Rosa de Fernanda Trías. Una distopía que sucede en Montevideo: una ciudad infestada por una epidemia que devela la insaciabilidad humana." />
   <meta property="og:image" content="../assets/portadas/mugre-rosa.webp" />
   <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/components.css" />
   <link rel="stylesheet" href="../css/animations.css" />
   <link rel="stylesheet" href="../css/layout.css" />
 </head>
 <body>
-
-  <!-- HEADER -->
   <header class="header" role="banner">
     <div class="container">
       <div class="header__inner">
@@ -40,16 +30,8 @@
           <a href="../catalogo.html">Catálogo</a>
           <a href="../quien-soy.html">Quién soy</a>
         </nav>
-        <button
-          class="header__hamburger"
-          id="hamburger"
-          aria-expanded="false"
-          aria-controls="menu-mobile"
-          aria-label="Abrir menú"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="header__hamburger" id="hamburger" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
         </button>
       </div>
       <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
@@ -57,94 +39,62 @@
           Catálogo <span class="flecha" aria-hidden="true">▾</span>
         </button>
         <div class="header__submenu" id="submenu-categorias">
-          <a href="../catalogo.html?categoria=cuido">Cuido y cuido, ¿quién me cuida a mí?</a>
-          <a href="../catalogo.html?categoria=arrancaron">Me arrancaron algo que era mío</a>
-          <a href="../catalogo.html?categoria=tierra">La tierra que habito</a>
-          <a href="../catalogo.html?categoria=desaparecieron">Desaparecieron y se fueron</a>
-          <a href="../catalogo.html?categoria=tranquilidad">Me dio tranquilidad</a>
+          <a href="../categorias/cuido.html">Cuido y cuido, ¿quién me cuida a mí?</a>
+          <a href="../categorias/arrancaron.html">Me arrancaron algo que era mío</a>
+          <a href="../categorias/tierra.html">La tierra que habito</a>
+          <a href="../categorias/desaparecieron.html">Desaparecieron y se fueron</a>
+          <a href="../categorias/tranquilidad.html">Me dio tranquilidad</a>
         </div>
         <a href="../quien-soy.html">Quién soy</a>
       </nav>
     </div>
   </header>
-
-  <!-- CONTENIDO PRINCIPAL -->
   <main>
     <div class="container">
       <article class="ficha" aria-labelledby="ficha-titulo">
-
-        <!-- Botón volver -->
-        <a href="../catalogo.html" class="ficha__volver animar-solo">
-          ← Volver al catálogo
-        </a>
-
-        <!-- Layout interno: portada + datos -->
+        <a href="../catalogo.html" class="ficha__volver animar-solo">← Volver al catálogo</a>
         <div class="ficha__contenido animar-solo">
-
-          <!-- Portada -->
           <div class="ficha__portada-wrap">
-            <img
-              class="ficha__portada"
-              src="../assets/portadas/mugre-rosa.webp"
-              alt="Portada de Mugre rosa de Fernanda Trías"
-              loading="eager"
-            />
+            <img class="ficha__portada" src="../assets/portadas/mugre-rosa.webp" alt="Portada de Mugre Rosa de Fernanda Trías" loading="eager" />
           </div>
-
-          <!-- Datos del libro -->
           <div class="ficha__datos">
-
             <div class="ficha__tag">
-              <span class="tag">La tierra que habito</span>
+              <span class="tag" data-categoria="La tierra que habito">La tierra que habito</span>
             </div>
-
-            <h1 class="ficha__titulo" id="ficha-titulo">Mugre rosa</h1>
+            <h1 class="ficha__titulo" id="ficha-titulo">Mugre Rosa</h1>
             <p class="ficha__autora">Fernanda Trías</p>
             <p class="ficha__meta">Uruguay · 2020</p>
-
-            <!-- Sinopsis -->
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">De qué trata</h2>
-              <p class="ficha__curatorial">En una ciudad portuaria asolada por una plaga misteriosa, una mujer intenta descifrar por qué su mundo se desmorona. No es sólo el acecho de la enfermedad y la muerte, las algas y los vientos pestíferos, los amasijos rosáceos que son ya lo único que se puede comer, sino el colapso de todos sus vínculos afectivos, la incertidumbre, la eclosión de una soledad radical.</p>
+              <p class="ficha__curatorial">En una ciudad portuaria infestada por una epidemia de olor nauseabundo, una mujer cuida a un niño con un síndrome que lo obliga a comer sin parar. Una novela sobre la interdependencia con el planeta y el desgaste de los vínculos en tiempos de crisis.</p>
             </div>
-
-            <!-- Texto curatorial -->
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">Por qué dialoga con Latinoamérica hoy</h2>
-              <p class="ficha__curatorial">Esta novela fue escrita antes del COVID-19 y publicada en 2020. Las raíces de la idea provienen de preocupaciones previas sobre crisis ambientales y pandemias: no es un don profético, sino una sensibilidad artística hacia las tensiones del inconsciente colectivo. El corazón de la historia no es la pandemia en sí, sino el impacto de esta en las relaciones de la protagonista: con un matrimonio desgastado, la relación con su madre y el vínculo con Mauro, un niño que padece un síndrome extraño basado en el síndrome de Prader-Willi. Ese mismo síndrome funciona como un espejo de la insaciabilidad humana, donde el consumo desenfrenado de recursos conduce a una ciudad portuaria infestada con referencias a Montevideo. Es una ciudad transfigurada para crear una atmósfera universal, pero que dialoga con el contexto de su ciudad de origen.</p>
+              <p class="ficha__curatorial">Esta novela fue escrita antes del COVID-19 y publicada en 2020. Las raíces de la idea que sacudió a la literatura uruguaya en medio del confinamiento, provienen de preocupaciones previas sobre crisis ambientales y pandemias. No es un don profético, sino una sensibilidad artística que maneja la autora hacia las tensiones del inconsciente colectivo.</p>
+              <p class="ficha__curatorial">El corazón de la historia no es la pandemia en sí, sino el impacto de esta en las relaciones de la protagonista: con un matrimonio desgastado, la relación con su madre y el vínculo con Mauro, un niño que padece un síndrome extraño que se basa en el síndrome de Prader-Willi.</p>
+              <p class="ficha__curatorial">Ese mismo síndrome funciona como un espejo de la insaciabilidad humana, donde el consumo desenfrenado de recursos conduce a una ciudad portuaria infestada, la cual en el libro tiene referencias a Montevideo.</p>
+              <p class="ficha__curatorial">Es una ciudad transfigurada para crear una atmósfera universal, pero que dialoga con el contexto de su ciudad de origen, en la que otros pueden sentirse identificados.</p>
             </div>
-
-            <!-- Acciones -->
             <div class="ficha__acciones">
-              <a href="../catalogo.html" class="btn btn-secondary">
-                ← Ver catálogo completo
-              </a>
-              <a href="https://www.buscalibre.com.ar/libro-mugre-rosa-mapa-de-las-lenguas/9789566248477/p/63539820?afiliado=5bd1144d2c1104dd1a69" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Comprar en Buscalibre
-              </a>
+              <a href="../catalogo.html" class="btn btn-secondary">← Ver catálogo completo</a>
+              <a href="https://www.buscalibre.com.ar" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar en Buscalibre</a>
             </div>
-
           </div>
         </div>
-
       </article>
     </div>
   </main>
-
-  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__inner">
-      <p class="footer__creditos">© 2026 Autoras y Latinas</p>
-      <div class="footer__links">
-        <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
-        <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__creditos">© 2026 Autoras y Latinas</p>
+        <div class="footer__links">
+          <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
+          <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-  <!-- Scripts -->
+  </footer>
   <script src="../js/animations.js"></script>
-
 </body>
 </html>

@@ -3,33 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
   <title>Limpia — Alia Trabucco Zerán · Autoras y Latinas</title>
-  <meta name="description" content="Limpia de Alia Trabucco Zerán (Chile, 2022). Estela deja a su madre en el sur para trabajar en la casa de una familia en Santiago de Chile y allí se queda los siguientes siete años, limpiando y c…" />
-
-  <!-- Open Graph -->
+  <meta name="description" content="Limpia de Alia Trabucco Zerán (Chile). La historia de una empleada doméstica que revela la desigualdad de clase en la burguesía chilena." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://autorasylatinas.com/libros/limpia.html" />
   <meta property="og:title" content="Limpia — Alia Trabucco Zerán · Autoras y Latinas" />
-  <meta property="og:description" content="Limpia de Alia Trabucco Zerán. Estela deja a su madre en el sur para trabajar en la casa de una familia en Santiago de Chile y allí se queda los siguientes siete años, limpiando y c…" />
+  <meta property="og:description" content="Limpia de Alia Trabucco Zerán. La historia de una empleada doméstica que revela la desigualdad de clase en la burguesía chilena." />
   <meta property="og:image" content="../assets/portadas/limpia.webp" />
   <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/components.css" />
   <link rel="stylesheet" href="../css/animations.css" />
   <link rel="stylesheet" href="../css/layout.css" />
 </head>
 <body>
-
-  <!-- HEADER -->
   <header class="header" role="banner">
     <div class="container">
       <div class="header__inner">
@@ -40,16 +30,8 @@
           <a href="../catalogo.html">Catálogo</a>
           <a href="../quien-soy.html">Quién soy</a>
         </nav>
-        <button
-          class="header__hamburger"
-          id="hamburger"
-          aria-expanded="false"
-          aria-controls="menu-mobile"
-          aria-label="Abrir menú"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="header__hamburger" id="hamburger" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
         </button>
       </div>
       <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
@@ -57,95 +39,61 @@
           Catálogo <span class="flecha" aria-hidden="true">▾</span>
         </button>
         <div class="header__submenu" id="submenu-categorias">
-          <a href="../catalogo.html?categoria=cuido">Cuido y cuido, ¿quién me cuida a mí?</a>
-          <a href="../catalogo.html?categoria=arrancaron">Me arrancaron algo que era mío</a>
-          <a href="../catalogo.html?categoria=tierra">La tierra que habito</a>
-          <a href="../catalogo.html?categoria=desaparecieron">Desaparecieron y se fueron</a>
-          <a href="../catalogo.html?categoria=tranquilidad">Me dio tranquilidad</a>
+          <a href="../categorias/cuido.html">Cuido y cuido, ¿quién me cuida a mí?</a>
+          <a href="../categorias/arrancaron.html">Me arrancaron algo que era mío</a>
+          <a href="../categorias/tierra.html">La tierra que habito</a>
+          <a href="../categorias/desaparecieron.html">Desaparecieron y se fueron</a>
+          <a href="../categorias/tranquilidad.html">Me dio tranquilidad</a>
         </div>
         <a href="../quien-soy.html">Quién soy</a>
       </nav>
     </div>
   </header>
-
-  <!-- CONTENIDO PRINCIPAL -->
   <main>
     <div class="container">
       <article class="ficha" aria-labelledby="ficha-titulo">
-
-        <!-- Botón volver -->
-        <a href="../catalogo.html" class="ficha__volver animar-solo">
-          ← Volver al catálogo
-        </a>
-
-        <!-- Layout interno: portada + datos -->
+        <a href="../catalogo.html" class="ficha__volver animar-solo">← Volver al catálogo</a>
         <div class="ficha__contenido animar-solo">
-
-          <!-- Portada -->
           <div class="ficha__portada-wrap">
-            <img
-              class="ficha__portada"
-              src="../assets/portadas/limpia.webp"
-              alt="Portada de Limpia de Alia Trabucco Zerán"
-              loading="eager"
-            />
+            <img class="ficha__portada" src="../assets/portadas/limpia.webp" alt="Portada de Limpia de Alia Trabucco Zerán" loading="eager" />
           </div>
-
-          <!-- Datos del libro -->
           <div class="ficha__datos">
-
             <div class="ficha__tag">
-              <span class="tag">Cuido y cuido, ¿quién me cuida a mí?</span>
+              <span class="tag" data-categoria="Cuido y cuido, ¿quién me cuida a mí?">Cuido y cuido, ¿quién me cuida a mí?</span>
             </div>
-
             <h1 class="ficha__titulo" id="ficha-titulo">Limpia</h1>
             <p class="ficha__autora">Alia Trabucco Zerán</p>
-            <p class="ficha__meta">Chile · 2022</p>
-
-            <!-- Sinopsis -->
+            <p class="ficha__meta">Chile</p>
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">De qué trata</h2>
-              <p class="ficha__curatorial">Estela deja a su madre en el sur para trabajar en la casa de una familia en Santiago de Chile y allí se queda los siguientes siete años, limpiando y criando a una niña acosada por la ansiedad, cuya muerte conocemos al comienzo de la novela. Como en una tragedia griega, la tensión crece con cada página hasta un desenlace tan poderoso como inevitable. Una novela excepcional donde todo el espesor reflexivo es contrapesado por una trama vertiginosa.</p>
+              <p class="ficha__curatorial">Una empleada doméstica narra desde adentro la vida de la familia que la emplea. Con una mirada afilada y contenida, la novela expone la desigualdad de clase en la burguesía chilena y el costo invisible del trabajo de cuidado.</p>
             </div>
-
-            <!-- Texto curatorial -->
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">Por qué dialoga con Latinoamérica hoy</h2>
-              <p class="ficha__curatorial">Alia revela en una entrevista que utiliza la palabra con múltiples connotaciones. «Limpia» tanto adjetivo como una orden, reflejando cómo se manifiesta la limpieza dentro de la historia y reflejando la desigualdad y las diferencias de clase en Chile a través de la perspectiva de una empleada doméstica. Esta obra analiza la brecha de clase, la presión social por mantener apariencias en la clase acomodada y cómo estas expectativas afectan al crecimiento y la salud mental de una niña quien desarrolla conductas autodestructivas, como negarse a comer, romper objetos o esconder cosas para culpar a otros, reflejando su malestar ante la falta de libertad y presión por destacar. Se retrata la limpieza como un esfuerzo inútil y constante: la suciedad y el caos siempre regresan. Esto simboliza que las injusticias sociales y los conflictos estructurales no se eliminan, sino que se acumulan bajo la superficie, alimentando un descontento que eventualmente desemboca en la tragedia.</p>
+              <p class="ficha__curatorial">Alia revela en una entrevista que utiliza la palabra con múltiples connotaciones. "Limpia" tanto adjetivo como una orden, reflejando cómo se manifiesta la limpieza dentro de la historia y reflejando la desigualdad y las diferencias de clase en Chile a través de la perspectiva de una empleada doméstica.</p>
+              <p class="ficha__curatorial">Esta obra analiza la brecha de clase, la presión social por mantener apariencias en la clase acomodada y cómo estas expectativas afectan al crecimiento y la salud mental de una niña quien desarrolla conductas autodestructivas, como negarse a comer, romper objetos o esconder cosas para culpar a otros, reflejando su malestar ante la falta de libertad y presión por destacar.</p>
+              <p class="ficha__curatorial">Se retrata la limpieza como un esfuerzo inútil y constante: la suciedad y el caos siempre regresan. Esto simboliza que las injusticias sociales y los conflictos estructurales no se eliminan, sino que se acumulan bajo la superficie, alimentando un descontento que eventualmente desemboca en la tragedia.</p>
             </div>
-
-            <!-- Acciones -->
             <div class="ficha__acciones">
-              <a href="../catalogo.html" class="btn btn-secondary">
-                ← Ver catálogo completo
-              </a>
-              <a href="https://www.buscalibre.com.ar/libro-limpia/9789566058458/p/54355857?afiliado=5bd1144d2c1104dd1a69" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Comprar en Buscalibre
-              </a>
+              <a href="../catalogo.html" class="btn btn-secondary">← Ver catálogo completo</a>
+              <a href="https://www.buscalibre.com.ar" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar en Buscalibre</a>
             </div>
-
           </div>
         </div>
-
       </article>
     </div>
   </main>
-
-  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__inner">
-      <p class="footer__creditos">© 2026 Autoras y Latinas</p>
-      <div class="footer__links">
-        <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
-        <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__creditos">© 2026 Autoras y Latinas</p>
+        <div class="footer__links">
+          <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
+          <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-
-  <!-- Scripts -->
+  </footer>
   <script src="../js/animations.js"></script>
-
 </body>
 </html>

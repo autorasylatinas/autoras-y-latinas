@@ -3,33 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
   <title>La hora de la estrella — Clarice Lispector · Autoras y Latinas</title>
-  <meta name="description" content="La hora de la estrella de Clarice Lispector (Brasil, 1977). Con La hora de la estrella Clarice Lispector puso el punto final a una gran carrera que constituyó uno de los momentos más altos de la literatura bras…" />
-
-  <!-- Open Graph -->
+  <meta name="description" content="La hora de la estrella de Clarice Lispector (Brasil, 1977). La historia de Macabea, una joven migrante nordestina invisibilizada por la miseria y el exilio social en São Paulo." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://autorasylatinas.com/libros/la-hora-de-la-estrella.html" />
   <meta property="og:title" content="La hora de la estrella — Clarice Lispector · Autoras y Latinas" />
-  <meta property="og:description" content="La hora de la estrella de Clarice Lispector. Con La hora de la estrella Clarice Lispector puso el punto final a una gran carrera que constituyó uno de los momentos más altos de la literatura bras…" />
+  <meta property="og:description" content="La hora de la estrella de Clarice Lispector. La historia de Macabea, invisibilizada por la miseria y el exilio social." />
   <meta property="og:image" content="../assets/portadas/la-hora-de-la-estrella.webp" />
   <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
-
-  <!-- Estilos -->
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/components.css" />
   <link rel="stylesheet" href="../css/animations.css" />
   <link rel="stylesheet" href="../css/layout.css" />
 </head>
 <body>
-
-  <!-- HEADER -->
   <header class="header" role="banner">
     <div class="container">
       <div class="header__inner">
@@ -40,16 +30,8 @@
           <a href="../catalogo.html">Catálogo</a>
           <a href="../quien-soy.html">Quién soy</a>
         </nav>
-        <button
-          class="header__hamburger"
-          id="hamburger"
-          aria-expanded="false"
-          aria-controls="menu-mobile"
-          aria-label="Abrir menú"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <button class="header__hamburger" id="hamburger" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
         </button>
       </div>
       <nav class="header__menu-mobile" id="menu-mobile" aria-label="Navegación mobile">
@@ -57,95 +39,61 @@
           Catálogo <span class="flecha" aria-hidden="true">▾</span>
         </button>
         <div class="header__submenu" id="submenu-categorias">
-          <a href="../catalogo.html?categoria=cuido">Cuido y cuido, ¿quién me cuida a mí?</a>
-          <a href="../catalogo.html?categoria=arrancaron">Me arrancaron algo que era mío</a>
-          <a href="../catalogo.html?categoria=tierra">La tierra que habito</a>
-          <a href="../catalogo.html?categoria=desaparecieron">Desaparecieron y se fueron</a>
-          <a href="../catalogo.html?categoria=tranquilidad">Me dio tranquilidad</a>
+          <a href="../categorias/cuido.html">Cuido y cuido, ¿quién me cuida a mí?</a>
+          <a href="../categorias/arrancaron.html">Me arrancaron algo que era mío</a>
+          <a href="../categorias/tierra.html">La tierra que habito</a>
+          <a href="../categorias/desaparecieron.html">Desaparecieron y se fueron</a>
+          <a href="../categorias/tranquilidad.html">Me dio tranquilidad</a>
         </div>
         <a href="../quien-soy.html">Quién soy</a>
       </nav>
     </div>
   </header>
-
-  <!-- CONTENIDO PRINCIPAL -->
   <main>
     <div class="container">
       <article class="ficha" aria-labelledby="ficha-titulo">
-
-        <!-- Botón volver -->
-        <a href="../catalogo.html" class="ficha__volver animar-solo">
-          ← Volver al catálogo
-        </a>
-
-        <!-- Layout interno: portada + datos -->
+        <a href="../catalogo.html" class="ficha__volver animar-solo">← Volver al catálogo</a>
         <div class="ficha__contenido animar-solo">
-
-          <!-- Portada -->
           <div class="ficha__portada-wrap">
-            <img
-              class="ficha__portada"
-              src="../assets/portadas/la-hora-de-la-estrella.webp"
-              alt="Portada de La hora de la estrella de Clarice Lispector"
-              loading="eager"
-            />
+            <img class="ficha__portada" src="../assets/portadas/la-hora-de-la-estrella.webp" alt="Portada de La hora de la estrella de Clarice Lispector" loading="eager" />
           </div>
-
-          <!-- Datos del libro -->
           <div class="ficha__datos">
-
             <div class="ficha__tag">
-              <span class="tag">Me arrancaron algo que era mío</span>
+              <span class="tag" data-categoria="Me arrancaron algo que era mío">Me arrancaron algo que era mío</span>
             </div>
-
             <h1 class="ficha__titulo" id="ficha-titulo">La hora de la estrella</h1>
             <p class="ficha__autora">Clarice Lispector</p>
             <p class="ficha__meta">Brasil · 1977</p>
-
-            <!-- Sinopsis -->
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">De qué trata</h2>
-              <p class="ficha__curatorial">Con La hora de la estrella Clarice Lispector puso el punto final a una gran carrera que constituyó uno de los momentos más altos de la literatura brasileña moderna. Esta es la historia de una inocencia herida, de una miseria anónima, una breve e intensa visión del absurdo que supone una existencia anodina. En sus páginas aparece en toda su magnitud el personalísimo estilo de Clarice Lispector.</p>
+              <p class="ficha__curatorial">Macabea es una joven migrante nordestina que vive en São Paulo. Mecanógrafa, ignorante de su propia marginalidad, su historia es narrada por un escritor que no sabe cómo contarla. La última novela de Lispector, publicada semanas antes de su muerte.</p>
             </div>
-
-            <!-- Texto curatorial -->
             <div class="ficha__bloque">
               <h2 class="ficha__seccion-titulo">Por qué dialoga con Latinoamérica hoy</h2>
-              <p class="ficha__curatorial">El personaje de Macabea representa a aquellos seres invisibilizados por la miseria y el exilio social. La ignorancia juega un papel fundamental, ya que funciona como un mecanismo de protección frente a su realidad: debido a que ella no es plenamente consciente de ser víctima de un sistema social que la margina y la exilia, logra sobrevivir sin el peso devastador de esa verdad. La novela de Clarice Lispector, publicada en 1977 poco antes de su fallecimiento, es una crítica a la desigualdad, la exclusión y marginación en una sociedad brasileña de los años 70, que habla de las mujeres con pocas opciones para su supervivencia. También se destaca que se elige a un narrador hombre para poder narrar la historia de Macabea de una forma fría y cruel, porque el problema literario que plantea la autora es narrar una historia de alguien que apenas se percibe existente en una cruda realidad.</p>
+              <p class="ficha__curatorial">El personaje de Macabea representa a aquellos seres invisibilizados por la miseria y el exilio social. La ignorancia juega un papel fundamental, ya que funciona como un mecanismo de protección frente a su realidad: debido a que ella no es plenamente consciente de ser víctima de un sistema social que la margina y la exilia, logra sobrevivir sin el peso devastador de esa verdad. Esta falta de consciencia le quita un peso existencial y le permite mantener una esperanza que, aunque dolorosa, le otorga una forma de inocencia ante un mundo que nunca la ha valorado.</p>
+              <p class="ficha__curatorial">La novela de Clarice Lispector, publicada en 1977, poco antes de su fallecimiento, es una crítica a la desigualdad, la exclusión y marginación en una sociedad brasileña de los años 70, que habla de las mujeres con pocas opciones para su supervivencia. Sin embargo, pareciera que la autora está narrando perspectivas que aún continúan al día de hoy.</p>
+              <p class="ficha__curatorial">También se destaca que se elige a un narrador hombre, para poder narrar la historia de Macabea de una forma fría y cruel, porque el problema literario que plantea la autora es narrar una historia de alguien que apenas se percibe existente en una cruda realidad.</p>
             </div>
-
-            <!-- Acciones -->
             <div class="ficha__acciones">
-              <a href="../catalogo.html" class="btn btn-secondary">
-                ← Ver catálogo completo
-              </a>
-              <a href="https://www.buscalibre.com.ar/libro-hora-de-la-estrella-la/9789877258004/p/66881946?afiliado=5bd1144d2c1104dd1a69" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                Comprar en Buscalibre
-              </a>
+              <a href="../catalogo.html" class="btn btn-secondary">← Ver catálogo completo</a>
+              <a href="https://www.buscalibre.com.ar" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Comprar en Buscalibre</a>
             </div>
-
           </div>
         </div>
-
       </article>
     </div>
   </main>
-
-  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__inner">
-      <p class="footer__creditos">© 2026 Autoras y Latinas</p>
-      <div class="footer__links">
-        <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
-        <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__creditos">© 2026 Autoras y Latinas</p>
+        <div class="footer__links">
+          <a href="https://instagram.com/autorasylatinas" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Autoras y Latinas">Instagram</a>
+          <a href="mailto:autorasylatinas@gmail.com" aria-label="Correo de contacto">autorasylatinas@gmail.com</a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-
-  <!-- Scripts -->
+  </footer>
   <script src="../js/animations.js"></script>
-
 </body>
 </html>
