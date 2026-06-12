@@ -75,17 +75,49 @@
 
         <!-- FILTROS -->
         <div class="filtros animar-solo" id="filtros" role="search" aria-label="Filtros del catálogo">
-          <div class="filtros__grupo" role="group" aria-label="Filtrar por país">
-            <span class="filtros__label" id="label-pais">País</span>
-            <div class="filtros__botones" id="filtros-pais" aria-labelledby="label-pais"></div>
+
+          <!-- Select de países -->
+          <div class="filtros__grupo filtros__grupo--pais">
+            <label for="select-pais" class="filtros__label">País</label>
+            <select id="select-pais" class="filtros__select" aria-label="Filtrar por país">
+              <option value="">Todos los países</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Bolivia">Bolivia</option>
+              <option value="Brasil">Brasil</option>
+              <option value="Chile">Chile</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Cuba">Cuba</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="México">México</option>
+              <option value="Perú">Perú</option>
+              <option value="República Dominicana">República Dominicana</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Venezuela">Venezuela</option>
+            </select>
           </div>
+
+          <!-- Botones de categoría -->
           <div class="filtros__grupo filtros__grupo--categoria" role="group" aria-label="Filtrar por categoría">
             <span class="filtros__label" id="label-categoria">Categoría</span>
             <div class="filtros__botones" id="filtros-categoria" aria-labelledby="label-categoria"></div>
           </div>
+
           <button class="filtros__limpiar" id="limpiar-filtros" hidden aria-label="Limpiar todos los filtros activos">
             ✕ Limpiar filtros
           </button>
+        </div>
+
+        <!-- Panel de descripción de categoría -->
+        <div
+          id="panel-categoria"
+          class="panel-categoria"
+          role="region"
+          aria-label="Descripción de categoría"
+          hidden
+        >
+          <button class="panel-categoria__cerrar" id="cerrar-panel" aria-label="Cerrar descripción de categoría">✕</button>
+          <h3 class="panel-categoria__titulo" id="panel-cat-titulo"></h3>
+          <p class="panel-categoria__texto" id="panel-cat-texto"></p>
         </div>
 
         <p class="catalogo-contador animar-solo" id="catalogo-contador" aria-live="polite" aria-atomic="true"></p>
