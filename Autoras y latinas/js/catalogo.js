@@ -136,37 +136,22 @@ function asignarEventoSelectPais() {
   });
 }
 
-// --- Toggle de filtro de categoría ---
+// --- Mapeo de categoría a URL de página propia ---
+const URLS_CATEGORIAS = {
+  'Cuido y cuido, ¿quién me cuida a mí?': 'categorias/cuido.html',
+  'Me arrancaron algo que era mío':        'categorias/arrancaron.html',
+  'La tierra que habito':                  'categorias/tierra.html',
+  'Desaparecieron y se fueron':            'categorias/desaparecieron.html',
+  'Me dio tranquilidad':                   'categorias/tranquilidad.html'
+};
+
+// --- Clic en botón de categoría: navega a la página de esa categoría ---
 
 function toggleCategoria(valor, btnClickeado) {
-  const yaActivo = filtroActivo.categoria === valor;
-  const panel = document.getElementById('panel-categoria');
-
-  if (yaActivo) {
-    // Si ya estaba activo: desactivar y cerrar panel
-    filtroActivo.categoria = null;
-    btnClickeado.classList.remove('activo');
-    btnClickeado.setAttribute('aria-pressed', 'false');
-    cerrarPanel();
-  } else {
-    // Desactivar cualquier otro botón activo
-    document.querySelectorAll('.filtro-btn[data-tipo="categoria"]').forEach(btn => {
-      btn.classList.remove('activo');
-      btn.setAttribute('aria-pressed', 'false');
-    });
-
-    // Activar el nuevo
-    filtroActivo.categoria = valor;
-    btnClickeado.classList.add('activo');
-    btnClickeado.setAttribute('aria-pressed', 'true');
-    botonCategoriaActivo = btnClickeado;
-
-    // Mostrar descripción en el panel
-    abrirPanel(valor);
+  const url = URLS_CATEGORIAS[valor];
+  if (url) {
+    window.location.href = url;
   }
-
-  actualizarBotonLimpiar();
-  renderizarCatalogo();
 }
 
 // --- Panel de descripción de categoría ---
