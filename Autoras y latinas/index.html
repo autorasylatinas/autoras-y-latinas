@@ -197,44 +197,7 @@
       border-radius: 2px;
     }
 
-    /* ════════════════════════════════════════
-       SECCIÓN CUESTIONARIO
-    ════════════════════════════════════════ */
 
-    .seccion-cuestionario {
-      padding: 72px 0 96px;
-    }
-
-    .seccion-cuestionario__encabezado {
-      margin-bottom: 48px;
-    }
-
-    .seccion-cuestionario__kicker {
-      display: inline-block;
-      font-family: var(--fuente-body);
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--color-amarillo);
-      margin-bottom: 12px;
-    }
-
-    .seccion-cuestionario__titulo {
-      font-family: var(--fuente-display);
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      font-weight: 700;
-      color: var(--color-texto);
-      margin: 0 0 12px;
-      line-height: 1.2;
-    }
-
-    .seccion-cuestionario__desc {
-      font-family: var(--fuente-body);
-      font-size: 0.95rem;
-      color: var(--color-texto-sec);
-      margin: 0;
-    }
 
     /* ── Mobile ── */
     @media (max-width: 767px) {
@@ -374,27 +337,7 @@
       </div>
     </section>
 
-    <!-- ── SECCIÓN 2: CUESTIONARIO ── -->
-    <section class="seccion-cuestionario" id="cuestionario" aria-label="Cuestionario de descubrimiento">
-      <div class="container">
 
-        <div class="seccion-cuestionario__encabezado animar-solo">
-          <span class="seccion-cuestionario__kicker">El cuestionario</span>
-          <h2 class="seccion-cuestionario__titulo">¿Por dónde empezamos?</h2>
-          <p class="seccion-cuestionario__desc">Dos preguntas. Un libro. Sin respuestas incorrectas.</p>
-        </div>
-
-        <!--
-          CUESTIONARIO: acá va el bloque del cuestionario de descubrimiento
-          que ya está implementado. No se toca su lógica ni su HTML interno.
-          El JS de cuestionario.js lo inicializa automáticamente.
-        -->
-        <div id="cuestionario-app" class="animar-solo">
-          <!-- El cuestionario se renderiza acá desde cuestionario.js -->
-        </div>
-
-      </div>
-    </section>
 
   </main>
 
