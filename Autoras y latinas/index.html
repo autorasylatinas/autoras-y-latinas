@@ -135,13 +135,7 @@
       margin-bottom: 20px;
     }
 
-    .hero__eyebrow::before {
-      content: '';
-      display: inline-block;
-      width: 20px;
-      height: 1.5px;
-      background: currentColor;
-    }
+
 
     /* Título principal — el display más grande del sitio */
     .hero__titulo {
@@ -198,6 +192,13 @@
     }
 
 
+
+    /* Sin espacio entre hero y footer */
+    main {
+      display: block;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
 
     /* ── Mobile ── */
     @media (max-width: 767px) {
@@ -317,7 +318,7 @@
       <div class="container">
         <div class="hero__contenido animar-solo">
 
-          <span class="hero__eyebrow">15 libros · 5 países · una sola pregunta</span>
+          <span class="hero__eyebrow">¿Te gustaría leer más autoras latinoamericanas?</span>
 
           <h1 class="hero__titulo">
             Ellas escribieron<br>
@@ -336,8 +337,6 @@
         </div>
       </div>
     </section>
-
-
 
   </main>
 
