@@ -35,9 +35,18 @@
     .hero {
       position: relative;
       overflow: hidden;
+      /* padding-bottom generoso para el contenido, pero el main no agrega nada extra */
       padding: 72px 0 80px;
       /* Fondo ligeramente más cálido que el crema base */
       background: #f5f0e8;
+    }
+
+    /* Anula cualquier padding o gap que venga de layout.css */
+    .home-layout,
+    .home-main {
+      gap: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
     }
 
     /* ── Formas decorativas SVG monocromáticas ── */
@@ -198,6 +207,14 @@
       display: block;
       padding: 0 !important;
       margin: 0 !important;
+    }
+
+    /* Anula cualquier padding residual de layout.css en esta página */
+    .home-layout,
+    .home-main {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      gap: 0 !important;
     }
 
     /* ── Mobile ── */
