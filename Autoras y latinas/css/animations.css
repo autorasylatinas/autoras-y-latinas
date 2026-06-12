@@ -10,7 +10,7 @@
 .intro {
   position: fixed;
   inset: 0;
-  background-color: #e89b21;
+  background-color: #e5901d; /* Mismo naranja del video exportado desde Canva */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,15 +56,15 @@
 }
 
 /* Stagger: delay entre elementos consecutivos */
-.animar:nth-child(1) { transition-delay: 0ms; }
-.animar:nth-child(2) { transition-delay: 80ms; }
-.animar:nth-child(3) { transition-delay: 160ms; }
-.animar:nth-child(4) { transition-delay: 240ms; }
-.animar:nth-child(5) { transition-delay: 320ms; }
-.animar:nth-child(6) { transition-delay: 400ms; }
-.animar:nth-child(7) { transition-delay: 480ms; }
-.animar:nth-child(8) { transition-delay: 560ms; }
-.animar:nth-child(9) { transition-delay: 640ms; }
+.animar:nth-child(1)  { transition-delay: 0ms; }
+.animar:nth-child(2)  { transition-delay: 80ms; }
+.animar:nth-child(3)  { transition-delay: 160ms; }
+.animar:nth-child(4)  { transition-delay: 240ms; }
+.animar:nth-child(5)  { transition-delay: 320ms; }
+.animar:nth-child(6)  { transition-delay: 400ms; }
+.animar:nth-child(7)  { transition-delay: 480ms; }
+.animar:nth-child(8)  { transition-delay: 560ms; }
+.animar:nth-child(9)  { transition-delay: 640ms; }
 .animar:nth-child(10) { transition-delay: 720ms; }
 .animar:nth-child(11) { transition-delay: 800ms; }
 .animar:nth-child(12) { transition-delay: 880ms; }
