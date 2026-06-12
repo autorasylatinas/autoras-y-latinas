@@ -488,6 +488,25 @@
   display: none;
 }
 
+/* Scroll cuando el texto es largo */
+.panel-categoria {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* Párrafos dentro del panel */
+.panel-categoria__texto p {
+  font-size: var(--fs-body);
+  line-height: 1.65;
+  color: var(--color-texto-sec);
+  max-width: 70ch;
+  margin-bottom: var(--space-2);
+}
+
+.panel-categoria__texto p:last-child {
+  margin-bottom: 0;
+}
+
 @keyframes entradaPanel {
   from {
     opacity: 0;
