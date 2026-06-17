@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://autorasylatinas.com.ar/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Catálogo -->
+  <url>
+    <loc>https://autorasylatinas.com.ar/catalogo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Cuestionario -->
+  <url>
+    <loc>https://autorasylatinas.com.ar/cuestionario.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Quién soy -->
+  <url>
+    <loc>https://autorasylatinas.com.ar/quien-soy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Páginas de categorías -->
+  <url>
+    <loc>https://autorasylatinas.com.ar/categorias/cuido.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/categorias/arrancaron.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/categorias/tierra.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/categorias/desaparecieron.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/categorias/tranquilidad.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Fichas individuales — Cuido y cuido -->
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/limpia.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/el-matrimonio-de-los-peces-rojos.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/esta-herida-llena-de-peces.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Fichas individuales — Me arrancaron algo que era mío -->
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/la-hora-de-la-estrella.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/la-mucama-de-omicunle.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/las-voladoras.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Fichas individuales — La tierra que habito -->
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/mugre-rosa.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/distancia-de-rescate.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/ustedes-brillan-en-lo-oscuro.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Fichas individuales — Desaparecieron y se fueron -->
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/atras-queda-la-tierra.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/atusparia.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/todos-se-van.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Fichas individuales — Me dio tranquilidad -->
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/tanto.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/budin-del-cielo.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://autorasylatinas.com.ar/libros/bibliotecas.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
