@@ -10,11 +10,20 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://autorasylatinas.vercel.app/" />
+  <meta property="og:url" content="https://autorasylatinas.com.ar/" />
   <meta property="og:title" content="Autoras y Latinas — Buscador de lecturas latinoamericanas" />
   <meta property="og:description" content="Encontrá tu próxima lectura entre 15 libros escritos por autoras latinoamericanas que dialogan con el contexto político y social de América Latina." />
   <meta property="og:image" content="assets/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKF6DDWDKX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YKF6DDWDKX');
+  </script>
 
   <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,9 +44,7 @@
     .hero {
       position: relative;
       overflow: hidden;
-      /* padding-bottom generoso para el contenido, pero el main no agrega nada extra */
       padding: 72px 0 80px;
-      /* Fondo ligeramente más cálido que el crema base */
       background: #f5f0e8;
     }
 
@@ -50,7 +57,6 @@
     }
 
     /* ── Formas decorativas SVG monocromáticas ── */
-    /* Cada figura usa UN solo color de la paleta con opacidad baja */
 
     .hero__formas {
       position: absolute;
@@ -60,7 +66,6 @@
       z-index: 0;
     }
 
-    /* Círculo grande — amarillo ocre, esquina superior derecha */
     .hero__forma-1 {
       position: absolute;
       top: -60px;
@@ -72,7 +77,6 @@
       opacity: 0.12;
     }
 
-    /* Rectángulo rotado — fucsia, borde inferior izquierdo */
     .hero__forma-2 {
       position: absolute;
       bottom: -40px;
@@ -85,7 +89,6 @@
       transform: rotate(-18deg);
     }
 
-    /* Círculo mediano — índigo, centro-izquierda */
     .hero__forma-3 {
       position: absolute;
       top: 40%;
@@ -97,7 +100,6 @@
       opacity: 0.08;
     }
 
-    /* Elipse — turquesa, arriba centro */
     .hero__forma-4 {
       position: absolute;
       top: -20px;
@@ -109,7 +111,6 @@
       opacity: 0.18;
     }
 
-    /* Cuadrado pequeño rotado — ciruela, derecha medio */
     .hero__forma-5 {
       position: absolute;
       top: 50%;
@@ -130,7 +131,6 @@
       max-width: 680px;
     }
 
-    /* Eyebrow — etiqueta pequeña encima del título */
     .hero__eyebrow {
       display: inline-flex;
       align-items: center;
@@ -144,9 +144,6 @@
       margin-bottom: 20px;
     }
 
-
-
-    /* Título principal — el display más grande del sitio */
     .hero__titulo {
       font-family: var(--fuente-display);
       font-weight: 800;
@@ -154,7 +151,6 @@
       line-height: 1.08;
       color: var(--color-texto);
       margin: 0 0 28px;
-      /* La última palabra en color acento */
     }
 
     .hero__titulo em {
@@ -162,7 +158,6 @@
       color: var(--color-fucsia);
     }
 
-    /* Subtítulo / descripción */
     .hero__subtitulo {
       font-family: var(--fuente-body);
       font-size: clamp(1rem, 2vw, 1.15rem);
@@ -172,7 +167,6 @@
       max-width: 540px;
     }
 
-    /* CTAs */
     .hero__ctas {
       display: flex;
       align-items: center;
@@ -200,16 +194,12 @@
       border-radius: 2px;
     }
 
-
-
-    /* Sin espacio entre hero y footer */
     main {
       display: block;
       padding: 0 !important;
       margin: 0 !important;
     }
 
-    /* Anula cualquier padding residual de layout.css en esta página */
     .home-layout,
     .home-main {
       padding-top: 0 !important;
@@ -217,7 +207,6 @@
       gap: 0 !important;
     }
 
-    /* main.css le pone margin-top: 96px al footer — en el home no lo queremos */
     .footer {
       margin-top: 0 !important;
     }
@@ -328,7 +317,6 @@
     <!-- ── SECCIÓN 1: HERO ── -->
     <section class="hero" aria-label="Presentación del proyecto">
 
-      <!-- Formas decorativas monocromáticas (colores del sitio, baja opacidad) -->
       <div class="hero__formas" aria-hidden="true">
         <div class="hero__forma-1"></div>
         <div class="hero__forma-2"></div>
