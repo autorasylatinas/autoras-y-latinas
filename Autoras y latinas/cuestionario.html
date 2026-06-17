@@ -10,11 +10,20 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://autorasylatinas.vercel.app/cuestionario.html" />
+  <meta property="og:url" content="https://autorasylatinas.com.ar/cuestionario.html" />
   <meta property="og:title" content="Encontrá tu lectura — Autoras y Latinas" />
   <meta property="og:description" content="Respondé dos preguntas y encontrá el libro latinoamericano escrito por una autora latina que dialoga con tu momento." />
   <meta property="og:image" content="assets/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKF6DDWDKX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YKF6DDWDKX');
+  </script>
 
   <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -78,9 +87,7 @@
 </head>
 <body>
 
-  <!-- ============================================
-       HEADER
-       ============================================ -->
+  <!-- HEADER -->
   <header class="header" role="banner">
     <div class="container">
       <div class="header__inner">
@@ -124,9 +131,7 @@
     </div>
   </header>
 
-  <!-- ============================================
-       CONTENIDO PRINCIPAL
-       ============================================ -->
+  <!-- CONTENIDO PRINCIPAL -->
   <main>
     <div class="container">
       <div class="cuestionario-page">
@@ -172,7 +177,6 @@
                   <span class="opcion__descripcion">Propio, familiar o colectivo</span>
                 </button>
 
-                <!-- Rama E — nueva en v2.0 -->
                 <button class="opcion" data-rama="E" aria-pressed="false">
                   <span class="opcion__texto">Necesito distraerme de mi alrededor</span>
                   <span class="opcion__descripcion"></span>
@@ -194,9 +198,7 @@
     </div>
   </main>
 
-  <!-- ============================================
-       FOOTER
-       ============================================ -->
+  <!-- FOOTER -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__inner">

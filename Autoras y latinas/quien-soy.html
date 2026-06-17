@@ -10,11 +10,20 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://autorasylatinas.vercel.app/quien-soy.html" />
+  <meta property="og:url" content="https://autorasylatinas.com.ar/quien-soy.html" />
   <meta property="og:title" content="Quién soy — Autoras y Latinas" />
   <meta property="og:description" content="La creadora detrás de Autoras y Latinas. Un proyecto sobre literatura latinoamericana escrita por mujeres." />
   <meta property="og:image" content="assets/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKF6DDWDKX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YKF6DDWDKX');
+  </script>
 
   <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +45,6 @@
       padding: 48px 0 80px;
     }
 
-    /* ── Encabezado con etiqueta tipo editorial ── */
     .qs-encabezado {
       margin-bottom: 56px;
     }
@@ -61,7 +69,6 @@
       margin: 0;
     }
 
-    /* ── Bloque presentación: foto + texto ── */
     .qs-presentacion {
       display: grid;
       grid-template-columns: 180px 1fr;
@@ -70,7 +77,6 @@
       margin-bottom: 64px;
     }
 
-    /* Foto */
     .qs-foto-wrap {
       position: relative;
     }
@@ -98,7 +104,6 @@
       color: var(--color-texto-sec);
     }
 
-    /* Acento de color detrás de la foto */
     .qs-foto-wrap::before {
       content: '';
       position: absolute;
@@ -109,7 +114,6 @@
       z-index: -1;
     }
 
-    /* Nombre y bio */
     .qs-nombre {
       font-family: var(--fuente-display);
       font-size: 1.6rem;
@@ -119,7 +123,6 @@
       line-height: 1.15;
     }
 
-    /* ── Secciones de texto ── */
     .qs-bloque {
       margin-bottom: 56px;
     }
@@ -145,7 +148,6 @@
       margin-bottom: 0;
     }
 
-    /* ── Separador entre secciones ── */
     .qs-separador {
       display: flex;
       align-items: center;
@@ -170,7 +172,6 @@
       flex-shrink: 0;
     }
 
-    /* ── Contacto ── */
     .qs-contacto {
       background: var(--color-fondo-alt);
       border-radius: 20px;
@@ -222,7 +223,6 @@
       color: inherit;
     }
 
-    /* ── Mobile ── */
     @media (max-width: 767px) {
       .qs-pagina {
         padding: 32px 0 64px;
@@ -236,7 +236,6 @@
         font-size: 2.2rem;
       }
 
-      /* En mobile: foto arriba, texto abajo */
       .qs-presentacion {
         grid-template-columns: 1fr;
         gap: 28px;
@@ -305,21 +304,14 @@
     <div class="container">
       <div class="qs-pagina">
 
-        <!-- Encabezado -->
         <div class="qs-encabezado animar-solo">
           <span class="qs-encabezado__etiqueta">El proyecto</span>
           <h1 class="qs-titulo">Quién soy</h1>
         </div>
 
-        <!-- Presentación: foto + bio -->
         <section class="qs-presentacion animar-solo" aria-labelledby="qs-nombre">
 
           <div class="qs-foto-wrap" aria-hidden="true">
-            <!--
-              FOTO: cuando tengas la imagen lista, reemplazá el bloque de abajo
-              con: <img src="assets/foto-leo.jpg" alt="Leonora" class="qs-foto-real" />
-              y eliminá el div qs-foto-placeholder
-            -->
             <div class="qs-foto-placeholder"><span>Foto</span></div>
           </div>
 
@@ -334,14 +326,12 @@
           </div>
         </section>
 
-        <!-- Separador -->
         <div class="qs-separador" aria-hidden="true">
           <span class="qs-separador__punto"></span>
           <span class="qs-separador__punto"></span>
           <span class="qs-separador__punto"></span>
         </div>
 
-        <!-- Por qué este proyecto -->
         <section class="qs-bloque animar-solo" aria-labelledby="qs-proyecto-titulo">
           <h2 class="qs-bloque-titulo" id="qs-proyecto-titulo">Por qué este proyecto</h2>
           <p class="qs-texto">
@@ -358,7 +348,6 @@
           </p>
         </section>
 
-        <!-- Contacto -->
         <section class="qs-bloque qs-contacto animar-solo" aria-labelledby="qs-contacto-titulo">
           <h2 class="qs-contacto-label" id="qs-contacto-titulo">Contacto</h2>
           <div class="qs-contacto-links">
